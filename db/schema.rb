@@ -11,7 +11,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121016131005) do
+ActiveRecord::Schema.define(:version => 20121030202520) do
+
+  create_table "authors", :force => true do |t|
+    t.string   "a1stname"
+    t.string   "asurname"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "books", :force => true do |t|
+    t.string   "title"
+    t.integer  "author_id"
+    t.string   "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "books", ["author_id", "created_at"], :name => "index_books_on_author_id_and_created_at"
 
   create_table "microposts", :force => true do |t|
     t.string   "content"
@@ -32,6 +49,16 @@ ActiveRecord::Schema.define(:version => 20121016131005) do
   add_index "relationships", ["followed_id"], :name => "index_relationships_on_followed_id"
   add_index "relationships", ["follower_id", "followed_id"], :name => "index_relationships_on_follower_id_and_followed_id", :unique => true
   add_index "relationships", ["follower_id"], :name => "index_relationships_on_follower_id"
+
+  create_table "reviews", :force => true do |t|
+    t.string   "text"
+    t.integer  "user_id"
+    t.integer  "book_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "reviews", ["user_id", "book_id", "created_at"], :name => "index_reviews_on_user_id_and_book_id_and_created_at"
 
   create_table "users", :force => true do |t|
     t.string   "firstname"
