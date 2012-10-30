@@ -11,6 +11,8 @@
     <section>
       <%= render 'shared/stats' %>
     </section>
+    <section>
+      <h4> User has <%= pluralize(@user.reviews.count, "book review") %>.</h4>
   </aside>
   <div class="span8">
     <%= render 'follow_form' if signed_in? %>

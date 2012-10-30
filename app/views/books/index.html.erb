@@ -1,0 +1,18 @@
+<% provide(:title, 'All Books') %>
+<h1>Books List</h1>
+
+<ul class="users">
+  <% @books.each do |book| %>
+    <li>
+      <%= link_to book.title, book %> by: 
+      <%= book.author.asurname %>,
+      <%= book.author.a1stname %>
+      <br />
+      <h5> This book has been reviewed
+      <%= pluralize(book.reviews.count, "times") %>.
+      </h5>
+    </li>
+  <% end %>
+</ul>
+
+   

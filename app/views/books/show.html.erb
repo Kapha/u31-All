@@ -1,0 +1,23 @@
+<% provide(:title, @book.title) %>
+<div class="row">
+  <aside class="span4">
+    <section>
+      <h1>
+        <%= @book.title %>, </h1>
+      <h4>
+        <%= @book.author.asurname %>, 
+        <%= @book.author.a1stname %>
+      </h4>
+    </section>
+    <section>
+      <h4> This book has been reviewed <%= pluralize(@book.reviews.count, "time") %>.
+      </h4>
+    </section>
+    <% if current_user.admin? %>
+      <section>
+        <%= link_to "delete", @book, method: :delete, data: {confirm: "This will delete the current book and all reviews attached to it. Are you sure?" } %>
+        | <%= link_to "edit", @book, method: :update %>
+      </section>
+    <% end %>
+  </aside>
+</div>
