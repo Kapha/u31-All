@@ -1,0 +1,15 @@
+<% provide(:title, 'Authors page') %>
+<h1>The Author List </h1>
+
+<ul class="users">
+  <% @authors.each do |author| %>
+    <li>
+      <%= link_to author.asurname, author %>,
+      <%= link_to author.a1stname, author %>
+      <br />
+      <h5>Author has <%= pluralize(author.books.count, "book") %>
+      </h5>
+    </li>
+  <% end %>
+</ul>
+
