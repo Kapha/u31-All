@@ -1,3 +1,0 @@
-class Author < ActiveRecord::Base
-  attr_accessible :a-1stname, :a-surname
-end
