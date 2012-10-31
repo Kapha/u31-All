@@ -1,6 +1,7 @@
 class Author < ActiveRecord::Base
   attr_accessible :a1stname, :asurname
   has_many :books
+  accepts_nested_attributes_for :book
   def afull_name
     "#{asurname}, #{a1stname}"
   end

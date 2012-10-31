@@ -1,0 +1,9 @@
+<%= form_for(@micropost) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="field">
+    <%= f.text_area :text, placeholder: "Compose new review..." %>
+  </div>
+    <%= f.select :rating [1, 2, 3, 4, 5] %>
+    <%= f.hidden_field :book_id, @book.id %>
+  <%= f.submit "Post", class: "btn btn-large btn-primary" %>
+<% end %>

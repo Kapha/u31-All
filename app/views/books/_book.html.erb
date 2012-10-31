@@ -1,5 +1,5 @@
 <li>
-  <span class="content"><%= link_to book.title, book_path %>
+  <span class="content"><%= link_to book.title, book_path(book) %>
   | Reviewed <%= pluralize(book.reviews.count, "time") %>
   </span>
   </br>
