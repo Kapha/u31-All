@@ -1,7 +1,6 @@
 <% provide(:title, 'All Books') %>
 <h1>Books List</h1>
 
-<% link_to "List a new book", new_book_path, class: "btn btn-large btn-primary" %>
 <ul class="users">
   <% @books.each do |book| %>
     <li>
