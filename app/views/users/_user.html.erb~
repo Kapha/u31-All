@@ -6,9 +6,9 @@
       | <%= link_to "Delete", user, method: :delete,
                                     data: { confirm: "You sure?" } %>
       | <% if user.admin? %>
-          <%= link_to "Admin", admin_user_path(user), method: :post, data: {confirm: "This will remove admin rights from #{user.firstname} #{user.sirname}. Are you sure?"} %>
+          <%= link_to "Admin", admin_user_path(user), method: :post, data: {confirm: "This will remove admin rights from #{user.firstname} #{user.sirname} are you sure?"} %>
         <% else %>
-          <%= link_to "Not-Admin", admin_user_path(user), method: :post, data: {confirm: "This will give #{user.firstname} #{user.sirname} admin rights. Are you sure?"} %>
+          <%= link_to "Not-Admin", admin_user_path(user), method: :post %>
           </%= render 'add_admin' %>
         <% end %>
   <% end %>

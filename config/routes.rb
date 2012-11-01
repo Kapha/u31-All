@@ -4,6 +4,8 @@ SampleApp::Application.routes.draw do
   resources :users do
     member do
       get :following, :followers
+      put :toggle
+      post :admin
     end
   end
   resources :sessions, only: [ :new, :create, :destroy]
@@ -13,8 +15,6 @@ SampleApp::Application.routes.draw do
   resources :authors
 
   root :to => 'static_pages#home'
-
-  match '/signup', to: 'users#new'
 
   match '/main',    to: "static_pages#home"
   match '/help',    to: "static_pages#help"

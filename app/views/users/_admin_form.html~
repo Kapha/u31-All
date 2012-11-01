@@ -1,0 +1,7 @@
+<div id="follow_form">
+<% if admin == 1 %>
+  <%= render 'Remove Admin' %>
+<% else %>
+  <%= render 'Add Admin' %>
+<% end %>
+</div>
