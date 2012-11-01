@@ -4,7 +4,7 @@
     <section>
       <h1>
         <%= @book.title %>, </h1>
-        <%= link_to @book.author.asurname, author_path %>, 
+        <%= link_to @book.author.asurname, author_path(@author) %>, 
         <%= link_to @book.author.a1stname, author_path(@author) %>
       <h4>
 
@@ -17,7 +17,7 @@
     <% if current_user.admin? %>
       <section>
         <%= link_to "delete", @book, method: :delete, data: {confirm: "This will delete the current book and all reviews attached to it. Are you sure?" } %>
-        | <%= link_to "edit", @book, method: :update %>
+        | <%= link_to "edit", edit_book_path(@book) %>
       </section>
       <section>
 

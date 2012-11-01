@@ -4,8 +4,8 @@
     <section>
       <h1>
         <%= @book.title %>, </h1>
-        <%= link_to @book.author.asurname, author_path %>, 
-        <%= link_to @book.author.a1stname, author_path(author_id) %>
+        <%= link_to @book.author.asurname, author_path(@author) %>, 
+        <%= link_to @book.author.a1stname, author_path(@author) %>
       <h4>
 
       </h4>

@@ -11,14 +11,14 @@
       <h4> This author has <%= pluralize(@author.books.count, "book") %> in our library.
       </h4>
     </section>
-    <section>
-      <%= link_to "Add Book", new_book_author_path, class: "btn btn-large btn-primary" %>
-    </section>
-    <% if current_user.admin? %>
       <section>
         <%= link_to "delete", @author, method: :delete, data: {confirm: "This will delete the current author and all books attached to it. Are you sure?" } %>
         | <%= link_to "edit", edit_author_path(@author) %>
       </section>
+    <section>
+      <%= link_to "Add Book", new_book_path, class: "btn btn-large btn-primary" %>
+    </section>
+    <% if current_user.admin? %>
     <% end %>
   </aside>
   <div class="span8">
