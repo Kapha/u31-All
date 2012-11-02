@@ -2,10 +2,11 @@ class ReviewsController < ApplicationController
   before_filter :signed_in_user
 
   def create
-    @review = current_user.review.build(params[:micropost])
-    if @review.save
-      flash[:success] = "Review submitted!"
-      redirect_to book_url
+    @review = Review.new(params[:review, :book_id])
+    @review.user_id = current_user
+    if @review.save!
+      flash[:success] = "Thank you for your opinion."
+      redirect_to reviews_path
     else
       @feed_items = []
       render book_url
@@ -17,9 +18,6 @@ class ReviewsController < ApplicationController
 
   def index
     @reviews = Review.paginate(page: params[:page])
-    @book = @review.book
-    @author = @book.author
-    
   end
 
   def show

@@ -8,9 +8,14 @@
   Book by 
   <%= link_to review.book.author.afull_name, @author %>
   </span>
+  <br />
   <span class="timestamp">
   Review written by 
-  <%= link_to "firstname", @user %>
+  <% if review.user == nil %>
+    Test review
+  <% else %>
+    <%= link_to review.user.sirname, @user %>
+  <% end %>
   <% if current_user.admin? %>
   |  Delete | Edit
   <% end %>

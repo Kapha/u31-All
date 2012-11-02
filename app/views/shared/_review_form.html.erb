@@ -1,1 +1,9 @@
-<h1> THIS IS A TEST</h1>
+<% @review = Review.new %>
+<%= form_for(@review) do |f| %>
+  <%= f.hidden_field :book_id, :value => @book.id  %>
+  <div class="field" >
+    <%= f.text_area :text, placeholder: "Write a review for this book..." %>
+  </div>
+
+    <%= f.submit "Post Review", class: "btn btn-large btn-primary" %>
+<% end %>

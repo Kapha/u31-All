@@ -1,5 +1,5 @@
 <% @book = review.book %>
-<% @author = @book.author %>
+<% @author = review.book.author %>
 <% @user = review.user %>
 <li>
   <span class="content">
@@ -11,7 +11,11 @@
   <br />
   <span class="timestamp">
   Review written by 
-  <%= link_to "firstname", @user %>
+  <% if review.user == nil %>
+    Test review
+  <% else %>
+    <%= link_to review.user.sirname, @user %>
+  <% end %>
   <% if current_user.admin? %>
   |  Delete | Edit
   <% end %>

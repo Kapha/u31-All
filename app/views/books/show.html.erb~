@@ -29,7 +29,7 @@
       <h2><%= @book.description %></h2>
     <section>
       <% if @book.reviews.any? %>
-        <h4 class="micropost"><%= render @reviews %></h4>
+        <h4 class="microposts"><%= render @reviews %></h4>
       <% else %>
         <h1>No one has reviewed this book yet. Take a second to do so by filling out the information on the left.</h1>
       <% end %>
