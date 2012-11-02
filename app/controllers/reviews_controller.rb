@@ -14,4 +14,14 @@ class ReviewsController < ApplicationController
 
   def destroy
   end
+
+  def index
+    @reviews = Review.paginate(page: params[:page])
+  end
+
+  def show
+    @review = Review.find(params[:id])
+    @book = @review.book
+    @author = @book.author
+  end
 end

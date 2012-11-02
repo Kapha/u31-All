@@ -12,11 +12,7 @@ SampleApp::Application.routes.draw do
   resources :microposts, only: [ :create, :destroy]
   resources :relationships, only: [:create, :destroy]
   resources :books
-  resources :authors do
-    member do
-      post :edit
-    end
-  end
+  resources :authors
 
   root :to => 'static_pages#home'
 

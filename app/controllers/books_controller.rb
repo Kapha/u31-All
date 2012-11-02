@@ -4,6 +4,7 @@ before_filter :admin_user, only: [:destroy, :update]
   def show
     @book = Book.find(params[:id])
     @author = @book.author_id
+    @reviews = @book.reviews.paginate(page: params[:page])
   end
 
   def update

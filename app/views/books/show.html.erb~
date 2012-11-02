@@ -17,11 +17,22 @@
     <% if current_user.admin? %>
       <section>
         <%= link_to "delete", @book, method: :delete, data: {confirm: "This will delete the current book and all reviews attached to it. Are you sure?" } %>
-        | <%= link_to "edit", @book, method: :update %>
+        | <%= link_to "edit", edit_book_path(@book) %>
       </section>
       <section>
 
       </section>
     <% end %>
   </aside>
+  <div class="span8">
+      <section>
+      <h2><%= @book.description %></h2>
+    <section>
+      <% if @book.reviews.any? %>
+        <h4 class="micropost"><%= render @reviews %></h4>
+      <% else %>
+        <h1>No one has reviewed this book yet. Take a second to do so by filling out the information on the left.</h1>
+      <% end %>
+    </section>
+  </div>
 </div>

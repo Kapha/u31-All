@@ -1,4 +1,4 @@
-class MicropostsController < ApplicationController
+class ReviewsController < ApplicationController
   before_filter :signed_in_user
 
   def create
@@ -13,5 +13,18 @@ class MicropostsController < ApplicationController
   end
 
   def destroy
+  end
+
+  def index
+    @reviews = Review.paginate(page: params[:page])
+    @book = @review.book
+    @author = @book.author
+    
+  end
+
+  def show
+    @review = Review.find(params[:id])
+    @book = @review.book
+    @author = @book.author
   end
 end

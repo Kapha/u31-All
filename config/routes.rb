@@ -13,6 +13,7 @@ SampleApp::Application.routes.draw do
   resources :relationships, only: [:create, :destroy]
   resources :books
   resources :authors
+  resources :reviews
 
   root :to => 'static_pages#home'
 

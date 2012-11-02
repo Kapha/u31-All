@@ -1,0 +1,10 @@
+<% provide(:title, 'All Reviews') %>
+<h1>Review List</h1>
+
+<%= will_paginate %>
+  <ul class="users">
+    <%= render @reviews %> 
+  </ul>
+
+<%= will_paginate %>
+

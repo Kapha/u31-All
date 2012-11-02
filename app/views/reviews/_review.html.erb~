@@ -1,0 +1,19 @@
+<% @book = review.book %>
+<% @author = @book.author %>
+<% @user = review.user %>
+<li>
+  <span class="content">
+  Review of 
+  <%= link_to review.book.title, @book %>, 
+  Book by 
+  <%= link_to review.book.author.afull_name, @author %>
+  </span>
+  <span class="timestamp">
+  Review written by 
+  <%= link_to "firstname", @user %>
+  <% if current_user.admin? %>
+  |  Delete | Edit
+  <% end %>
+  </span>
+</li> 
+

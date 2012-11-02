@@ -30,6 +30,8 @@
         <%= render @books %>
       </ol>
       <%= will_paginate @books %>
+    <% else %>
+      <h3> Author has no books. Please take a second to add one. </h3>
     <% end %>
   </div>
 </div>
