@@ -1,5 +1,5 @@
 <% @book = review.book %>
-<% @author = @book.author %>
+<% @author = review.book.author %>
 <% @user = review.user %>
 <li>
   <span class="content">
@@ -10,7 +10,8 @@
   </span>
   <br />
   <span class="timestamp">
-  Review written by 
+  This book was rated <%= review.rating/2 %>
+  by 
   <% if review.user == nil %>
     Test review
   <% else %>
