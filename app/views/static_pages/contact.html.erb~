@@ -1,0 +1,5 @@
+<% provide(:title, 'Contact Me') %>
+<h1>Contact me</h1>
+<p>
+Peter Blomgren<br>
+417-555-1234<p>
