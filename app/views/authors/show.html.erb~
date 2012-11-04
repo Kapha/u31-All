@@ -8,7 +8,7 @@
      </h1>
     </section>
     <section>
-      <h4> This author has <%= pluralize(@author.books.count, "book") %> in our library.
+      <h4> This author has <%= pluralize(@author.books.count, "book") %> in our library with an average rating of <%= @author.reviews.average(:rating) %>!
       </h4>
     </section>
     <% if current_user.admin? %>  
@@ -31,7 +31,7 @@
       </ol>
       <%= will_paginate @books %>
     <% else %>
-      <h3> Author has no books please add a book. </h3>
+      <h3> Author has no books. Please take a second to add one. </h3>
     <% end %>
   </div>
 </div>

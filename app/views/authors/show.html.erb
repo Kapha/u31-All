@@ -8,7 +8,7 @@
      </h1>
     </section>
     <section>
-      <h4> This author has <%= pluralize(@author.books.count, "book") %> in our library.
+      <h4> This author has <%= pluralize(@author.books.count, "book") %> in our library with an average rating of <%= @author.reviews.average(:rating).round(1) %>
       </h4>
     </section>
     <% if current_user.admin? %>  

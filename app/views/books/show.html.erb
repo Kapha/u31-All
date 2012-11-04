@@ -12,6 +12,9 @@
     </section>
     <section>
       <h4> This book has been reviewed <%= pluralize(@book.reviews.count, "time") %>.
+      <% if @book.reviews.any? %>
+      And has an average review of <%= @book.reviews.average(:rating).round(1) %>
+      <% end %>
       </h4>
     </section>
     <% if current_user.admin? %>

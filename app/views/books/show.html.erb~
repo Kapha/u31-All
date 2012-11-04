@@ -12,6 +12,9 @@
     </section>
     <section>
       <h4> This book has been reviewed <%= pluralize(@book.reviews.count, "time") %>.
+      <% if @book.reviews.any? %>
+      And has an average review of <%= @book.reviews.average(:rating).to_i %>
+      <% end %>
       </h4>
     </section>
     <% if current_user.admin? %>
@@ -20,7 +23,7 @@
         | <%= link_to "edit", edit_book_path(@book) %>
       </section>
       <section>
-
+        <%= render 'shared/review_form' %>
       </section>
     <% end %>
   </aside>

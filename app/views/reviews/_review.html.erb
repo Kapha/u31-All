@@ -2,11 +2,15 @@
 <% @author = review.book.author %>
 <% @user = review.user %>
 <li>
-  <span class="content">
+  <span class="timestamp">
   Review of 
   <%= link_to review.book.title, @book %>, 
   Book by 
   <%= link_to review.book.author.afull_name, @author %>
+  </span>
+  <br />
+  <span class="content">
+  <%= review.text %>
   </span>
   <br />
   <span class="timestamp">

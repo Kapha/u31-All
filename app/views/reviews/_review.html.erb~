@@ -10,7 +10,7 @@
   </span>
   <br />
   <span class="timestamp">
-  This book was rated <%= review.rating/2 %>
+  This book was rated <%= review.rating %>
   by 
   <% if review.user == nil %>
     Test review
