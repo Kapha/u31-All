@@ -41,6 +41,8 @@ class User < ActiveRecord::Base
   before_save { |user| user.email = email.downcase }
   before_save :create_remember_token
 
+  validates :username, presence: true, length: { maximum: 25 }, 
+                       uniqueness: { case_sensitive:false }
   validates :sirname, presence: true, length: { maximum: 25 }
   validates :firstname, presence: true, length: { maximum: 12 }
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
