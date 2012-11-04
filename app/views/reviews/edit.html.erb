@@ -1,0 +1,16 @@
+<% provide(:title, "Edit Review") %>
+<h1> Update This Review of <%= @review.book.title %> </h1>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@review) do |f| %>
+      <%= render 'shared/error_messages', object: f.object %>
+
+  <div class="field" >
+    <%= f.text_area :text, placeholder: "Write a review for this book..." %>
+  </div>
+  <%= f.select(:rating, options_for_select([['1', 1], ['2',2], ['3', 3], ['4',4], ['5', 5]], 3)) %>
+      <%= f.submit "Save Changes", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>

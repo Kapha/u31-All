@@ -13,9 +13,6 @@ class ReviewsController < ApplicationController
     end
   end
 
-  def destroy
-  end
-
   def index
     @reviews = Review.paginate(page: params[:page])
   end
@@ -24,5 +21,26 @@ class ReviewsController < ApplicationController
     @review = Review.find(params[:id])
     @book = @review.book
     @author = @book.author
+  end
+
+  def destroy
+    @review = Review.find(params[:id])
+    @review.destroy
+    flash[:success] = "Review Deleted."
+    redirect_to books_url
+  end
+
+  def update
+    @review = Review.find(params[:id])    
+    if @review.update_attributes(params[:review])
+      flash[:success] = "Review updated"
+      redirect_to @review
+    else
+      render 'edit'
+    end
+  end
+
+  def edit
+    @review = Review.find(params[:id])
   end
 end

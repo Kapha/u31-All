@@ -2,7 +2,7 @@ class ReviewsController < ApplicationController
   before_filter :signed_in_user
 
   def create
-    @review = Review.new(params[:review, :book_id])
+    @review = Review.new(params[:review])
     @review.user_id = current_user
     if @review.save!
       flash[:success] = "Thank you for your opinion."
@@ -11,9 +11,6 @@ class ReviewsController < ApplicationController
       @feed_items = []
       render book_url
     end
-  end
-
-  def destroy
   end
 
   def index
@@ -25,4 +22,24 @@ class ReviewsController < ApplicationController
     @book = @review.book
     @author = @book.author
   end
+
+  def destroy
+    @review = Review.find(params[:id])
+    @review.destroy
+    flash[:success] = "Review Deleted."
+    redirect_to books_url
+  end
+
+  def update
+    @review = Review.find(params[:id])    
+    if @review.update_attributes(params[:review])
+      flash[:success] = "Review updated"
+      redirect_to @review
+    else
+      render 'edit'
+    end
+  end
+
+  def edit
+    @review = Review.find(params[:id])
 end

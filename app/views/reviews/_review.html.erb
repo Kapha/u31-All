@@ -19,10 +19,11 @@
   <% if review.user == nil %>
     Test review
   <% else %>
-    <%= link_to review.user.sirname, @user %>
+    <%= link_to review.user.username, @user %>
   <% end %>
   <% if current_user.admin? %>
-  |  Delete | Edit
+  |  <%= link_to "Delete", review, method: :delete,
+                                   data: { confirm: "Your post will be permenantly deleted. Are you sure?"} %> 
   <% end %>
   </span>
 </li> 

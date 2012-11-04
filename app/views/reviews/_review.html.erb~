@@ -2,11 +2,15 @@
 <% @author = review.book.author %>
 <% @user = review.user %>
 <li>
-  <span class="content">
+  <span class="timestamp">
   Review of 
   <%= link_to review.book.title, @book %>, 
   Book by 
   <%= link_to review.book.author.afull_name, @author %>
+  </span>
+  <br />
+  <span class="content">
+  <%= review.text %>
   </span>
   <br />
   <span class="timestamp">
@@ -15,10 +19,11 @@
   <% if review.user == nil %>
     Test review
   <% else %>
-    <%= link_to review.user.sirname, @user %>
+    <%= link_to review.user, @user.username %>
   <% end %>
   <% if current_user.admin? %>
-  |  Delete | Edit
+  |  <%= link_to "Delete", review, method: :delete,
+                                   data: { confirm: "Your post will be permenantly deleted. Are you sure?"} %> 
   <% end %>
   </span>
 </li> 
