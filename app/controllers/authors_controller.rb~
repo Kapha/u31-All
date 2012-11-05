@@ -44,7 +44,8 @@ class AuthorsController < ApplicationController
   end
 
   def update
-    if @author.update_attributes(params[:Author])
+    @author = Author.find(params[:id])    
+    if @author.update_attributes(params[:author])
       flash[:success] = "Author updated"
       redirect_to @author
     else

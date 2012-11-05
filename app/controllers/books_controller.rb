@@ -41,7 +41,7 @@ before_filter :admin_user, only: [:destroy, :update]
 
   def create
     @book = Book.new(params[:book])
-    if @book.save!
+    if @book.save
       flash[:success] = "Thank you for adding a new book to the site."
       redirect_to @book
     else

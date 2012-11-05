@@ -6,7 +6,7 @@ class AuthorsController < ApplicationController
 
   def create
     @author = Author.new(params[:author])
-    if @author.save!
+    if @author.save
       flash[:success] = "Thank you for adding a new Author to the site."
       redirect_to @author
     else

@@ -1,10 +1,10 @@
 <% provide(:title, 'New Author') %>
-<h1>Sign up</h1>
+<h1>Add a New Author</h1>
 
 <div class="row">
   <div class="span6 offset3">
     <%= form_for(@author) do |f| %>
-      <%= render 'shared/error_messages', object: f.object %>
+      <%= render 'author/error_messages', object: f.object %>
 
       <%= f.label :"First Name" %>
       <%= f.text_field :a1stname %>

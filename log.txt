@@ -1,0 +1,1502 @@
+2012-11-04T00:23:17+00:00 heroku[router]: POST glacial-ocean-1154.herokuapp.com/sessions dyno=web.1 queue=0 wait=1ms service=121ms status=200 bytes=2272
+2012-11-04T00:23:17+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-d79227125b1cacca1b5e13de19ada8a1.css dyno=web.1 queue=0 wait=4ms service=13ms status=304 bytes=0
+2012-11-04T00:23:17+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-04T00:23:17+00:00 app[web.1]: Completed 200 OK in 105ms (Views: 4.2ms | ActiveRecord: 20.5ms)
+2012-11-04T00:23:17+00:00 app[web.1]:   Rendered layouts/_header.html.erb (20.5ms)
+2012-11-04T00:23:17+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-0f3eff22898a15a391044aec2dfec4d8.js dyno=web.1 queue=0 wait=0ms service=4ms status=304 bytes=0
+2012-11-04T00:23:59+00:00 app[web.1]: 
+2012-11-04T00:23:59+00:00 app[web.1]: Started POST "/sessions" for 208.54.83.175 at 2012-11-04 00:23:59 +0000
+2012-11-04T00:23:59+00:00 app[web.1]: 
+2012-11-04T00:23:59+00:00 app[web.1]: Processing by SessionsController#create as HTML
+2012-11-04T00:23:59+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"GvDZKSTVn3V86xjz2Yd46wApYofSJZ8uVkT/g3VOYTw=", "session"=>{"email"=>"mr@pablomgren.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+2012-11-04T00:23:59+00:00 app[web.1]: Completed 302 Found in 84ms (ActiveRecord: 0.9ms)
+2012-11-04T00:23:59+00:00 app[web.1]: Redirected to https://glacial-ocean-1154.herokuapp.com/users/1
+2012-11-04T00:23:59+00:00 heroku[router]: POST glacial-ocean-1154.herokuapp.com/sessions dyno=web.1 queue=0 wait=0ms service=98ms status=302 bytes=114
+2012-11-04T00:24:00+00:00 app[web.1]: Started GET "/users/1" for 208.54.83.175 at 2012-11-04 00:24:00 +0000
+2012-11-04T00:24:00+00:00 app[web.1]: 
+2012-11-04T00:24:00+00:00 app[web.1]: 
+2012-11-04T00:24:00+00:00 app[web.1]: Processing by UsersController#show as HTML
+2012-11-04T00:24:00+00:00 app[web.1]:   Parameters: {"id"=>"1"}
+2012-11-04T00:24:00+00:00 app[web.1]:   Rendered shared/_stats.html.erb (70.9ms)
+2012-11-04T00:24:00+00:00 app[web.1]:   Rendered users/_follow_form.html.erb (0.5ms)
+2012-11-04T00:24:00+00:00 app[web.1]:   Rendered microposts/_micropost.html.erb (14.5ms)
+2012-11-04T00:24:00+00:00 app[web.1]:   Rendered users/show.html.erb within layouts/application (108.8ms)
+2012-11-04T00:24:00+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-04T00:24:00+00:00 app[web.1]: Completed 200 OK in 189ms (Views: 98.9ms | ActiveRecord: 18.1ms)
+2012-11-04T00:24:00+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.4ms)
+2012-11-04T00:24:00+00:00 app[web.1]:   Rendered layouts/_header.html.erb (3.1ms)
+2012-11-04T00:24:00+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users/1 dyno=web.1 queue=0 wait=0ms service=197ms status=200 bytes=3396
+2012-11-04T00:24:00+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-d79227125b1cacca1b5e13de19ada8a1.css dyno=web.1 queue=0 wait=0ms service=10ms status=304 bytes=0
+2012-11-04T00:24:00+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-0f3eff22898a15a391044aec2dfec4d8.js dyno=web.1 queue=0 wait=0ms service=6ms status=304 bytes=0
+2012-11-04T00:24:31+00:00 app[web.1]: 
+2012-11-04T00:24:31+00:00 app[web.1]: Processing by UsersController#index as HTML
+2012-11-04T00:24:31+00:00 app[web.1]: 
+2012-11-04T00:24:31+00:00 app[web.1]: Started GET "/users" for 208.54.83.175 at 2012-11-04 00:24:31 +0000
+2012-11-04T00:24:31+00:00 app[web.1]:   Rendered users/index.html.erb within layouts/application (6.2ms)
+2012-11-04T00:24:31+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-04T00:24:31+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.4ms)
+2012-11-04T00:24:31+00:00 app[web.1]:   Rendered users/_user.html.erb (2.6ms)
+2012-11-04T00:24:31+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-04T00:24:31+00:00 app[web.1]: Completed 200 OK in 16ms (Views: 8.6ms | ActiveRecord: 6.4ms)
+2012-11-04T00:24:31+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users dyno=web.1 queue=0 wait=0ms service=24ms status=200 bytes=3090
+2012-11-04T00:24:31+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-d79227125b1cacca1b5e13de19ada8a1.css dyno=web.1 queue=0 wait=0ms service=4ms status=304 bytes=0
+2012-11-04T01:33:37+00:00 heroku[web.1]: Idling
+2012-11-04T01:33:38+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2012-11-04T01:33:39+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+2012-11-04T01:33:39+00:00 app[web.1]: [2012-11-04 01:33:39] ERROR SignalException: SIGTERM
+2012-11-04T01:33:48+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
+2012-11-04T01:33:48+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
+2012-11-04T01:33:49+00:00 heroku[web.1]: Process exited with status 137
+2012-11-04T01:33:50+00:00 heroku[web.1]: State changed from up to down
+2012-11-04T01:33:50+00:00 heroku[web.1]: State changed from down to starting
+2012-11-04T01:33:52+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 16440`
+2012-11-04T01:33:55+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-04T01:33:55+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-04T01:34:00+00:00 app[web.1]: => Call with -d to detach
+2012-11-04T01:34:00+00:00 app[web.1]: => Booting WEBrick
+2012-11-04T01:34:00+00:00 app[web.1]: => Rails 3.2.8 application starting in production on http://0.0.0.0:16440
+2012-11-04T01:34:00+00:00 app[web.1]: => Ctrl-C to shutdown server
+2012-11-04T01:34:00+00:00 app[web.1]: Connecting to database specified by DATABASE_URL
+2012-11-04T01:34:00+00:00 app[web.1]: [2012-11-04 01:34:00] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2012-11-04T01:34:00+00:00 app[web.1]: [2012-11-04 01:34:00] INFO  WEBrick 1.3.1
+2012-11-04T01:34:00+00:00 app[web.1]: [2012-11-04 01:34:00] INFO  WEBrick::HTTPServer#start: pid=2 port=16440
+2012-11-04T01:34:01+00:00 heroku[web.1]: State changed from starting to up
+2012-11-04T02:40:06+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2012-11-04T02:40:07+00:00 app[web.1]: [2012-11-04 02:40:07] ERROR SignalException: SIGTERM
+2012-11-04T02:40:07+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+2012-11-04T02:40:03+00:00 heroku[web.1]: Idling
+2012-11-04T02:40:17+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
+2012-11-04T02:40:17+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
+2012-11-04T02:40:19+00:00 heroku[web.1]: Process exited with status 137
+2012-11-04T02:40:19+00:00 heroku[web.1]: State changed from up to down
+2012-11-04T04:51:26+00:00 heroku[slugc]: Slug compilation started
+2012-11-04T04:52:11+00:00 heroku[slugc]: Slug compilation finished
+2012-11-04T20:47:16+00:00 heroku[slugc]: Slug compilation started
+2012-11-04T20:48:01+00:00 heroku[slugc]: Slug compilation finished
+2012-11-04T21:48:32+00:00 heroku[slugc]: Slug compilation started
+2012-11-04T21:49:09+00:00 heroku[slugc]: Slug compilation finished
+2012-11-04T21:49:44+00:00 heroku[run.1]: Awaiting client
+2012-11-04T21:49:44+00:00 heroku[run.1]: Starting process with command `db:migrate`
+2012-11-04T21:49:44+00:00 heroku[run.1]: Client connection closed. Sending SIGHUP to all processes
+2012-11-04T21:49:44+00:00 heroku[run.1]: State changed from starting to complete
+2012-11-04T21:49:46+00:00 heroku[run.1]: Process exited with status 127
+2012-11-04T21:50:01+00:00 heroku[run.1]: Awaiting client
+2012-11-04T21:50:01+00:00 heroku[run.1]: Starting process with command `bundle exec rake db:migrate`
+2012-11-04T21:50:01+00:00 heroku[run.1]: State changed from starting to up
+2012-11-04T21:50:21+00:00 heroku[run.1]: Process exited with status 0
+2012-11-04T21:50:21+00:00 heroku[run.1]: State changed from up to complete
+2012-11-04T21:50:56+00:00 heroku[web.1]: Unidling
+2012-11-04T21:50:56+00:00 heroku[web.1]: State changed from down to starting
+2012-11-04T21:51:00+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 20311`
+2012-11-04T21:51:06+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-04T21:51:06+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-04T21:51:18+00:00 app[web.1]: => Booting WEBrick
+2012-11-04T21:51:18+00:00 app[web.1]: => Rails 3.2.8 application starting in production on http://0.0.0.0:20311
+2012-11-04T21:51:18+00:00 app[web.1]: => Call with -d to detach
+2012-11-04T21:51:18+00:00 app[web.1]: => Ctrl-C to shutdown server
+2012-11-04T21:51:18+00:00 app[web.1]: Connecting to database specified by DATABASE_URL
+2012-11-04T21:51:19+00:00 app[web.1]: [2012-11-04 21:51:19] INFO  WEBrick 1.3.1
+2012-11-04T21:51:19+00:00 app[web.1]: [2012-11-04 21:51:19] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2012-11-04T21:51:19+00:00 app[web.1]: [2012-11-04 21:51:19] INFO  WEBrick::HTTPServer#start: pid=2 port=20311
+2012-11-04T21:51:20+00:00 heroku[web.1]: State changed from starting to up
+2012-11-04T21:51:22+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/ dyno=web.1 queue=0 wait=1ms service=89ms status=301 bytes=0
+2012-11-04T21:51:27+00:00 app[web.1]: 
+2012-11-04T21:51:27+00:00 app[web.1]: Started GET "/" for 209.106.205.35 at 2012-11-04 21:51:27 +0000
+2012-11-04T21:51:27+00:00 app[web.1]: 
+2012-11-04T21:51:27+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2012-11-04T21:51:27+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (212.1ms)
+2012-11-04T21:51:27+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.4ms)
+2012-11-04T21:51:27+00:00 app[web.1]:   Rendered layouts/_header.html.erb (2.0ms)
+2012-11-04T21:51:27+00:00 app[web.1]: Completed 200 OK in 717ms (Views: 396.4ms | ActiveRecord: 157.3ms)
+2012-11-04T21:51:27+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.8ms)
+2012-11-04T21:51:28+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/ dyno=web.1 queue=0 wait=1ms service=978ms status=200 bytes=1699
+2012-11-04T21:52:00+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=7ms status=301 bytes=0
+2012-11-04T21:52:01+00:00 app[web.1]: 
+2012-11-04T21:52:01+00:00 app[web.1]: 
+2012-11-04T21:52:01+00:00 app[web.1]: Started GET "/" for 209.106.205.35 at 2012-11-04 21:52:01 +0000
+2012-11-04T21:52:01+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2012-11-04T21:52:01+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+2012-11-04T21:52:01+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-04T21:52:01+00:00 app[web.1]:   Rendered layouts/_header.html.erb (0.8ms)
+2012-11-04T21:52:01+00:00 app[web.1]: Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.9ms)
+2012-11-04T21:52:01+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-04T21:52:01+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=16ms status=200 bytes=1699
+2012-11-04T21:52:12+00:00 app[web.1]: 
+2012-11-04T21:52:12+00:00 app[web.1]: 
+2012-11-04T21:52:12+00:00 app[web.1]: Started GET "/signin" for 209.106.205.35 at 2012-11-04 21:52:12 +0000
+2012-11-04T21:52:12+00:00 app[web.1]: Processing by SessionsController#new as HTML
+2012-11-04T21:52:12+00:00 app[web.1]:   Rendered sessions/new.html.erb within layouts/application (61.6ms)
+2012-11-04T21:52:12+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-04T21:52:12+00:00 app[web.1]: Completed 200 OK in 76ms (Views: 73.7ms | ActiveRecord: 1.7ms)
+2012-11-04T21:52:12+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-04T21:52:12+00:00 app[web.1]:   Rendered layouts/_header.html.erb (3.1ms)
+2012-11-04T21:52:12+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/signin dyno=web.1 queue=0 wait=0ms service=91ms status=200 bytes=2181
+2012-11-04T21:52:22+00:00 app[web.1]: 
+2012-11-04T21:52:22+00:00 app[web.1]: 
+2012-11-04T21:52:22+00:00 app[web.1]: Started POST "/sessions" for 209.106.205.35 at 2012-11-04 21:52:22 +0000
+2012-11-04T21:52:22+00:00 app[web.1]: Processing by SessionsController#create as HTML
+2012-11-04T21:52:22+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"5u6vvdLIsP/ia0gMB+htGXfKUpLHljj5sJf9RtXQTI4=", "session"=>{"email"=>"mr@pablomgren.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+2012-11-04T21:52:22+00:00 app[web.1]: WARNING: Can't verify CSRF token authenticity
+2012-11-04T21:52:22+00:00 app[web.1]: Completed 302 Found in 133ms (ActiveRecord: 28.0ms)
+2012-11-04T21:52:22+00:00 app[web.1]: Redirected to https://glacial-ocean-1154.herokuapp.com/users/1
+2012-11-04T21:52:22+00:00 heroku[router]: POST glacial-ocean-1154.herokuapp.com/sessions dyno=web.1 queue=0 wait=0ms service=156ms status=302 bytes=114
+2012-11-04T21:52:22+00:00 app[web.1]: Started GET "/users/1" for 209.106.205.35 at 2012-11-04 21:52:22 +0000
+2012-11-04T21:52:22+00:00 app[web.1]: 
+2012-11-04T21:52:22+00:00 app[web.1]: 
+2012-11-04T21:52:22+00:00 app[web.1]: Processing by UsersController#show as HTML
+2012-11-04T21:52:22+00:00 app[web.1]:   Parameters: {"id"=>"1"}
+2012-11-04T21:52:23+00:00 app[web.1]:   Rendered shared/_stats.html.erb (120.7ms)
+2012-11-04T21:52:23+00:00 app[web.1]:   Rendered microposts/_micropost.html.erb (43.8ms)
+2012-11-04T21:52:23+00:00 app[web.1]:   Rendered users/show.html.erb within layouts/application (222.8ms)
+2012-11-04T21:52:23+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-04T21:52:23+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.1ms)
+2012-11-04T21:52:23+00:00 app[web.1]: Completed 200 OK in 778ms (Views: 143.6ms | ActiveRecord: 521.7ms)
+2012-11-04T21:52:23+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-04T21:52:23+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users/1 dyno=web.1 queue=0 wait=7ms service=819ms status=200 bytes=2223
+2012-11-04T21:52:44+00:00 app[web.1]: 
+2012-11-04T21:52:44+00:00 app[web.1]: 
+2012-11-04T21:52:44+00:00 app[web.1]: Started GET "/help" for 209.106.205.35 at 2012-11-04 21:52:44 +0000
+2012-11-04T21:52:44+00:00 app[web.1]: Processing by StaticPagesController#help as HTML
+2012-11-04T21:52:44+00:00 app[web.1]:   Rendered static_pages/help.html.erb within layouts/application (0.3ms)
+2012-11-04T21:52:44+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-04T21:52:44+00:00 app[web.1]:   Rendered layouts/_header.html.erb (2.4ms)
+2012-11-04T21:52:44+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-04T21:52:44+00:00 app[web.1]: Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 1.1ms)
+2012-11-04T21:52:44+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/help dyno=web.1 queue=0 wait=0ms service=50ms status=200 bytes=1503
+2012-11-04T21:52:47+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/ dyno=web.1 queue=0 wait=10ms service=8ms status=301 bytes=0
+2012-11-04T21:52:50+00:00 app[web.1]: 
+2012-11-04T21:52:50+00:00 app[web.1]: 
+2012-11-04T21:52:50+00:00 app[web.1]: Started GET "/" for 209.106.205.35 at 2012-11-04 21:52:50 +0000
+2012-11-04T21:52:50+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2012-11-04T21:52:50+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+2012-11-04T21:52:50+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-04T21:52:50+00:00 app[web.1]:   Rendered layouts/_header.html.erb (0.8ms)
+2012-11-04T21:52:50+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-04T21:52:50+00:00 app[web.1]: Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.9ms)
+2012-11-04T21:52:51+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-d79227125b1cacca1b5e13de19ada8a1.css dyno=web.1 queue=0 wait=3ms service=8ms status=304 bytes=0
+2012-11-04T21:52:51+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-0f3eff22898a15a391044aec2dfec4d8.js dyno=web.1 queue=0 wait=0ms service=8ms status=304 bytes=0
+2012-11-04T21:53:09+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=6ms status=301 bytes=0
+2012-11-04T21:53:10+00:00 app[web.1]: 
+2012-11-04T21:53:10+00:00 app[web.1]: 
+2012-11-04T21:53:10+00:00 app[web.1]: Started GET "/" for 209.106.205.35 at 2012-11-04 21:53:10 +0000
+2012-11-04T21:53:10+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2012-11-04T21:53:10+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+2012-11-04T21:53:10+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-04T21:53:10+00:00 app[web.1]: Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.7ms)
+2012-11-04T21:53:10+00:00 app[web.1]:   Rendered layouts/_header.html.erb (0.8ms)
+2012-11-04T21:53:10+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-04T21:53:11+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-d79227125b1cacca1b5e13de19ada8a1.css dyno=web.1 queue=0 wait=0ms service=17ms status=200 bytes=86654
+2012-11-04T21:53:11+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-0f3eff22898a15a391044aec2dfec4d8.js dyno=web.1 queue=0 wait=0ms service=26ms status=200 bytes=122359
+2012-11-04T21:53:15+00:00 app[web.1]: 
+2012-11-04T21:53:15+00:00 app[web.1]: 
+2012-11-04T21:53:15+00:00 app[web.1]: Started GET "/signin" for 209.106.205.35 at 2012-11-04 21:53:15 +0000
+2012-11-04T21:53:15+00:00 app[web.1]: Processing by SessionsController#new as HTML
+2012-11-04T21:53:15+00:00 app[web.1]:   Rendered sessions/new.html.erb within layouts/application (1.3ms)
+2012-11-04T21:53:15+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-04T21:53:15+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-04T21:53:15+00:00 app[web.1]:   Rendered layouts/_header.html.erb (2.5ms)
+2012-11-04T21:53:15+00:00 app[web.1]: Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 1.2ms)
+2012-11-04T21:53:15+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/signin dyno=web.1 queue=0 wait=3ms service=30ms status=200 bytes=2181
+2012-11-04T21:53:27+00:00 app[web.1]: 
+2012-11-04T21:53:27+00:00 app[web.1]: Processing by SessionsController#create as HTML
+2012-11-04T21:53:27+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"/yF/BaxJjCB7RmNooF3HWnjU5N6IkNKJ8NljCQdqt/w=", "session"=>{"email"=>"mr@pablomgren.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+2012-11-04T21:53:27+00:00 app[web.1]: 
+2012-11-04T21:53:27+00:00 app[web.1]: Started POST "/sessions" for 209.106.205.35 at 2012-11-04 21:53:27 +0000
+2012-11-04T21:53:27+00:00 app[web.1]: Redirected to https://glacial-ocean-1154.herokuapp.com/users/1
+2012-11-04T21:53:27+00:00 app[web.1]: Completed 302 Found in 82ms (ActiveRecord: 0.9ms)
+2012-11-04T21:53:27+00:00 heroku[router]: POST glacial-ocean-1154.herokuapp.com/sessions dyno=web.1 queue=0 wait=0ms service=92ms status=302 bytes=114
+2012-11-04T21:53:27+00:00 app[web.1]: Started GET "/users/1" for 209.106.205.35 at 2012-11-04 21:53:27 +0000
+2012-11-04T21:53:27+00:00 app[web.1]: 
+2012-11-04T21:53:27+00:00 app[web.1]: 
+2012-11-04T21:53:27+00:00 app[web.1]: Processing by UsersController#show as HTML
+2012-11-04T21:53:27+00:00 app[web.1]:   Parameters: {"id"=>"1"}
+2012-11-04T21:53:27+00:00 app[web.1]:   Rendered shared/_stats.html.erb (7.7ms)
+2012-11-04T21:53:27+00:00 app[web.1]:   Rendered users/_follow_form.html.erb (0.4ms)
+2012-11-04T21:53:27+00:00 app[web.1]:   Rendered microposts/_micropost.html.erb (15.7ms)
+2012-11-04T21:53:27+00:00 app[web.1]:   Rendered users/show.html.erb within layouts/application (37.7ms)
+2012-11-04T21:53:27+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-04T21:53:27+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.6ms)
+2012-11-04T21:53:27+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-04T21:53:27+00:00 app[web.1]: Completed 200 OK in 43ms (Views: 12.5ms | ActiveRecord: 29.6ms)
+2012-11-04T21:53:27+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users/1 dyno=web.1 queue=0 wait=11ms service=93ms status=200 bytes=3366
+2012-11-04T21:53:35+00:00 app[web.1]:   Rendered users/_follow_form.html.erb (0.0ms)
+2012-11-04T21:53:35+00:00 app[web.1]:   Parameters: {"id"=>"1"}
+2012-11-04T21:53:35+00:00 app[web.1]: Processing by UsersController#show as HTML
+2012-11-04T21:53:35+00:00 app[web.1]:   Rendered shared/_stats.html.erb (4.3ms)
+2012-11-04T21:53:35+00:00 app[web.1]: Started GET "/users/1" for 209.106.205.35 at 2012-11-04 21:53:35 +0000
+2012-11-04T21:53:35+00:00 app[web.1]: 
+2012-11-04T21:53:35+00:00 app[web.1]: 
+2012-11-04T21:53:35+00:00 app[web.1]:   Rendered microposts/_micropost.html.erb (2.0ms)
+2012-11-04T21:53:35+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-04T21:53:35+00:00 app[web.1]:   Rendered users/show.html.erb within layouts/application (12.7ms)
+2012-11-04T21:53:35+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.5ms)
+2012-11-04T21:53:35+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-04T21:53:35+00:00 app[web.1]: Completed 200 OK in 19ms (Views: 11.7ms | ActiveRecord: 5.9ms)
+2012-11-04T21:53:35+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users/1 dyno=web.1 queue=0 wait=0ms service=31ms status=304 bytes=0
+2012-11-04T21:53:46+00:00 app[web.1]: Started GET "/users/1/edit" for 209.106.205.35 at 2012-11-04 21:53:46 +0000
+2012-11-04T21:53:46+00:00 app[web.1]: 
+2012-11-04T21:53:46+00:00 app[web.1]: Processing by UsersController#edit as HTML
+2012-11-04T21:53:46+00:00 app[web.1]:   Parameters: {"id"=>"1"}
+2012-11-04T21:53:46+00:00 app[web.1]: 
+2012-11-04T21:53:46+00:00 app[web.1]: Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 2.0ms)
+2012-11-04T21:53:46+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-04T21:53:46+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.6ms)
+2012-11-04T21:53:46+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-04T21:53:46+00:00 app[web.1]:   Rendered shared/_error_messages.html.erb (0.4ms)
+2012-11-04T21:53:46+00:00 app[web.1]:   Rendered users/edit.html.erb within layouts/application (5.2ms)
+2012-11-04T21:53:46+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users/1/edit dyno=web.1 queue=0 wait=5ms service=28ms status=200 bytes=4006
+2012-11-04T21:53:46+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-0f3eff22898a15a391044aec2dfec4d8.js dyno=web.1 queue=0 wait=0ms service=8ms status=304 bytes=0
+2012-11-04T21:54:03+00:00 app[web.1]: Started PUT "/users/1" for 209.106.205.35 at 2012-11-04 21:54:03 +0000
+2012-11-04T21:54:03+00:00 app[web.1]: 
+2012-11-04T21:54:03+00:00 app[web.1]: 
+2012-11-04T21:54:03+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"/yF/BaxJjCB7RmNooF3HWnjU5N6IkNKJ8NljCQdqt/w=", "user"=>{"username"=>"Kapha", "firstname"=>"Peter", "sirname"=>"Blomgren", "email"=>"mr@pablomgren.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save Changes", "id"=>"1"}
+2012-11-04T21:54:03+00:00 app[web.1]: Processing by UsersController#update as HTML
+2012-11-04T21:54:04+00:00 app[web.1]: Completed 302 Found in 181ms (ActiveRecord: 70.6ms)
+2012-11-04T21:54:04+00:00 app[web.1]: Redirected to https://glacial-ocean-1154.herokuapp.com/users/1
+2012-11-04T21:54:04+00:00 heroku[router]: POST glacial-ocean-1154.herokuapp.com/users/1 dyno=web.1 queue=0 wait=0ms service=247ms status=302 bytes=114
+2012-11-04T21:54:04+00:00 app[web.1]: 
+2012-11-04T21:54:04+00:00 app[web.1]: Started GET "/users/1" for 209.106.205.35 at 2012-11-04 21:54:04 +0000
+2012-11-04T21:54:04+00:00 app[web.1]: Processing by UsersController#show as HTML
+2012-11-04T21:54:04+00:00 app[web.1]:   Parameters: {"id"=>"1"}
+2012-11-04T21:54:04+00:00 app[web.1]: 
+2012-11-04T21:54:04+00:00 app[web.1]:   Rendered shared/_stats.html.erb (4.8ms)
+2012-11-04T21:54:04+00:00 app[web.1]:   Rendered users/_follow_form.html.erb (0.1ms)
+2012-11-04T21:54:04+00:00 app[web.1]:   Rendered users/show.html.erb within layouts/application (21.5ms)
+2012-11-04T21:54:04+00:00 app[web.1]:   Rendered microposts/_micropost.html.erb (2.5ms)
+2012-11-04T21:54:04+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-04T21:54:04+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-04T21:54:04+00:00 app[web.1]: Completed 200 OK in 29ms (Views: 13.9ms | ActiveRecord: 13.5ms)
+2012-11-04T21:54:04+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.6ms)
+2012-11-04T21:54:04+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users/1 dyno=web.1 queue=0 wait=0ms service=42ms status=200 bytes=3453
+2012-11-04T21:56:00+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users dyno=web.1 queue=0 wait=0ms service=30ms status=200 bytes=3023
+2012-11-04T21:56:02+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-0f3eff22898a15a391044aec2dfec4d8.js dyno=web.1 queue=0 wait=0ms service=1421ms status=304 bytes=0
+2012-11-04T21:56:12+00:00 heroku[router]: POST glacial-ocean-1154.herokuapp.com/signout dyno=web.1 queue=0 wait=0ms service=20ms status=302 bytes=107
+2012-11-04T21:56:12+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=58ms status=304 bytes=0
+2012-11-04T21:56:39+00:00 heroku[router]: POST glacial-ocean-1154.herokuapp.com/sessions dyno=web.1 queue=0 wait=0ms service=139ms status=302 bytes=114
+2012-11-04T21:56:40+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users/2 dyno=web.1 queue=0 wait=0ms service=39ms status=200 bytes=2999
+2012-11-04T21:56:46+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-d79227125b1cacca1b5e13de19ada8a1.css dyno=web.1 queue=0 wait=0ms service=51ms status=304 bytes=0
+2012-11-04T21:56:52+00:00 heroku[router]: POST glacial-ocean-1154.herokuapp.com/users/2 dyno=web.1 queue=0 wait=0ms service=65ms status=200 bytes=4486
+2012-11-04T21:57:04+00:00 heroku[router]: POST glacial-ocean-1154.herokuapp.com/users/2 dyno=web.1 queue=0 wait=0ms service=110ms status=302 bytes=114
+2012-11-04T21:57:04+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users/2 dyno=web.1 queue=0 wait=0ms service=27ms status=200 bytes=3088
+2012-11-04T21:57:10+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users dyno=web.1 queue=0 wait=9ms service=35ms status=200 bytes=3019
+2012-11-04T21:57:16+00:00 heroku[router]: POST glacial-ocean-1154.herokuapp.com/signout dyno=web.1 queue=0 wait=0ms service=29ms status=302 bytes=107
+2012-11-04T21:57:16+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/ dyno=web.1 queue=0 wait=1ms service=15ms status=304 bytes=0
+2012-11-04T22:05:25+00:00 heroku[web.1]: State changed from up to down
+2012-11-04T22:05:25+00:00 heroku[web.1]: State changed from down to starting
+2012-11-04T22:05:26+00:00 heroku[slugc]: Slug compilation finished
+2012-11-04T22:05:35+00:00 heroku[web.1]: State changed from starting to up
+2012-11-04T22:36:44+00:00 heroku[slugc]: Slug compilation started
+2012-11-04T22:37:25+00:00 heroku[web.1]: State changed from up to down
+2012-11-04T22:37:25+00:00 heroku[web.1]: State changed from down to starting
+2012-11-04T22:37:26+00:00 heroku[slugc]: Slug compilation finished
+2012-11-04T22:37:28+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2012-11-04T22:37:29+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 47458`
+2012-11-04T22:37:29+00:00 app[web.1]: [2012-11-04 22:37:29] ERROR SignalException: SIGTERM
+2012-11-04T22:37:29+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+2012-11-04T22:37:35+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-04T22:37:35+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-04T22:37:37+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
+2012-11-04T22:37:37+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
+2012-11-04T22:37:39+00:00 heroku[web.1]: Process exited with status 137
+2012-11-04T22:37:40+00:00 app[web.1]: => Rails 3.2.8 application starting in production on http://0.0.0.0:47458
+2012-11-04T22:37:40+00:00 app[web.1]: => Call with -d to detach
+2012-11-04T22:37:40+00:00 app[web.1]: => Booting WEBrick
+2012-11-04T22:37:40+00:00 app[web.1]: => Ctrl-C to shutdown server
+2012-11-04T22:37:40+00:00 app[web.1]: Connecting to database specified by DATABASE_URL
+2012-11-04T22:37:42+00:00 app[web.1]: [2012-11-04 22:37:42] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2012-11-04T22:37:42+00:00 app[web.1]: [2012-11-04 22:37:42] INFO  WEBrick 1.3.1
+2012-11-04T22:37:42+00:00 app[web.1]: [2012-11-04 22:37:42] INFO  WEBrick::HTTPServer#start: pid=2 port=47458
+2012-11-04T22:37:43+00:00 heroku[web.1]: State changed from starting to up
+2012-11-04T22:53:58+00:00 heroku[slugc]: Slug compilation started
+2012-11-04T22:54:35+00:00 heroku[slugc]: Slug compilation finished
+2012-11-04T22:54:37+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 19166`
+2012-11-04T22:54:37+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2012-11-04T22:54:38+00:00 app[web.1]: [2012-11-04 22:54:38] ERROR SignalException: SIGTERM
+2012-11-04T22:54:38+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+2012-11-04T22:54:41+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-04T22:54:41+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-04T22:54:45+00:00 app[web.1]: => Booting WEBrick
+2012-11-04T22:54:45+00:00 app[web.1]: => Rails 3.2.8 application starting in production on http://0.0.0.0:19166
+2012-11-04T22:54:45+00:00 app[web.1]: => Call with -d to detach
+2012-11-04T22:54:45+00:00 app[web.1]: => Ctrl-C to shutdown server
+2012-11-04T22:54:45+00:00 app[web.1]: Connecting to database specified by DATABASE_URL
+2012-11-04T22:54:45+00:00 app[web.1]: [2012-11-04 22:54:45] INFO  WEBrick 1.3.1
+2012-11-04T22:54:45+00:00 app[web.1]: [2012-11-04 22:54:45] INFO  WEBrick::HTTPServer#start: pid=2 port=19166
+2012-11-04T22:54:45+00:00 app[web.1]: [2012-11-04 22:54:45] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2012-11-04T22:54:46+00:00 heroku[web.1]: State changed from starting to up
+2012-11-04T22:54:48+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
+2012-11-04T22:54:48+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
+2012-11-04T22:54:50+00:00 heroku[web.1]: Process exited with status 137
+2012-11-04T22:54:58+00:00 app[web.1]: 
+2012-11-04T22:54:58+00:00 app[web.1]: 
+2012-11-04T22:54:58+00:00 app[web.1]: Started GET "/signup" for 209.106.205.35 at 2012-11-04 22:54:58 +0000
+2012-11-04T22:54:59+00:00 app[web.1]: Processing by StaticPagesController#beta as HTML
+2012-11-04T22:54:59+00:00 app[web.1]:   Rendered static_pages/beta.html.erb within layouts/application (8.8ms)
+2012-11-04T22:54:59+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.2ms)
+2012-11-04T22:54:59+00:00 app[web.1]:   Rendered layouts/_header.html.erb (397.8ms)
+2012-11-04T22:54:59+00:00 app[web.1]: Completed 200 OK in 469ms (Views: 72.6ms | ActiveRecord: 396.3ms)
+2012-11-04T22:54:59+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (1.0ms)
+2012-11-04T22:54:59+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/signup dyno=web.1 queue=0 wait=0ms service=706ms status=200 bytes=1792
+2012-11-04T22:54:59+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-0f3eff22898a15a391044aec2dfec4d8.js dyno=web.1 queue=0 wait=0ms service=11ms status=200 bytes=122359
+2012-11-04T22:54:59+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-d79227125b1cacca1b5e13de19ada8a1.css dyno=web.1 queue=0 wait=12ms service=23ms status=200 bytes=86654
+2012-11-04T22:56:51+00:00 heroku[slugc]: Slug compilation started
+2012-11-04T22:57:34+00:00 heroku[web.1]: State changed from up to down
+2012-11-04T22:57:34+00:00 heroku[web.1]: State changed from down to starting
+2012-11-04T22:57:35+00:00 heroku[slugc]: Slug compilation finished
+2012-11-04T22:57:36+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2012-11-04T22:57:37+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+2012-11-04T22:57:37+00:00 app[web.1]: [2012-11-04 22:57:37] ERROR SignalException: SIGTERM
+2012-11-04T22:57:37+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 42373`
+2012-11-04T22:57:43+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-04T22:57:43+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-04T22:57:46+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
+2012-11-04T22:57:46+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
+2012-11-04T22:57:48+00:00 heroku[web.1]: Process exited with status 137
+2012-11-04T22:57:48+00:00 app[web.1]: Connecting to database specified by DATABASE_URL
+2012-11-04T22:57:48+00:00 app[web.1]: => Booting WEBrick
+2012-11-04T22:57:48+00:00 app[web.1]: => Rails 3.2.8 application starting in production on http://0.0.0.0:42373
+2012-11-04T22:57:48+00:00 app[web.1]: => Call with -d to detach
+2012-11-04T22:57:48+00:00 app[web.1]: => Ctrl-C to shutdown server
+2012-11-04T22:57:49+00:00 app[web.1]: [2012-11-04 22:57:49] INFO  WEBrick::HTTPServer#start: pid=2 port=42373
+2012-11-04T22:57:49+00:00 app[web.1]: [2012-11-04 22:57:49] INFO  WEBrick 1.3.1
+2012-11-04T22:57:49+00:00 app[web.1]: [2012-11-04 22:57:49] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2012-11-04T22:57:50+00:00 heroku[web.1]: State changed from starting to up
+2012-11-04T22:58:00+00:00 app[web.1]: 
+2012-11-04T22:58:00+00:00 app[web.1]: 
+2012-11-04T22:58:00+00:00 app[web.1]: Started GET "/" for 209.106.205.35 at 2012-11-04 22:58:00 +0000
+2012-11-04T22:58:00+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2012-11-04T22:58:00+00:00 app[web.1]:   Rendered layouts/_header.html.erb (2.5ms)
+2012-11-04T22:58:00+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.8ms)
+2012-11-04T22:58:00+00:00 app[web.1]: Completed 200 OK in 190ms (Views: 92.0ms | ActiveRecord: 59.5ms)
+2012-11-04T22:58:00+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (39.9ms)
+2012-11-04T22:58:00+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.4ms)
+2012-11-04T22:58:00+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=357ms status=304 bytes=0
+2012-11-04T22:58:00+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-d79227125b1cacca1b5e13de19ada8a1.css dyno=web.1 queue=0 wait=0ms service=20ms status=200 bytes=86654
+2012-11-04T22:58:00+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-0f3eff22898a15a391044aec2dfec4d8.js dyno=web.1 queue=0 wait=0ms service=20ms status=200 bytes=122359
+2012-11-04T22:58:05+00:00 app[web.1]: Started GET "/signup" for 209.106.205.35 at 2012-11-04 22:58:05 +0000
+2012-11-04T22:58:05+00:00 app[web.1]: 
+2012-11-04T22:58:05+00:00 app[web.1]: 
+2012-11-04T22:58:05+00:00 app[web.1]: Processing by StaticPagesController#beta as HTML
+2012-11-04T22:58:05+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-04T22:58:05+00:00 app[web.1]:   Rendered static_pages/beta.html.erb within layouts/application (0.4ms)
+2012-11-04T22:58:05+00:00 app[web.1]:   Rendered layouts/_header.html.erb (3.6ms)
+2012-11-04T22:58:05+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.9ms)
+2012-11-04T22:58:05+00:00 app[web.1]: Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 2.4ms)
+2012-11-04T22:58:05+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/signup dyno=web.1 queue=0 wait=27ms service=63ms status=200 bytes=1796
+2012-11-04T22:58:48+00:00 app[web.1]: 
+2012-11-04T22:58:48+00:00 app[web.1]: 
+2012-11-04T22:58:48+00:00 app[web.1]: Started GET "/about" for 209.106.205.35 at 2012-11-04 22:58:48 +0000
+2012-11-04T22:58:48+00:00 app[web.1]: Processing by StaticPagesController#about as HTML
+2012-11-04T22:58:48+00:00 app[web.1]:   Rendered static_pages/about.html.erb within layouts/application (0.3ms)
+2012-11-04T22:58:48+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-04T22:58:48+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-04T22:58:48+00:00 app[web.1]: Completed 200 OK in 7ms (Views: 4.2ms | ActiveRecord: 2.4ms)
+2012-11-04T22:58:48+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/about dyno=web.1 queue=0 wait=2ms service=19ms status=200 bytes=1553
+2012-11-04T22:58:48+00:00 app[web.1]:   Rendered layouts/_header.html.erb (3.6ms)
+2012-11-04T22:58:48+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-d79227125b1cacca1b5e13de19ada8a1.css dyno=web.1 queue=0 wait=0ms service=7ms status=304 bytes=0
+2012-11-04T22:58:48+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-0f3eff22898a15a391044aec2dfec4d8.js dyno=web.1 queue=0 wait=3ms service=25ms status=304 bytes=0
+2012-11-04T23:21:57+00:00 heroku[slugc]: Slug compilation started
+2012-11-04T23:22:26+00:00 app[web.1]: 
+2012-11-04T23:22:26+00:00 app[web.1]: 
+2012-11-04T23:22:26+00:00 app[web.1]: Started GET "/" for 209.106.205.35 at 2012-11-04 23:22:26 +0000
+2012-11-04T23:22:26+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2012-11-04T23:22:26+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.4ms)
+2012-11-04T23:22:26+00:00 app[web.1]: Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 2.3ms)
+2012-11-04T23:22:26+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+2012-11-04T23:22:26+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-04T23:22:26+00:00 app[web.1]:   Rendered layouts/_header.html.erb (0.9ms)
+2012-11-04T23:22:26+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=21ms status=304 bytes=0
+2012-11-04T23:22:27+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-d79227125b1cacca1b5e13de19ada8a1.css dyno=web.1 queue=0 wait=0ms service=7ms status=304 bytes=0
+2012-11-04T23:22:27+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-0f3eff22898a15a391044aec2dfec4d8.js dyno=web.1 queue=0 wait=0ms service=6ms status=304 bytes=0
+2012-11-04T23:22:30+00:00 app[web.1]: 
+2012-11-04T23:22:30+00:00 app[web.1]: Started GET "/about" for 209.106.205.35 at 2012-11-04 23:22:30 +0000
+2012-11-04T23:22:30+00:00 app[web.1]: 
+2012-11-04T23:22:30+00:00 app[web.1]: Processing by StaticPagesController#about as HTML
+2012-11-04T23:22:30+00:00 app[web.1]:   Rendered static_pages/about.html.erb within layouts/application (0.1ms)
+2012-11-04T23:22:30+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-04T23:22:30+00:00 app[web.1]:   Rendered layouts/_header.html.erb (3.3ms)
+2012-11-04T23:22:30+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-04T23:22:30+00:00 app[web.1]: Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 2.2ms)
+2012-11-04T23:22:30+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/about dyno=web.1 queue=0 wait=1ms service=21ms status=304 bytes=0
+2012-11-04T23:22:33+00:00 app[web.1]: 
+2012-11-04T23:22:33+00:00 app[web.1]: 
+2012-11-04T23:22:33+00:00 app[web.1]: Started GET "/" for 209.106.205.35 at 2012-11-04 23:22:33 +0000
+2012-11-04T23:22:33+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2012-11-04T23:22:33+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+2012-11-04T23:22:33+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-04T23:22:33+00:00 app[web.1]:   Rendered layouts/_header.html.erb (28.8ms)
+2012-11-04T23:22:33+00:00 app[web.1]: Completed 200 OK in 34ms (Views: 31.5ms | ActiveRecord: 2.2ms)
+2012-11-04T23:22:33+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-04T23:22:33+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=56ms status=304 bytes=0
+2012-11-04T23:22:33+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-d79227125b1cacca1b5e13de19ada8a1.css dyno=web.1 queue=0 wait=0ms service=5ms status=304 bytes=0
+2012-11-04T23:22:33+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-0f3eff22898a15a391044aec2dfec4d8.js dyno=web.1 queue=0 wait=0ms service=9ms status=304 bytes=0
+2012-11-04T23:22:35+00:00 app[web.1]: 
+2012-11-04T23:22:35+00:00 app[web.1]: 
+2012-11-04T23:22:35+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/about dyno=web.1 queue=0 wait=0ms service=19ms status=304 bytes=0
+2012-11-04T23:22:35+00:00 app[web.1]: Started GET "/about" for 209.106.205.35 at 2012-11-04 23:22:35 +0000
+2012-11-04T23:22:35+00:00 app[web.1]: Processing by StaticPagesController#about as HTML
+2012-11-04T23:22:35+00:00 app[web.1]:   Rendered static_pages/about.html.erb within layouts/application (0.1ms)
+2012-11-04T23:22:35+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-04T23:22:35+00:00 app[web.1]: Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 2.2ms)
+2012-11-04T23:22:35+00:00 app[web.1]:   Rendered layouts/_header.html.erb (4.1ms)
+2012-11-04T23:22:35+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-04T23:22:42+00:00 heroku[web.1]: State changed from up to down
+2012-11-04T23:22:42+00:00 heroku[web.1]: State changed from down to starting
+2012-11-04T23:22:42+00:00 heroku[slugc]: Slug compilation finished
+2012-11-04T23:22:44+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2012-11-04T23:22:45+00:00 app[web.1]: [2012-11-04 23:22:45] ERROR SignalException: SIGTERM
+2012-11-04T23:22:45+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+2012-11-04T23:22:45+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 34885`
+2012-11-04T23:22:49+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-04T23:22:49+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-04T23:22:53+00:00 app[web.1]: => Booting WEBrick
+2012-11-04T23:22:53+00:00 app[web.1]: => Rails 3.2.8 application starting in production on http://0.0.0.0:34885
+2012-11-04T23:22:53+00:00 app[web.1]: => Ctrl-C to shutdown server
+2012-11-04T23:22:53+00:00 app[web.1]: Connecting to database specified by DATABASE_URL
+2012-11-04T23:22:53+00:00 app[web.1]: => Call with -d to detach
+2012-11-04T23:22:53+00:00 app[web.1]: [2012-11-04 23:22:53] INFO  WEBrick 1.3.1
+2012-11-04T23:22:53+00:00 app[web.1]: [2012-11-04 23:22:53] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2012-11-04T23:22:53+00:00 app[web.1]: [2012-11-04 23:22:53] INFO  WEBrick::HTTPServer#start: pid=2 port=34885
+2012-11-04T23:22:55+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
+2012-11-04T23:22:55+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
+2012-11-04T23:22:55+00:00 heroku[web.1]: State changed from starting to up
+2012-11-04T23:22:57+00:00 app[web.1]: 
+2012-11-04T23:22:57+00:00 app[web.1]: 
+2012-11-04T23:22:57+00:00 app[web.1]: Started GET "/about" for 209.106.205.35 at 2012-11-04 23:22:57 +0000
+2012-11-04T23:22:57+00:00 heroku[web.1]: Process exited with status 137
+2012-11-04T23:22:57+00:00 app[web.1]: Processing by StaticPagesController#about as HTML
+2012-11-04T23:22:57+00:00 app[web.1]:   Rendered static_pages/about.html.erb within layouts/application (14.2ms)
+2012-11-04T23:22:57+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.5ms)
+2012-11-04T23:22:57+00:00 app[web.1]:   Rendered layouts/_header.html.erb (215.5ms)
+2012-11-04T23:22:57+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/about dyno=web.1 queue=0 wait=0ms service=734ms status=200 bytes=2714
+2012-11-04T23:22:57+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (31.1ms)
+2012-11-04T23:22:57+00:00 app[web.1]: Completed 200 OK in 455ms (Views: 259.6ms | ActiveRecord: 194.6ms)
+2012-11-04T23:24:07+00:00 app[web.1]: 
+2012-11-04T23:24:07+00:00 app[web.1]: 
+2012-11-04T23:24:07+00:00 app[web.1]: Started GET "/contact" for 209.106.205.35 at 2012-11-04 23:24:07 +0000
+2012-11-04T23:24:07+00:00 app[web.1]:   Rendered static_pages/contact.html.erb within layouts/application (0.9ms)
+2012-11-04T23:24:07+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-04T23:24:07+00:00 app[web.1]: Processing by StaticPagesController#contact as HTML
+2012-11-04T23:24:07+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.4ms)
+2012-11-04T23:24:07+00:00 app[web.1]:   Rendered layouts/_header.html.erb (4.3ms)
+2012-11-04T23:24:07+00:00 app[web.1]: Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 2.2ms)
+2012-11-04T23:24:07+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/contact dyno=web.1 queue=0 wait=0ms service=33ms status=200 bytes=1455
+2012-11-04T23:28:28+00:00 heroku[slugc]: Slug compilation started
+2012-11-04T23:29:09+00:00 heroku[web.1]: State changed from up to down
+2012-11-04T23:29:09+00:00 heroku[web.1]: State changed from down to starting
+2012-11-04T23:29:10+00:00 heroku[slugc]: Slug compilation finished
+2012-11-04T23:29:13+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 22659`
+2012-11-04T23:29:14+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2012-11-04T23:29:15+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+2012-11-04T23:29:15+00:00 app[web.1]: [2012-11-04 23:29:15] ERROR SignalException: SIGTERM
+2012-11-04T23:29:22+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-04T23:29:22+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-04T23:29:24+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
+2012-11-04T23:29:24+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
+2012-11-04T23:29:26+00:00 heroku[web.1]: Process exited with status 137
+2012-11-04T23:29:30+00:00 app[web.1]: => Booting WEBrick
+2012-11-04T23:29:30+00:00 app[web.1]: => Rails 3.2.8 application starting in production on http://0.0.0.0:22659
+2012-11-04T23:29:30+00:00 app[web.1]: => Call with -d to detach
+2012-11-04T23:29:30+00:00 app[web.1]: => Ctrl-C to shutdown server
+2012-11-04T23:29:30+00:00 app[web.1]: Connecting to database specified by DATABASE_URL
+2012-11-04T23:29:32+00:00 app[web.1]: [2012-11-04 23:29:32] INFO  WEBrick 1.3.1
+2012-11-04T23:29:32+00:00 app[web.1]: [2012-11-04 23:29:32] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2012-11-04T23:29:32+00:00 app[web.1]: [2012-11-04 23:29:32] INFO  WEBrick::HTTPServer#start: pid=2 port=22659
+2012-11-04T23:29:43+00:00 app[web.1]: 
+2012-11-04T23:29:43+00:00 app[web.1]: 
+2012-11-04T23:29:43+00:00 app[web.1]: Started GET "/contact" for 209.106.205.35 at 2012-11-04 23:29:43 +0000
+2012-11-04T23:29:44+00:00 app[web.1]: Processing by StaticPagesController#contact as HTML
+2012-11-04T23:29:44+00:00 app[web.1]:   Rendered static_pages/contact.html.erb within layouts/application (10.0ms)
+2012-11-04T23:29:44+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.3ms)
+2012-11-04T23:29:44+00:00 app[web.1]:   Rendered layouts/_header.html.erb (188.5ms)
+2012-11-04T23:29:44+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (1.0ms)
+2012-11-04T23:29:44+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/contact dyno=web.1 queue=0 wait=0ms service=976ms status=200 bytes=1534
+2012-11-04T23:29:44+00:00 app[web.1]: Completed 200 OK in 412ms (Views: 374.0ms | ActiveRecord: 37.3ms)
+2012-11-04T23:29:45+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-d79227125b1cacca1b5e13de19ada8a1.css dyno=web.1 queue=0 wait=0ms service=16ms status=200 bytes=86654
+2012-11-04T23:29:45+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-0f3eff22898a15a391044aec2dfec4d8.js dyno=web.1 queue=0 wait=0ms service=25ms status=200 bytes=122359
+2012-11-04T23:29:50+00:00 app[web.1]: 
+2012-11-04T23:29:50+00:00 app[web.1]: 
+2012-11-04T23:29:50+00:00 app[web.1]: Started GET "/about" for 209.106.205.35 at 2012-11-04 23:29:50 +0000
+2012-11-04T23:29:50+00:00 app[web.1]: Processing by StaticPagesController#about as HTML
+2012-11-04T23:29:50+00:00 app[web.1]:   Rendered static_pages/about.html.erb within layouts/application (0.4ms)
+2012-11-04T23:29:50+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-04T23:29:50+00:00 app[web.1]:   Rendered layouts/_header.html.erb (17.5ms)
+2012-11-04T23:29:50+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.4ms)
+2012-11-04T23:29:50+00:00 app[web.1]: Completed 200 OK in 45ms (Views: 31.4ms | ActiveRecord: 13.0ms)
+2012-11-04T23:30:11+00:00 app[web.1]: 
+2012-11-04T23:30:11+00:00 app[web.1]: 
+2012-11-04T23:30:11+00:00 app[web.1]: Started GET "/" for 209.106.205.35 at 2012-11-04 23:30:11 +0000
+2012-11-04T23:30:11+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2012-11-04T23:30:11+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (2.3ms)
+2012-11-04T23:30:11+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-04T23:30:11+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.1ms)
+2012-11-04T23:30:11+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-04T23:30:11+00:00 app[web.1]: Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 2.4ms)
+2012-11-04T23:30:11+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=35ms status=304 bytes=0
+2012-11-04T23:30:11+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-d79227125b1cacca1b5e13de19ada8a1.css dyno=web.1 queue=0 wait=0ms service=14ms status=304 bytes=0
+2012-11-04T23:30:11+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-0f3eff22898a15a391044aec2dfec4d8.js dyno=web.1 queue=0 wait=0ms service=21ms status=304 bytes=0
+2012-11-05T00:39:16+00:00 heroku[web.1]: Idling
+2012-11-05T00:39:20+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2012-11-05T00:39:21+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+2012-11-05T00:39:21+00:00 app[web.1]: [2012-11-05 00:39:21] ERROR SignalException: SIGTERM
+2012-11-05T00:39:29+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
+2012-11-05T00:39:29+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
+2012-11-05T00:39:31+00:00 heroku[web.1]: Process exited with status 137
+2012-11-05T00:39:31+00:00 heroku[web.1]: State changed from up to down
+2012-11-05T01:50:47+00:00 heroku[web.1]: Unidling
+2012-11-05T01:50:47+00:00 heroku[web.1]: State changed from down to starting
+2012-11-05T01:50:50+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 3325`
+2012-11-05T01:50:54+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-05T01:50:54+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-05T01:50:58+00:00 app[web.1]: => Call with -d to detach
+2012-11-05T01:50:58+00:00 app[web.1]: => Booting WEBrick
+2012-11-05T01:50:58+00:00 app[web.1]: => Ctrl-C to shutdown server
+2012-11-05T01:50:58+00:00 app[web.1]: => Rails 3.2.8 application starting in production on http://0.0.0.0:3325
+2012-11-05T01:50:58+00:00 app[web.1]: Connecting to database specified by DATABASE_URL
+2012-11-05T01:50:58+00:00 app[web.1]: [2012-11-05 01:50:58] INFO  WEBrick 1.3.1
+2012-11-05T01:50:58+00:00 app[web.1]: [2012-11-05 01:50:58] INFO  WEBrick::HTTPServer#start: pid=2 port=3325
+2012-11-05T01:50:58+00:00 app[web.1]: [2012-11-05 01:50:58] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2012-11-05T01:50:59+00:00 heroku[web.1]: State changed from starting to up
+2012-11-05T01:51:04+00:00 app[web.1]: 
+2012-11-05T01:51:04+00:00 app[web.1]: Started GET "/users" for 208.54.83.212 at 2012-11-05 01:51:04 +0000
+2012-11-05T01:51:04+00:00 app[web.1]: 
+2012-11-05T01:51:04+00:00 app[web.1]: Processing by UsersController#index as HTML
+2012-11-05T01:51:04+00:00 app[web.1]: Redirected to https://glacial-ocean-1154.herokuapp.com/signin
+2012-11-05T01:51:04+00:00 app[web.1]: Filter chain halted as :signed_in_user rendered or redirected
+2012-11-05T01:51:04+00:00 app[web.1]: Completed 302 Found in 62ms (ActiveRecord: 36.4ms)
+2012-11-05T01:51:04+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users dyno=web.1 queue=0 wait=0ms service=226ms status=302 bytes=113
+2012-11-05T01:51:07+00:00 app[web.1]: 
+2012-11-05T01:51:07+00:00 app[web.1]: 
+2012-11-05T01:51:07+00:00 app[web.1]: Started GET "/signin" for 208.54.83.212 at 2012-11-05 01:51:07 +0000
+2012-11-05T01:51:07+00:00 app[web.1]: Processing by SessionsController#new as HTML
+2012-11-05T01:51:07+00:00 app[web.1]:   Rendered sessions/new.html.erb within layouts/application (64.1ms)
+2012-11-05T01:51:07+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.4ms)
+2012-11-05T01:51:07+00:00 app[web.1]:   Rendered layouts/_header.html.erb (11.3ms)
+2012-11-05T01:51:07+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.8ms)
+2012-11-05T01:51:07+00:00 app[web.1]: Completed 200 OK in 144ms (Views: 133.4ms | ActiveRecord: 9.2ms)
+2012-11-05T01:51:07+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/signin dyno=web.1 queue=0 wait=0ms service=167ms status=200 bytes=2254
+2012-11-05T01:51:09+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-d79227125b1cacca1b5e13de19ada8a1.css dyno=web.1 queue=0 wait=0ms service=15ms status=200 bytes=86654
+2012-11-05T01:51:09+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-0f3eff22898a15a391044aec2dfec4d8.js dyno=web.1 queue=0 wait=0ms service=19ms status=200 bytes=122359
+2012-11-05T01:52:39+00:00 app[web.1]: 
+2012-11-05T01:52:39+00:00 app[web.1]: 
+2012-11-05T01:52:39+00:00 app[web.1]: Started POST "/sessions" for 208.54.83.212 at 2012-11-05 01:52:39 +0000
+2012-11-05T01:52:39+00:00 app[web.1]: Processing by SessionsController#create as HTML
+2012-11-05T01:52:39+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"dkWblj1pWhjkydJQ9nBhO9f2nzteubOKiTaC4bIOMro=", "session"=>{"email"=>"mr@pablomgren.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+2012-11-05T01:52:39+00:00 app[web.1]: Completed 302 Found in 162ms (ActiveRecord: 2.9ms)
+2012-11-05T01:52:39+00:00 app[web.1]: Redirected to https://glacial-ocean-1154.herokuapp.com/users
+2012-11-05T01:52:39+00:00 heroku[router]: POST glacial-ocean-1154.herokuapp.com/sessions dyno=web.1 queue=0 wait=0ms service=189ms status=302 bytes=112
+2012-11-05T01:52:40+00:00 app[web.1]: 
+2012-11-05T01:52:40+00:00 app[web.1]: 
+2012-11-05T01:52:40+00:00 app[web.1]: Started GET "/users" for 208.54.83.212 at 2012-11-05 01:52:40 +0000
+2012-11-05T01:52:40+00:00 app[web.1]: Processing by UsersController#index as HTML
+2012-11-05T01:52:40+00:00 app[web.1]:   Rendered users/_user.html.erb (4.6ms)
+2012-11-05T01:52:40+00:00 app[web.1]:   Rendered users/index.html.erb within layouts/application (13.9ms)
+2012-11-05T01:52:40+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T01:52:40+00:00 app[web.1]:   Rendered layouts/_header.html.erb (2.6ms)
+2012-11-05T01:52:40+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.5ms)
+2012-11-05T01:52:40+00:00 app[web.1]: Completed 200 OK in 25ms (Views: 16.9ms | ActiveRecord: 6.4ms)
+2012-11-05T01:52:42+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-d79227125b1cacca1b5e13de19ada8a1.css dyno=web.1 queue=0 wait=0ms service=10ms status=304 bytes=0
+2012-11-05T01:52:44+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-0f3eff22898a15a391044aec2dfec4d8.js dyno=web.1 queue=0 wait=0ms service=6ms status=304 bytes=0
+2012-11-05T01:53:24+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users dyno=web.1 queue=0 wait=15ms service=27ms status=301 bytes=0
+2012-11-05T01:53:27+00:00 app[web.1]: 
+2012-11-05T01:53:27+00:00 app[web.1]: Started GET "/users" for 208.54.83.212 at 2012-11-05 01:53:27 +0000
+2012-11-05T01:53:27+00:00 app[web.1]: 
+2012-11-05T01:53:27+00:00 app[web.1]: Processing by UsersController#index as HTML
+2012-11-05T01:53:27+00:00 app[web.1]:   Rendered users/index.html.erb within layouts/application (9.9ms)
+2012-11-05T01:53:27+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T01:53:27+00:00 app[web.1]:   Rendered users/_user.html.erb (3.1ms)
+2012-11-05T01:53:27+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.6ms)
+2012-11-05T01:53:27+00:00 app[web.1]: Completed 200 OK in 25ms (Views: 12.1ms | ActiveRecord: 11.8ms)
+2012-11-05T01:53:27+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T01:53:29+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-d79227125b1cacca1b5e13de19ada8a1.css dyno=web.1 queue=0 wait=0ms service=7ms status=304 bytes=0
+2012-11-05T01:53:32+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-0f3eff22898a15a391044aec2dfec4d8.js dyno=web.1 queue=0 wait=0ms service=6ms status=304 bytes=0
+2012-11-05T01:53:53+00:00 app[web.1]: 
+2012-11-05T01:53:53+00:00 app[web.1]: 
+2012-11-05T01:53:53+00:00 app[web.1]: Started GET "/users/2" for 208.54.83.212 at 2012-11-05 01:53:53 +0000
+2012-11-05T01:53:53+00:00 app[web.1]: Processing by UsersController#show as HTML
+2012-11-05T01:53:53+00:00 app[web.1]:   Parameters: {"id"=>"2"}
+2012-11-05T01:53:53+00:00 app[web.1]:   Rendered shared/_stats.html.erb (85.4ms)
+2012-11-05T01:53:53+00:00 app[web.1]:   Rendered users/_follow_form.html.erb (17.4ms)
+2012-11-05T01:53:53+00:00 app[web.1]:   Rendered users/_unfollow.html.erb (5.3ms)
+2012-11-05T01:53:53+00:00 app[web.1]:   Rendered users/show.html.erb within layouts/application (130.1ms)
+2012-11-05T01:53:53+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T01:53:53+00:00 app[web.1]:   Rendered layouts/_header.html.erb (2.4ms)
+2012-11-05T01:53:53+00:00 app[web.1]: Completed 200 OK in 215ms (Views: 98.3ms | ActiveRecord: 41.5ms)
+2012-11-05T01:53:53+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T01:53:54+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-d79227125b1cacca1b5e13de19ada8a1.css dyno=web.1 queue=0 wait=0ms service=7ms status=304 bytes=0
+2012-11-05T01:53:56+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-0f3eff22898a15a391044aec2dfec4d8.js dyno=web.1 queue=0 wait=0ms service=5ms status=304 bytes=0
+2012-11-05T01:56:26+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users dyno=web.1 queue=0 wait=0ms service=5ms status=301 bytes=0
+2012-11-05T01:56:31+00:00 app[web.1]: 
+2012-11-05T01:56:31+00:00 app[web.1]: 
+2012-11-05T01:56:31+00:00 app[web.1]: Started GET "/users" for 208.54.83.212 at 2012-11-05 01:56:31 +0000
+2012-11-05T01:56:31+00:00 app[web.1]: Processing by UsersController#index as HTML
+2012-11-05T01:56:31+00:00 app[web.1]:   Rendered users/index.html.erb within layouts/application (8.0ms)
+2012-11-05T01:56:31+00:00 app[web.1]:   Rendered users/_user.html.erb (1.9ms)
+2012-11-05T01:56:31+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T01:56:31+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.8ms)
+2012-11-05T01:56:31+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T01:56:31+00:00 app[web.1]: Completed 200 OK in 20ms (Views: 12.5ms | ActiveRecord: 6.1ms)
+2012-11-05T01:56:32+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-d79227125b1cacca1b5e13de19ada8a1.css dyno=web.1 queue=0 wait=4ms service=7ms status=304 bytes=0
+2012-11-05T01:56:35+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-0f3eff22898a15a391044aec2dfec4d8.js dyno=web.1 queue=0 wait=0ms service=10ms status=304 bytes=0
+2012-11-05T03:03:16+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2012-11-05T03:03:17+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+2012-11-05T03:03:17+00:00 app[web.1]: [2012-11-05 03:03:17] ERROR SignalException: SIGTERM
+2012-11-05T03:03:26+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
+2012-11-05T03:03:26+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
+2012-11-05T03:03:28+00:00 heroku[web.1]: Process exited with status 137
+2012-11-05T03:03:28+00:00 heroku[web.1]: State changed from up to down
+2012-11-05T03:03:28+00:00 heroku[web.1]: State changed from down to starting
+2012-11-05T03:03:30+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 10407`
+2012-11-05T03:03:34+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-05T03:03:34+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-05T03:03:37+00:00 app[web.1]: => Booting WEBrick
+2012-11-05T03:03:37+00:00 app[web.1]: => Rails 3.2.8 application starting in production on http://0.0.0.0:10407
+2012-11-05T03:03:37+00:00 app[web.1]: => Call with -d to detach
+2012-11-05T03:03:37+00:00 app[web.1]: => Ctrl-C to shutdown server
+2012-11-05T03:03:37+00:00 app[web.1]: Connecting to database specified by DATABASE_URL
+2012-11-05T03:03:37+00:00 app[web.1]: [2012-11-05 03:03:37] INFO  WEBrick 1.3.1
+2012-11-05T03:03:37+00:00 app[web.1]: [2012-11-05 03:03:37] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2012-11-05T03:03:37+00:00 app[web.1]: [2012-11-05 03:03:37] INFO  WEBrick::HTTPServer#start: pid=2 port=10407
+2012-11-05T04:09:59+00:00 heroku[web.1]: Idling
+2012-11-05T04:10:03+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2012-11-05T04:10:03+00:00 app[web.1]: [2012-11-05 04:10:03] ERROR SignalException: SIGTERM
+2012-11-05T04:10:03+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+2012-11-05T04:10:12+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
+2012-11-05T04:10:12+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
+2012-11-05T04:10:14+00:00 heroku[web.1]: Process exited with status 137
+2012-11-05T04:10:14+00:00 heroku[web.1]: State changed from up to down
+2012-11-05T04:30:39+00:00 heroku[web.1]: State changed from down to starting
+2012-11-05T04:30:39+00:00 heroku[web.1]: Unidling
+2012-11-05T04:30:43+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 15006`
+2012-11-05T04:30:48+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-05T04:30:48+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-05T04:30:51+00:00 app[web.1]: => Booting WEBrick
+2012-11-05T04:30:51+00:00 app[web.1]: => Rails 3.2.8 application starting in production on http://0.0.0.0:15006
+2012-11-05T04:30:51+00:00 app[web.1]: => Call with -d to detach
+2012-11-05T04:30:51+00:00 app[web.1]: => Ctrl-C to shutdown server
+2012-11-05T04:30:51+00:00 app[web.1]: Connecting to database specified by DATABASE_URL
+2012-11-05T04:30:52+00:00 app[web.1]: [2012-11-05 04:30:52] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2012-11-05T04:30:52+00:00 app[web.1]: [2012-11-05 04:30:52] INFO  WEBrick::HTTPServer#start: pid=2 port=15006
+2012-11-05T04:30:52+00:00 app[web.1]: [2012-11-05 04:30:52] INFO  WEBrick 1.3.1
+2012-11-05T04:30:53+00:00 app[web.1]: 
+2012-11-05T04:30:53+00:00 app[web.1]: Started GET "/users/2" for 208.54.83.212 at 2012-11-05 04:30:53 +0000
+2012-11-05T04:30:53+00:00 app[web.1]: 
+2012-11-05T04:30:53+00:00 app[web.1]: Processing by UsersController#show as HTML
+2012-11-05T04:30:53+00:00 app[web.1]:   Parameters: {"id"=>"2"}
+2012-11-05T04:30:54+00:00 app[web.1]:   Rendered shared/_stats.html.erb (72.5ms)
+2012-11-05T04:30:54+00:00 app[web.1]:   Rendered users/_follow_form.html.erb (13.8ms)
+2012-11-05T04:30:54+00:00 app[web.1]:   Rendered users/_unfollow.html.erb (3.4ms)
+2012-11-05T04:30:54+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users/2 dyno=web.1 queue=0 wait=0ms service=914ms status=200 bytes=3590
+2012-11-05T04:30:54+00:00 app[web.1]:   
+Rendered layouts/_shim.html.erb (0.3ms)
+2012-11-05T04:30:54+00:00 app[web.1]:   Rendered layouts/_header.html.erb (3.0ms)
+2012-11-05T04:30:54+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.7ms)
+2012-11-05T04:30:54+00:00 app[web.1]: Completed 200 OK in 740ms (Views: 174.0ms | ActiveRecord: 436.1ms)
+2012-11-05T04:30:54+00:00 app[web.1]:   Rendered users/show.html.erb within layouts/application (191.0ms)
+2012-11-05T05:40:01+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2012-11-05T05:40:02+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+2012-11-05T05:40:02+00:00 app[web.1]: [2012-11-05 05:40:02] ERROR SignalException: SIGTERM
+2012-11-05T05:40:11+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
+2012-11-05T05:40:11+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
+2012-11-05T05:40:13+00:00 heroku[web.1]: Process exited with status 137
+2012-11-05T05:40:13+00:00 heroku[web.1]: State changed from up to down
+2012-11-05T07:51:43+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 35883`
+2012-11-05T07:51:47+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-05T07:51:47+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-05T07:51:39+00:00 heroku[web.1]: Unidling
+2012-11-05T07:51:39+00:00 heroku[web.1]: State changed from down to starting
+2012-11-05T07:51:50+00:00 app[web.1]: Connecting to database specified by DATABASE_URL
+2012-11-05T07:51:50+00:00 app[web.1]: => Call with -d to detach
+2012-11-05T07:51:50+00:00 app[web.1]: => Ctrl-C to shutdown server
+2012-11-05T07:51:50+00:00 app[web.1]: => Rails 3.2.8 application starting in production on http://0.0.0.0:35883
+2012-11-05T07:51:50+00:00 app[web.1]: => Booting WEBrick
+2012-11-05T07:51:50+00:00 app[web.1]: [2012-11-05 07:51:50] INFO  WEBrick 1.3.1
+2012-11-05T07:51:50+00:00 app[web.1]: [2012-11-05 07:51:50] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2012-11-05T07:51:50+00:00 app[web.1]: [2012-11-05 07:51:50] INFO  WEBrick::HTTPServer#start: pid=2 port=35883
+2012-11-05T07:51:52+00:00 heroku[web.1]: State changed from starting to up
+2012-11-05T07:51:54+00:00 app[web.1]: Started GET "/users/2" for 206.109.24.112 at 2012-11-05 07:51:54 +0000
+2012-11-05T07:51:54+00:00 app[web.1]: 
+2012-11-05T07:51:54+00:00 app[web.1]: 
+2012-11-05T07:51:54+00:00 app[web.1]: Processing by UsersController#show as HTML
+2012-11-05T07:51:54+00:00 app[web.1]:   Parameters: {"id"=>"2"}
+2012-11-05T07:51:55+00:00 app[web.1]:   Rendered shared/_stats.html.erb (221.5ms)
+2012-11-05T07:51:55+00:00 app[web.1]:   Rendered users/_unfollow.html.erb (19.5ms)
+2012-11-05T07:51:55+00:00 app[web.1]:   Rendered users/_follow_form.html.erb (82.0ms)
+2012-11-05T07:51:55+00:00 app[web.1]:   Rendered users/show.html.erb within layouts/application (676.6ms)
+2012-11-05T07:51:55+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.2ms)
+2012-11-05T07:51:56+00:00 app[web.1]:   Rendered layouts/_header.html.erb (172.9ms)
+2012-11-05T07:51:56+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (1.0ms)
+2012-11-05T07:51:56+00:00 app[web.1]: Completed 200 OK in 1939ms (Views: 926.4ms | ActiveRecord: 774.9ms)
+2012-11-05T07:51:56+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users/2 dyno=web.1 queue=0 wait=0ms service=2078ms status=200 bytes=3590
+2012-11-05T07:51:56+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-d79227125b1cacca1b5e13de19ada8a1.css dyno=web.1 queue=0 wait=0ms service=10ms status=304 bytes=0
+2012-11-05T07:51:56+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-0f3eff22898a15a391044aec2dfec4d8.js dyno=web.1 queue=0 wait=0ms service=19ms status=304 bytes=0
+2012-11-05T08:59:29+00:00 heroku[web.1]: Idling
+2012-11-05T08:59:33+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2012-11-05T08:59:34+00:00 app[web.1]: [2012-11-05 08:59:34] ERROR SignalException: SIGTERM
+2012-11-05T08:59:34+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+2012-11-05T08:59:44+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
+2012-11-05T08:59:44+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
+2012-11-05T08:59:46+00:00 heroku[web.1]: Process exited with status 137
+2012-11-05T08:59:46+00:00 heroku[web.1]: State changed from up to down
+2012-11-05T08:59:46+00:00 heroku[web.1]: State changed from down to starting
+2012-11-05T08:59:48+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 37744`
+2012-11-05T08:59:51+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-05T08:59:51+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-05T08:59:54+00:00 app[web.1]: => Call with -d to detach
+2012-11-05T08:59:54+00:00 app[web.1]: => Ctrl-C to shutdown server
+2012-11-05T08:59:54+00:00 app[web.1]: Connecting to database specified by DATABASE_URL
+2012-11-05T08:59:54+00:00 app[web.1]: => Rails 3.2.8 application starting in production on http://0.0.0.0:37744
+2012-11-05T08:59:54+00:00 app[web.1]: => Booting WEBrick
+2012-11-05T08:59:54+00:00 app[web.1]: [2012-11-05 08:59:54] INFO  WEBrick 1.3.1
+2012-11-05T08:59:54+00:00 app[web.1]: [2012-11-05 08:59:54] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2012-11-05T08:59:54+00:00 app[web.1]: [2012-11-05 08:59:54] INFO  WEBrick::HTTPServer#start: pid=2 port=37744
+2012-11-05T10:04:17+00:00 heroku[web.1]: Idling
+2012-11-05T10:04:21+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2012-11-05T10:04:22+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+2012-11-05T10:04:22+00:00 app[web.1]: [2012-11-05 10:04:22] ERROR SignalException: SIGTERM
+2012-11-05T10:04:30+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
+2012-11-05T10:04:30+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
+2012-11-05T10:04:32+00:00 heroku[web.1]: Process exited with status 137
+2012-11-05T10:04:32+00:00 heroku[web.1]: State changed from up to down
+2012-11-05T14:04:06+00:00 heroku[web.1]: Unidling
+2012-11-05T14:04:06+00:00 heroku[web.1]: State changed from down to starting
+2012-11-05T14:04:32+00:00 heroku[web.1]: State changed from starting to up
+2012-11-05T14:04:34+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/sessions dyno=web.1 queue=0 wait=0ms service=490ms status=404 bytes=728
+2012-11-05T14:19:18+00:00 app[web.1]: 
+2012-11-05T14:19:18+00:00 app[web.1]: Started GET "/" for 209.106.205.35 at 2012-11-05 14:19:18 +0000
+2012-11-05T14:19:18+00:00 app[web.1]: 
+2012-11-05T14:19:18+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2012-11-05T14:19:19+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (11.1ms)
+2012-11-05T14:19:19+00:00 app[web.1]: Completed 200 OK in 759ms (Views: 104.9ms | ActiveRecord: 645.5ms)
+2012-11-05T14:19:19+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.7ms)
+2012-11-05T14:19:19+00:00 app[web.1]:   Rendered layouts/_header.html.erb (2.5ms)
+2012-11-05T14:19:19+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.3ms)
+2012-11-05T14:19:19+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=799ms status=200 bytes=1699
+2012-11-05T14:19:19+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-d79227125b1cacca1b5e13de19ada8a1.css dyno=web.1 queue=0 wait=1ms service=18ms status=200 bytes=86654
+2012-11-05T14:19:23+00:00 app[web.1]: 
+2012-11-05T14:19:23+00:00 app[web.1]: 
+2012-11-05T14:19:23+00:00 app[web.1]: Started GET "/contact" for 209.106.205.35 at 2012-11-05 14:19:23 +0000
+2012-11-05T14:19:23+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/contact dyno=web.1 queue=0 wait=0ms service=37ms status=200 bytes=1534
+2012-11-05T14:19:23+00:00 app[web.1]: Processing by StaticPagesController#contact as HTML
+2012-11-05T14:19:23+00:00 app[web.1]:   Rendered static_pages/contact.html.erb within layouts/application (0.4ms)
+2012-11-05T14:19:23+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T14:19:23+00:00 app[web.1]:   Rendered layouts/_header.html.erb (3.5ms)
+2012-11-05T14:19:23+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T14:19:23+00:00 app[web.1]: Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 2.0ms)
+2012-11-05T14:19:26+00:00 app[web.1]: 
+2012-11-05T14:19:26+00:00 app[web.1]: 
+2012-11-05T14:19:26+00:00 app[web.1]: Started GET "/about" for 209.106.205.35 at 2012-11-05 14:19:26 +0000
+2012-11-05T14:19:26+00:00 app[web.1]: Processing by StaticPagesController#about as HTML
+2012-11-05T14:19:26+00:00 app[web.1]:   Rendered static_pages/about.html.erb within layouts/application (0.3ms)
+2012-11-05T14:19:26+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T14:19:26+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/about dyno=web.1 queue=0 wait=0ms service=88ms status=200 bytes=2714
+2012-11-05T14:19:26+00:00 app[web.1]:   Rendered layouts/_header.html.erb (35.4ms)
+2012-11-05T14:19:26+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T14:19:26+00:00 app[web.1]: Completed 200 OK in 39ms (Views: 6.1ms | ActiveRecord: 32.5ms)
+2012-11-05T14:21:00+00:00 app[web.1]: 
+2012-11-05T14:21:00+00:00 app[web.1]: 
+2012-11-05T14:21:00+00:00 app[web.1]: Started GET "/signin" for 209.106.205.35 at 2012-11-05 14:21:00 +0000
+2012-11-05T14:21:00+00:00 app[web.1]: Processing by SessionsController#new as HTML
+2012-11-05T14:21:01+00:00 app[web.1]:   Rendered sessions/new.html.erb within layouts/application (726.1ms)
+2012-11-05T14:21:01+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T14:21:01+00:00 app[web.1]:   Rendered layouts/_header.html.erb (26.4ms)
+2012-11-05T14:21:01+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.5ms)
+2012-11-05T14:21:01+00:00 app[web.1]: Completed 200 OK in 810ms (Views: 785.2ms | ActiveRecord: 24.7ms)
+2012-11-05T14:21:05+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/signin dyno=web.1 queue=0 wait=0ms service=4603ms status=200 bytes=2181
+2012-11-05T14:21:17+00:00 app[web.1]: 
+2012-11-05T14:21:17+00:00 app[web.1]: 
+2012-11-05T14:21:17+00:00 app[web.1]: Started POST "/sessions" for 209.106.205.35 at 2012-11-05 14:21:17 +0000
+2012-11-05T14:21:17+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"woPbdu4cacGNk7HmZJbzDbL7x9Aj7uli4xCU01Lddf8=", "session"=>{"email"=>"mr@pablomgren.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+2012-11-05T14:21:17+00:00 app[web.1]: Processing by SessionsController#create as HTML
+2012-11-05T14:21:17+00:00 heroku[router]: POST glacial-ocean-1154.herokuapp.com/sessions dyno=web.1 queue=0 wait=0ms service=447ms status=302 bytes=114
+2012-11-05T14:21:17+00:00 app[web.1]: Redirected to https://glacial-ocean-1154.herokuapp.com/users/1
+2012-11-05T14:21:17+00:00 app[web.1]: Completed 302 Found in 289ms (ActiveRecord: 18.3ms)
+2012-11-05T14:21:17+00:00 app[web.1]: Started GET "/users/1" for 209.106.205.35 at 2012-11-05 14:21:17 +0000
+2012-11-05T14:21:17+00:00 app[web.1]: 
+2012-11-05T14:21:17+00:00 app[web.1]: 
+2012-11-05T14:21:17+00:00 app[web.1]: Processing by UsersController#show as HTML
+2012-11-05T14:21:17+00:00 app[web.1]:   Parameters: {"id"=>"1"}
+2012-11-05T14:21:18+00:00 app[web.1]:   Rendered shared/_stats.html.erb (240.5ms)
+2012-11-05T14:21:18+00:00 app[web.1]:   Rendered users/_follow_form.html.erb (0.5ms)
+2012-11-05T14:21:18+00:00 app[web.1]:   Rendered microposts/_micropost.html.erb (40.3ms)
+2012-11-05T14:21:18+00:00 app[web.1]:   Rendered users/show.html.erb within layouts/application (561.6ms)
+2012-11-05T14:21:18+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T14:21:18+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.8ms)
+2012-11-05T14:21:18+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T14:21:18+00:00 app[web.1]: Completed 200 OK in 1088ms (Views: 362.5ms | ActiveRecord: 232.0ms)
+2012-11-05T14:21:18+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users/1 dyno=web.1 queue=0 wait=0ms service=1116ms status=200 bytes=3428
+2012-11-05T14:21:30+00:00 app[web.1]: 
+2012-11-05T14:21:30+00:00 app[web.1]: 
+2012-11-05T14:21:30+00:00 app[web.1]: Started GET "/users" for 209.106.205.35 at 2012-11-05 14:21:30 +0000
+2012-11-05T14:21:30+00:00 app[web.1]: Processing by UsersController#index as HTML
+2012-11-05T14:21:30+00:00 app[web.1]:   Rendered users/_user.html.erb (29.0ms)
+2012-11-05T14:21:30+00:00 app[web.1]:   Rendered users/index.html.erb within layouts/application (83.4ms)
+2012-11-05T14:21:30+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T14:21:30+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.8ms)
+2012-11-05T14:21:30+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.5ms)
+2012-11-05T14:21:30+00:00 app[web.1]: Completed 200 OK in 199ms (Views: 148.4ms | ActiveRecord: 49.3ms)
+2012-11-05T14:21:30+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users dyno=web.1 queue=0 wait=1ms service=333ms status=200 bytes=3021
+2012-11-05T14:21:43+00:00 app[web.1]: 
+2012-11-05T14:21:43+00:00 app[web.1]: 
+2012-11-05T14:21:43+00:00 app[web.1]: Started GET "/users" for 209.106.205.35 at 2012-11-05 14:21:43 +0000
+2012-11-05T14:21:43+00:00 app[web.1]: Processing by UsersController#index as HTML
+2012-11-05T14:21:43+00:00 app[web.1]:   Rendered users/_user.html.erb (1.9ms)
+2012-11-05T14:21:43+00:00 app[web.1]:   Rendered users/index.html.erb within layouts/application (5.7ms)
+2012-11-05T14:21:43+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.1ms)
+2012-11-05T14:21:43+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users dyno=web.1 queue=0 wait=0ms service=87ms status=304 bytes=0
+2012-11-05T14:21:43+00:00 app[web.1]:   Rendered layouts/_header.html.erb (33.8ms)
+2012-11-05T14:21:43+00:00 app[web.1]: Completed 200 OK in 45ms (Views: 39.8ms | ActiveRecord: 3.9ms)
+2012-11-05T14:21:43+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T14:21:45+00:00 app[web.1]: 
+2012-11-05T14:21:45+00:00 app[web.1]: 
+2012-11-05T14:21:45+00:00 app[web.1]: Started GET "/help" for 209.106.205.35 at 2012-11-05 14:21:45 +0000
+2012-11-05T14:21:45+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T14:21:45+00:00 app[web.1]: Processing by StaticPagesController#help as HTML
+2012-11-05T14:21:45+00:00 app[web.1]:   Rendered static_pages/help.html.erb within layouts/application (0.3ms)
+2012-11-05T14:21:45+00:00 app[web.1]:   Rendered layouts/_header.html.erb (4.7ms)
+2012-11-05T14:21:45+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T14:21:45+00:00 app[web.1]: Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 2.2ms)
+2012-11-05T14:21:45+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/help dyno=web.1 queue=0 wait=0ms service=22ms status=200 bytes=2485
+2012-11-05T15:22:55+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=117ms status=200 bytes=4214
+2012-11-05T15:23:28+00:00 heroku[web.1]: Idling
+2012-11-05T15:23:53+00:00 heroku[web.1]: State changed from down to starting
+2012-11-05T15:23:53+00:00 heroku[web.1]: State changed from up to down
+2012-11-05T15:24:02+00:00 heroku[web.1]: State changed from starting to up
+2012-11-05T15:41:59+00:00 heroku[slugc]: Slug compilation started
+2012-11-05T15:42:39+00:00 heroku[web.1]: State changed from up to down
+2012-11-05T15:42:39+00:00 heroku[web.1]: State changed from down to starting
+2012-11-05T15:42:39+00:00 heroku[slugc]: Slug compilation finished
+2012-11-05T15:42:41+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 13110`
+2012-11-05T15:42:42+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2012-11-05T15:42:43+00:00 app[web.1]: [2012-11-05 15:42:43] ERROR SignalException: SIGTERM
+2012-11-05T15:42:43+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+2012-11-05T15:42:44+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-05T15:42:44+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-05T15:42:47+00:00 app[web.1]: => Ctrl-C to shutdown server
+2012-11-05T15:42:47+00:00 app[web.1]: Connecting to database specified by DATABASE_URL
+2012-11-05T15:42:47+00:00 app[web.1]: => Call with -d to detach
+2012-11-05T15:42:47+00:00 app[web.1]: => Rails 3.2.8 application starting in production on http://0.0.0.0:13110
+2012-11-05T15:42:47+00:00 app[web.1]: => Booting WEBrick
+2012-11-05T15:42:47+00:00 app[web.1]: [2012-11-05 15:42:47] INFO  WEBrick::HTTPServer#start: pid=2 port=13110
+2012-11-05T15:42:47+00:00 app[web.1]: [2012-11-05 15:42:47] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2012-11-05T15:42:47+00:00 app[web.1]: [2012-11-05 15:42:47] INFO  WEBrick 1.3.1
+2012-11-05T15:42:48+00:00 heroku[web.1]: State changed from starting to up
+2012-11-05T15:42:54+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
+2012-11-05T15:42:54+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
+2012-11-05T15:42:55+00:00 heroku[web.1]: Process exited with status 137
+2012-11-05T15:50:58+00:00 app[web.1]: 
+2012-11-05T15:50:58+00:00 app[web.1]: 
+2012-11-05T15:50:58+00:00 app[web.1]: Started GET "/" for 209.106.205.35 at 2012-11-05 15:50:58 +0000
+2012-11-05T15:50:58+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2012-11-05T15:50:58+00:00 app[web.1]:   Rendered shared/_user_info.html.erb (5.9ms)
+2012-11-05T15:50:58+00:00 app[web.1]:   Rendered shared/_stats.html.erb (71.6ms)
+2012-11-05T15:50:58+00:00 app[web.1]:   Rendered shared/_micropost_form.html.erb (3.0ms)
+2012-11-05T15:50:58+00:00 app[web.1]:   Rendered shared/_error_messages.html.erb (0.4ms)
+2012-11-05T15:50:58+00:00 app[web.1]:   Rendered shared/_feed_item.html.erb (67.2ms)
+2012-11-05T15:50:58+00:00 app[web.1]:   Rendered shared/_feed.html.erb (76.0ms)
+2012-11-05T15:50:58+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (174.0ms)
+2012-11-05T15:50:58+00:00 app[web.1]:   Rendered layouts/_header.html.erb (2.5ms)
+2012-11-05T15:50:58+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.2ms)
+2012-11-05T15:50:58+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.7ms)
+2012-11-05T15:50:58+00:00 app[web.1]: Completed 200 OK in 388ms (Views: 207.7ms | ActiveRecord: 65.1ms)
+2012-11-05T15:50:58+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-d79227125b1cacca1b5e13de19ada8a1.css dyno=web.1 queue=0 wait=0ms service=11ms status=200 bytes=86654
+2012-11-05T15:50:58+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-0f3eff22898a15a391044aec2dfec4d8.js dyno=web.1 queue=0 wait=1ms service=21ms status=200 bytes=122359
+2012-11-05T15:53:24+00:00 app[web.1]: 
+2012-11-05T15:53:24+00:00 app[web.1]: 
+2012-11-05T15:53:24+00:00 app[web.1]: Started GET "/" for 209.106.205.35 at 2012-11-05 15:53:24 +0000
+2012-11-05T15:53:24+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2012-11-05T15:53:24+00:00 app[web.1]:   Rendered shared/_stats.html.erb (6.8ms)
+2012-11-05T15:53:24+00:00 app[web.1]:   Rendered shared/_micropost_form.html.erb (1.0ms)
+2012-11-05T15:53:24+00:00 app[web.1]:   Rendered shared/_user_info.html.erb (4.0ms)
+2012-11-05T15:53:24+00:00 app[web.1]:   Rendered shared/_error_messages.html.erb (0.0ms)
+2012-11-05T15:53:24+00:00 app[web.1]:   Rendered shared/_feed_item.html.erb (4.2ms)
+2012-11-05T15:53:24+00:00 app[web.1]:   Rendered shared/_feed.html.erb (11.3ms)
+2012-11-05T15:53:24+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (23.8ms)
+2012-11-05T15:53:24+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T15:53:24+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.5ms)
+2012-11-05T15:53:24+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T15:53:24+00:00 app[web.1]: Completed 200 OK in 32ms (Views: 12.5ms | ActiveRecord: 17.7ms)
+2012-11-05T15:53:24+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=44ms status=304 bytes=0
+2012-11-05T15:53:24+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-0f3eff22898a15a391044aec2dfec4d8.js dyno=web.1 queue=0 wait=0ms service=10ms status=304 bytes=0
+2012-11-05T15:56:42+00:00 app[web.1]: 
+2012-11-05T15:56:42+00:00 app[web.1]: 
+2012-11-05T15:56:42+00:00 app[web.1]: Started GET "/users/1" for 209.106.205.35 at 2012-11-05 15:56:42 +0000
+2012-11-05T15:56:42+00:00 app[web.1]: Processing by UsersController#show as HTML
+2012-11-05T15:56:42+00:00 app[web.1]:   Parameters: {"id"=>"1"}
+2012-11-05T15:56:42+00:00 app[web.1]:   Rendered shared/_stats.html.erb (9.4ms)
+2012-11-05T15:56:42+00:00 app[web.1]:   Rendered users/_follow_form.html.erb (0.6ms)
+2012-11-05T15:56:42+00:00 app[web.1]:   Rendered microposts/_micropost.html.erb (7.3ms)
+2012-11-05T15:56:42+00:00 app[web.1]:   Rendered users/show.html.erb within layouts/application (53.9ms)
+2012-11-05T15:56:42+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T15:56:42+00:00 app[web.1]:   Rendered layouts/_header.html.erb (2.8ms)
+2012-11-05T15:56:42+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.6ms)
+2012-11-05T15:56:42+00:00 app[web.1]: Completed 200 OK in 88ms (Views: 30.0ms | ActiveRecord: 55.7ms)
+2012-11-05T15:56:42+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-0f3eff22898a15a391044aec2dfec4d8.js dyno=web.1 queue=0 wait=0ms service=6ms status=304 bytes=0
+2012-11-05T15:56:50+00:00 app[web.1]: 
+2012-11-05T15:56:50+00:00 app[web.1]: 
+2012-11-05T15:56:50+00:00 app[web.1]: Started GET "/users/1/edit" for 209.106.205.35 at 2012-11-05 15:56:50 +0000
+2012-11-05T15:56:50+00:00 app[web.1]: Processing by UsersController#edit as HTML
+2012-11-05T15:56:50+00:00 app[web.1]:   Parameters: {"id"=>"1"}
+2012-11-05T15:56:50+00:00 app[web.1]:   Rendered shared/_error_messages.html.erb (0.0ms)
+2012-11-05T15:56:50+00:00 app[web.1]:   Rendered users/edit.html.erb within layouts/application (5.9ms)
+2012-11-05T15:56:50+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T15:56:50+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.5ms)
+2012-11-05T15:56:50+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T15:56:50+00:00 app[web.1]: Completed 200 OK in 17ms (Views: 10.0ms | ActiveRecord: 4.7ms)
+2012-11-05T15:56:50+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users/1/edit dyno=web.1 queue=0 wait=12ms service=80ms status=200 bytes=3876
+2012-11-05T15:56:53+00:00 app[web.1]: 
+2012-11-05T15:56:53+00:00 app[web.1]: 
+2012-11-05T15:56:53+00:00 app[web.1]: Started PUT "/users/1" for 209.106.205.35 at 2012-11-05 15:56:53 +0000
+2012-11-05T15:56:53+00:00 app[web.1]: Processing by UsersController#update as HTML
+2012-11-05T15:56:53+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"woPbdu4cacGNk7HmZJbzDbL7x9Aj7uli4xCU01Lddf8=", "user"=>{"firstname"=>"Peter", "sirname"=>"Blomgren", "email"=>"mr@pablomgren.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save Changes", "id"=>"1"}
+2012-11-05T15:56:53+00:00 heroku[router]: POST glacial-ocean-1154.herokuapp.com/users/1 dyno=web.1 queue=0 wait=0ms service=135ms status=200 bytes=4334
+2012-11-05T15:56:53+00:00 app[web.1]:   Rendered shared/_error_messages.html.erb (2.6ms)
+2012-11-05T15:56:53+00:00 app[web.1]:   Rendered users/edit.html.erb within layouts/application (6.3ms)
+2012-11-05T15:56:53+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T15:56:53+00:00 app[web.1]:   Rendered layouts/_header.html.erb (2.2ms)
+2012-11-05T15:56:53+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T15:56:53+00:00 app[web.1]: Completed 200 OK in 116ms (Views: 11.6ms | ActiveRecord: 87.1ms)
+2012-11-05T16:13:40+00:00 app[web.1]: 
+2012-11-05T16:13:40+00:00 app[web.1]: Started GET "/users" for 209.106.205.35 at 2012-11-05 16:13:40 +0000
+2012-11-05T16:13:40+00:00 app[web.1]: 
+2012-11-05T16:13:40+00:00 app[web.1]: Processing by UsersController#index as HTML
+2012-11-05T16:13:40+00:00 app[web.1]:   Rendered users/_user.html.erb (2.3ms)
+2012-11-05T16:13:40+00:00 app[web.1]:   Rendered users/index.html.erb within layouts/application (10.6ms)
+2012-11-05T16:13:40+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T16:13:40+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T16:13:40+00:00 app[web.1]: Completed 200 OK in 19ms (Views: 10.7ms | ActiveRecord: 6.9ms)
+2012-11-05T16:13:40+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.5ms)
+2012-11-05T16:13:40+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users dyno=web.1 queue=0 wait=0ms service=31ms status=200 bytes=3023
+2012-11-05T16:13:40+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-d79227125b1cacca1b5e13de19ada8a1.css dyno=web.1 queue=0 wait=0ms service=4ms status=304 bytes=0
+2012-11-05T17:22:59+00:00 heroku[web.1]: Idling
+2012-11-05T17:23:01+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2012-11-05T17:23:01+00:00 app[web.1]: [2012-11-05 17:23:01] ERROR SignalException: SIGTERM
+2012-11-05T17:23:01+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+2012-11-05T17:23:11+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
+2012-11-05T17:23:11+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
+2012-11-05T17:23:13+00:00 heroku[web.1]: Process exited with status 137
+2012-11-05T17:23:13+00:00 heroku[web.1]: State changed from up to down
+2012-11-05T21:26:52+00:00 heroku[web.1]: State changed from starting to up
+2012-11-05T21:26:54+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users/new dyno=web.1 queue=0 wait=0ms service=30ms status=301 bytes=0
+2012-11-05T21:26:56+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-0f3eff22898a15a391044aec2dfec4d8.js dyno=web.1 queue=0 wait=1ms service=110ms status=200 bytes=122359
+2012-11-05T21:26:56+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/assets/application-d79227125b1cacca1b5e13de19ada8a1.css dyno=web.1 queue=0 wait=0ms service=102ms status=200 bytes=86654
+2012-11-05T21:27:26+00:00 heroku[router]: POST glacial-ocean-1154.herokuapp.com/users dyno=web.1 queue=0 wait=0ms service=349ms status=302 bytes=114
+2012-11-05T21:27:26+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users/3 dyno=web.1 queue=0 wait=0ms service=139ms status=500 bytes=643
+2012-11-05T21:31:11+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=667ms status=200 bytes=4216
+2012-11-05T21:31:12+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/favicon.ico dyno=web.1 queue=0 wait=2ms service=42ms status=200 bytes=0
+2012-11-05T21:31:15+00:00 heroku[router]: POST glacial-ocean-1154.herokuapp.com/signout dyno=web.1 queue=0 wait=0ms service=28ms status=302 bytes=107
+2012-11-05T21:31:39+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users/new dyno=web.1 queue=0 wait=0ms service=32ms status=200 bytes=2721
+2012-11-05T21:32:07+00:00 heroku[router]: POST glacial-ocean-1154.herokuapp.com/users dyno=web.1 queue=0 wait=0ms service=162ms status=302 bytes=114
+2012-11-05T21:32:07+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users/4 dyno=web.1 queue=0 wait=0ms service=78ms status=200 bytes=3062
+2012-11-05T21:34:50+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users dyno=web.1 queue=0 wait=0ms service=71ms status=200 bytes=3024
+2012-11-05T21:34:53+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users/3 dyno=web.1 queue=0 wait=0ms service=57ms status=200 bytes=3576
+2012-11-05T21:35:10+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2012-11-05T21:35:10+00:00 app[web.1]: Started GET "/" for 209.106.205.35 at 2012-11-05 21:35:10 +0000
+2012-11-05T21:35:10+00:00 app[web.1]: 
+2012-11-05T21:35:10+00:00 app[web.1]: 
+2012-11-05T21:35:10+00:00 app[web.1]:   Rendered shared/_user_info.html.erb (4.6ms)
+2012-11-05T21:35:10+00:00 app[web.1]:   Rendered shared/_stats.html.erb (7.0ms)
+2012-11-05T21:35:10+00:00 app[web.1]:   Rendered shared/_error_messages.html.erb (0.0ms)
+2012-11-05T21:35:10+00:00 app[web.1]:   Rendered shared/_micropost_form.html.erb (1.1ms)
+2012-11-05T21:35:10+00:00 app[web.1]:   Rendered shared/_feed.html.erb (3.2ms)
+2012-11-05T21:35:10+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (16.8ms)
+2012-11-05T21:35:10+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:35:10+00:00 app[web.1]:   Rendered layouts/_header.html.erb (2.1ms)
+2012-11-05T21:35:10+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T21:35:10+00:00 app[web.1]: Completed 200 OK in 27ms (Views: 13.5ms | ActiveRecord: 11.9ms)
+2012-11-05T21:35:15+00:00 app[web.1]: 
+2012-11-05T21:35:15+00:00 app[web.1]: 
+2012-11-05T21:35:15+00:00 app[web.1]: Started GET "/users/4" for 209.106.205.35 at 2012-11-05 21:35:15 +0000
+2012-11-05T21:35:15+00:00 app[web.1]: Processing by UsersController#show as HTML
+2012-11-05T21:35:15+00:00 app[web.1]:   Parameters: {"id"=>"4"}
+2012-11-05T21:35:15+00:00 app[web.1]:   Rendered users/_follow_form.html.erb (0.1ms)
+2012-11-05T21:35:15+00:00 app[web.1]:   Rendered shared/_stats.html.erb (8.7ms)
+2012-11-05T21:35:15+00:00 app[web.1]:   Rendered users/show.html.erb within layouts/application (24.1ms)
+2012-11-05T21:35:15+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:35:15+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.6ms)
+2012-11-05T21:35:15+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T21:35:15+00:00 app[web.1]: Completed 200 OK in 33ms (Views: 15.4ms | ActiveRecord: 15.7ms)
+2012-11-05T21:35:15+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users/4 dyno=web.1 queue=0 wait=0ms service=64ms status=200 bytes=2977
+2012-11-05T21:35:17+00:00 app[web.1]: 
+2012-11-05T21:35:17+00:00 app[web.1]: 
+2012-11-05T21:35:17+00:00 app[web.1]: Started GET "/users" for 209.106.205.35 at 2012-11-05 21:35:17 +0000
+2012-11-05T21:35:17+00:00 app[web.1]: Processing by UsersController#index as HTML
+2012-11-05T21:35:18+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users dyno=web.1 queue=0 wait=0ms service=34ms status=304 bytes=0
+2012-11-05T21:35:18+00:00 app[web.1]:   Rendered users/_user.html.erb (3.6ms)
+2012-11-05T21:35:18+00:00 app[web.1]:   Rendered users/index.html.erb within layouts/application (10.0ms)
+2012-11-05T21:35:18+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:35:18+00:00 app[web.1]:   Rendered layouts/_header.html.erb (2.3ms)
+2012-11-05T21:35:18+00:00 app[web.1]: Completed 200 OK in 22ms (Views: 10.8ms | ActiveRecord: 9.5ms)
+2012-11-05T21:35:18+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.4ms)
+2012-11-05T21:35:19+00:00 app[web.1]: 
+2012-11-05T21:35:19+00:00 app[web.1]: 
+2012-11-05T21:35:19+00:00 app[web.1]: Started GET "/users/3" for 209.106.205.35 at 2012-11-05 21:35:19 +0000
+2012-11-05T21:35:19+00:00 app[web.1]: Processing by UsersController#show as HTML
+2012-11-05T21:35:19+00:00 app[web.1]:   Parameters: {"id"=>"3"}
+2012-11-05T21:35:19+00:00 app[web.1]:   Rendered shared/_stats.html.erb (7.6ms)
+2012-11-05T21:35:19+00:00 app[web.1]:   Rendered users/_follow_form.html.erb (11.1ms)
+2012-11-05T21:35:19+00:00 app[web.1]:   Rendered users/show.html.erb within layouts/application (31.0ms)
+2012-11-05T21:35:19+00:00 app[web.1]:   Rendered users/_follow.html.erb (3.5ms)
+2012-11-05T21:35:19+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:35:19+00:00 app[web.1]: Completed 200 OK in 45ms (Views: 25.5ms | ActiveRecord: 16.7ms)
+2012-11-05T21:35:19+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (1.8ms)
+2012-11-05T21:35:19+00:00 app[web.1]:   Rendered layouts/_header.html.erb (2.7ms)
+2012-11-05T21:35:19+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users/3 dyno=web.1 queue=0 wait=0ms service=59ms status=304 bytes=0
+2012-11-05T21:35:24+00:00 app[web.1]: 
+2012-11-05T21:35:24+00:00 app[web.1]: Started GET "/users/4" for 209.106.205.35 at 2012-11-05 21:35:24 +0000
+2012-11-05T21:35:24+00:00 app[web.1]: 
+2012-11-05T21:35:24+00:00 app[web.1]:   Parameters: {"id"=>"4"}
+2012-11-05T21:35:24+00:00 app[web.1]: Processing by UsersController#show as HTML
+2012-11-05T21:35:24+00:00 app[web.1]:   Rendered shared/_stats.html.erb (19.9ms)
+2012-11-05T21:35:24+00:00 app[web.1]:   Rendered users/_follow_form.html.erb (0.1ms)
+2012-11-05T21:35:24+00:00 app[web.1]:   Rendered users/show.html.erb within layouts/application (33.5ms)
+2012-11-05T21:35:24+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:35:24+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.5ms)
+2012-11-05T21:35:24+00:00 app[web.1]: Completed 200 OK in 97ms (Views: 74.7ms | ActiveRecord: 19.9ms)
+2012-11-05T21:35:24+00:00 app[web.1]:   Rendered layouts/_header.html.erb (46.9ms)
+2012-11-05T21:35:24+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users/4 dyno=web.1 queue=0 wait=0ms service=141ms status=304 bytes=0
+2012-11-05T21:35:53+00:00 app[web.1]: 
+2012-11-05T21:35:53+00:00 app[web.1]: 
+2012-11-05T21:35:53+00:00 app[web.1]: Started GET "/users" for 209.106.205.35 at 2012-11-05 21:35:53 +0000
+2012-11-05T21:35:53+00:00 app[web.1]: Processing by UsersController#index as HTML
+2012-11-05T21:35:53+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.5ms)
+2012-11-05T21:35:53+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T21:35:53+00:00 app[web.1]:   Rendered users/_user.html.erb (1.9ms)
+2012-11-05T21:35:53+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:35:53+00:00 app[web.1]: Completed 200 OK in 20ms (Views: 10.4ms | ActiveRecord: 7.4ms)
+2012-11-05T21:35:53+00:00 app[web.1]:   Rendered users/index.html.erb within layouts/application (11.0ms)
+2012-11-05T21:35:53+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users dyno=web.1 queue=0 wait=0ms service=42ms status=304 bytes=0
+2012-11-05T21:35:55+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users/3 dyno=web.1 queue=0 wait=0ms service=81ms status=304 bytes=0
+2012-11-05T21:35:55+00:00 app[web.1]: 
+2012-11-05T21:35:55+00:00 app[web.1]: 
+2012-11-05T21:35:55+00:00 app[web.1]: Started GET "/users/3" for 209.106.205.35 at 2012-11-05 21:35:55 +0000
+2012-11-05T21:35:55+00:00 app[web.1]: Processing by UsersController#show as HTML
+2012-11-05T21:35:55+00:00 app[web.1]:   Parameters: {"id"=>"3"}
+2012-11-05T21:35:55+00:00 app[web.1]:   Rendered shared/_stats.html.erb (8.1ms)
+2012-11-05T21:35:55+00:00 app[web.1]:   Rendered users/_follow.html.erb (5.7ms)
+2012-11-05T21:35:55+00:00 app[web.1]:   Rendered users/_follow_form.html.erb (9.3ms)
+2012-11-05T21:35:55+00:00 app[web.1]:   Rendered users/show.html.erb within layouts/application (39.7ms)
+2012-11-05T21:35:55+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:35:55+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.7ms)
+2012-11-05T21:35:55+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T21:35:55+00:00 app[web.1]: Completed 200 OK in 59ms (Views: 29.1ms | ActiveRecord: 17.4ms)
+2012-11-05T21:36:02+00:00 heroku[router]: POST glacial-ocean-1154.herokuapp.com/signout dyno=web.1 queue=0 wait=1ms service=14ms status=302 bytes=107
+2012-11-05T21:36:02+00:00 app[web.1]: 
+2012-11-05T21:36:02+00:00 app[web.1]: 
+2012-11-05T21:36:02+00:00 app[web.1]: Started DELETE "/signout" for 209.106.205.35 at 2012-11-05 21:36:02 +0000
+2012-11-05T21:36:02+00:00 app[web.1]: Processing by SessionsController#destroy as HTML
+2012-11-05T21:36:02+00:00 app[web.1]:   Parameters: {"authenticity_token"=>"2igk+3rhmUvbQ2Y01vEyk7gIbokBVUBeBjO4JWdeqA4="}
+2012-11-05T21:36:02+00:00 app[web.1]: Redirected to https://glacial-ocean-1154.herokuapp.com/
+2012-11-05T21:36:02+00:00 app[web.1]: Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+2012-11-05T21:36:02+00:00 app[web.1]: 
+2012-11-05T21:36:02+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2012-11-05T21:36:02+00:00 app[web.1]: 
+2012-11-05T21:36:02+00:00 app[web.1]: Started GET "/" for 209.106.205.35 at 2012-11-05 21:36:02 +0000
+2012-11-05T21:36:02+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.1ms)
+2012-11-05T21:36:02+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:36:02+00:00 app[web.1]: Completed 200 OK in 7ms (Views: 4.0ms | ActiveRecord: 2.4ms)
+2012-11-05T21:36:02+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T21:36:02+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+2012-11-05T21:36:02+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=20ms status=200 bytes=1699
+2012-11-05T21:36:04+00:00 app[web.1]: 
+2012-11-05T21:36:04+00:00 app[web.1]: 
+2012-11-05T21:36:04+00:00 app[web.1]: Processing by StaticPagesController#beta as HTML
+2012-11-05T21:36:04+00:00 app[web.1]: Started GET "/signup" for 209.106.205.35 at 2012-11-05 21:36:04 +0000
+2012-11-05T21:36:04+00:00 app[web.1]:   Rendered static_pages/beta.html.erb within layouts/application (0.4ms)
+2012-11-05T21:36:04+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:36:04+00:00 app[web.1]:   Rendered layouts/_header.html.erb (4.0ms)
+2012-11-05T21:36:04+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T21:36:04+00:00 app[web.1]: Completed 200 OK in 7ms (Views: 4.1ms | ActiveRecord: 2.7ms)
+2012-11-05T21:36:04+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/signup dyno=web.1 queue=0 wait=5ms service=40ms status=200 bytes=1822
+2012-11-05T21:36:19+00:00 app[web.1]: 
+2012-11-05T21:36:19+00:00 app[web.1]: 
+2012-11-05T21:36:19+00:00 app[web.1]: Started GET "/users/new" for 209.106.205.35 at 2012-11-05 21:36:19 +0000
+2012-11-05T21:36:19+00:00 app[web.1]: Processing by UsersController#new as HTML
+2012-11-05T21:36:19+00:00 app[web.1]:   Rendered shared/_error_messages.html.erb (0.0ms)
+2012-11-05T21:36:19+00:00 app[web.1]:   Rendered users/new.html.erb within layouts/application (4.2ms)
+2012-11-05T21:36:19+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:36:19+00:00 app[web.1]:   Rendered layouts/_header.html.erb (6.4ms)
+2012-11-05T21:36:19+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T21:36:19+00:00 app[web.1]: Completed 200 OK in 14ms (Views: 9.8ms | ActiveRecord: 3.6ms)
+2012-11-05T21:36:19+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users/new dyno=web.1 queue=0 wait=0ms service=34ms status=304 bytes=0
+2012-11-05T21:36:40+00:00 app[web.1]: 
+2012-11-05T21:36:40+00:00 app[web.1]: 
+2012-11-05T21:36:40+00:00 app[web.1]: Started POST "/users" for 209.106.205.35 at 2012-11-05 21:36:40 +0000
+2012-11-05T21:36:40+00:00 app[web.1]: Processing by UsersController#create as HTML
+2012-11-05T21:36:40+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"2igk+3rhmUvbQ2Y01vEyk7gIbokBVUBeBjO4JWdeqA4=", "user"=>{"username"=>"Test2", "firstname"=>"Test", "sirname"=>"t", "email"=>"fjdkl@sladkj.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+2012-11-05T21:36:40+00:00 app[web.1]: Redirected to https://glacial-ocean-1154.herokuapp.com/users/5
+2012-11-05T21:36:40+00:00 app[web.1]: Completed 302 Found in 99ms (ActiveRecord: 12.3ms)
+2012-11-05T21:36:40+00:00 heroku[router]: POST glacial-ocean-1154.herokuapp.com/users dyno=web.1 queue=0 wait=4ms service=142ms status=302 bytes=114
+2012-11-05T21:36:40+00:00 app[web.1]: 
+2012-11-05T21:36:40+00:00 app[web.1]: 
+2012-11-05T21:36:40+00:00 app[web.1]: Started GET "/users/5" for 209.106.205.35 at 2012-11-05 21:36:40 +0000
+2012-11-05T21:36:40+00:00 app[web.1]: Processing by UsersController#show as HTML
+2012-11-05T21:36:40+00:00 app[web.1]:   Parameters: {"id"=>"5"}
+2012-11-05T21:36:40+00:00 app[web.1]:   Rendered shared/_stats.html.erb (7.4ms)
+2012-11-05T21:36:40+00:00 app[web.1]:   Rendered users/_follow_form.html.erb (0.0ms)
+2012-11-05T21:36:40+00:00 app[web.1]:   Rendered users/show.html.erb within layouts/application (21.5ms)
+2012-11-05T21:36:40+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:36:40+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.4ms)
+2012-11-05T21:36:40+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T21:36:40+00:00 app[web.1]: Completed 200 OK in 29ms (Views: 10.9ms | ActiveRecord: 16.9ms)
+2012-11-05T21:36:44+00:00 app[web.1]: Started DELETE "/signout" for 209.106.205.35 at 2012-11-05 21:36:44 +0000
+2012-11-05T21:36:44+00:00 app[web.1]: 
+2012-11-05T21:36:44+00:00 app[web.1]: 
+2012-11-05T21:36:44+00:00 app[web.1]: Processing by SessionsController#destroy as HTML
+2012-11-05T21:36:44+00:00 app[web.1]:   Parameters: {"authenticity_token"=>"2igk+3rhmUvbQ2Y01vEyk7gIbokBVUBeBjO4JWdeqA4="}
+2012-11-05T21:36:44+00:00 app[web.1]: Redirected to https://glacial-ocean-1154.herokuapp.com/
+2012-11-05T21:36:44+00:00 app[web.1]: Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+2012-11-05T21:36:44+00:00 app[web.1]: 
+2012-11-05T21:36:44+00:00 app[web.1]: 
+2012-11-05T21:36:44+00:00 app[web.1]: Started GET "/" for 209.106.205.35 at 2012-11-05 21:36:44 +0000
+2012-11-05T21:36:44+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2012-11-05T21:36:44+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/ dyno=web.1 queue=0 wait=3ms service=19ms status=304 bytes=0
+2012-11-05T21:36:44+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+2012-11-05T21:36:44+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:36:44+00:00 app[web.1]:   Rendered layouts/_header.html.erb (0.8ms)
+2012-11-05T21:36:44+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T21:36:44+00:00 app[web.1]: Completed 200 OK in 7ms (Views: 3.4ms | ActiveRecord: 2.5ms)
+2012-11-05T21:36:46+00:00 app[web.1]: Processing by SessionsController#new as HTML
+2012-11-05T21:36:46+00:00 app[web.1]: 
+2012-11-05T21:36:46+00:00 app[web.1]: 
+2012-11-05T21:36:46+00:00 app[web.1]: Started GET "/signin" for 209.106.205.35 at 2012-11-05 21:36:46 +0000
+2012-11-05T21:36:46+00:00 app[web.1]:   Rendered sessions/new.html.erb within layouts/application (2.0ms)
+2012-11-05T21:36:46+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:36:46+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/signin dyno=web.1 queue=0 wait=0ms service=25ms status=200 bytes=2181
+2012-11-05T21:36:46+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T21:36:46+00:00 app[web.1]: Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 2.7ms)
+2012-11-05T21:36:46+00:00 app[web.1]:   Rendered layouts/_header.html.erb (4.8ms)
+2012-11-05T21:36:53+00:00 app[web.1]: 
+2012-11-05T21:36:53+00:00 app[web.1]: Started POST "/sessions" for 209.106.205.35 at 2012-11-05 21:36:53 +0000
+2012-11-05T21:36:53+00:00 app[web.1]: 
+2012-11-05T21:36:53+00:00 app[web.1]: Processing by SessionsController#create as HTML
+2012-11-05T21:36:53+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"2igk+3rhmUvbQ2Y01vEyk7gIbokBVUBeBjO4JWdeqA4=", "session"=>{"email"=>"mr@pablomgren.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+2012-11-05T21:36:53+00:00 heroku[router]: POST glacial-ocean-1154.herokuapp.com/sessions dyno=web.1 queue=0 wait=0ms service=122ms status=302 bytes=114
+2012-11-05T21:36:53+00:00 app[web.1]: Completed 302 Found in 96ms (ActiveRecord: 2.6ms)
+2012-11-05T21:36:53+00:00 app[web.1]: Redirected to https://glacial-ocean-1154.herokuapp.com/users/1
+2012-11-05T21:36:53+00:00 app[web.1]: 
+2012-11-05T21:36:53+00:00 app[web.1]: 
+2012-11-05T21:36:53+00:00 app[web.1]: Started GET "/users/1" for 209.106.205.35 at 2012-11-05 21:36:53 +0000
+2012-11-05T21:36:53+00:00 app[web.1]: Processing by UsersController#show as HTML
+2012-11-05T21:36:53+00:00 app[web.1]:   Parameters: {"id"=>"1"}
+2012-11-05T21:36:53+00:00 app[web.1]:   Rendered shared/_stats.html.erb (14.5ms)
+2012-11-05T21:36:53+00:00 app[web.1]:   Rendered users/_follow_form.html.erb (0.1ms)
+2012-11-05T21:36:54+00:00 app[web.1]:   Rendered microposts/_micropost.html.erb (24.5ms)
+2012-11-05T21:36:54+00:00 app[web.1]:   Rendered users/show.html.erb within layouts/application (116.0ms)
+2012-11-05T21:36:54+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:36:54+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.8ms)
+2012-11-05T21:36:54+00:00 app[web.1]: Completed 200 OK in 141ms (Views: 28.2ms | ActiveRecord: 110.9ms)
+2012-11-05T21:36:54+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.5ms)
+2012-11-05T21:36:56+00:00 app[web.1]: 
+2012-11-05T21:36:56+00:00 app[web.1]: 
+2012-11-05T21:36:56+00:00 app[web.1]: Started GET "/users" for 209.106.205.35 at 2012-11-05 21:36:56 +0000
+2012-11-05T21:36:56+00:00 app[web.1]: Processing by UsersController#index as HTML
+2012-11-05T21:36:56+00:00 app[web.1]:   Rendered users/_user.html.erb (10.5ms)
+2012-11-05T21:36:56+00:00 app[web.1]:   Rendered users/index.html.erb within layouts/application (19.1ms)
+2012-11-05T21:36:56+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:36:56+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users dyno=web.1 queue=0 wait=0ms service=92ms status=200 bytes=4402
+2012-11-05T21:36:56+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.4ms)
+2012-11-05T21:36:56+00:00 app[web.1]: Completed 200 OK in 58ms (Views: 43.4ms | ActiveRecord: 8.5ms)
+2012-11-05T21:36:56+00:00 app[web.1]:   Rendered layouts/_header.html.erb (3.6ms)
+2012-11-05T21:37:00+00:00 app[web.1]: 
+2012-11-05T21:37:00+00:00 app[web.1]: 
+2012-11-05T21:37:00+00:00 app[web.1]: Started DELETE "/users/4" for 209.106.205.35 at 2012-11-05 21:37:00 +0000
+2012-11-05T21:37:00+00:00 app[web.1]: Processing by UsersController#destroy as HTML
+2012-11-05T21:37:00+00:00 app[web.1]:   Parameters: {"authenticity_token"=>"2igk+3rhmUvbQ2Y01vEyk7gIbokBVUBeBjO4JWdeqA4=", "id"=>"4"}
+2012-11-05T21:37:00+00:00 app[web.1]: Redirected to https://glacial-ocean-1154.herokuapp.com/users
+2012-11-05T21:37:00+00:00 app[web.1]: Completed 302 Found in 36ms (ActiveRecord: 24.2ms)
+2012-11-05T21:37:00+00:00 heroku[router]: POST glacial-ocean-1154.herokuapp.com/users/4 dyno=web.1 queue=0 wait=0ms service=54ms status=302 bytes=112
+2012-11-05T21:37:00+00:00 app[web.1]: 
+2012-11-05T21:37:00+00:00 app[web.1]: 
+2012-11-05T21:37:00+00:00 app[web.1]: Started GET "/users" for 209.106.205.35 at 2012-11-05 21:37:00 +0000
+2012-11-05T21:37:00+00:00 app[web.1]: Processing by UsersController#index as HTML
+2012-11-05T21:37:00+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:37:00+00:00 app[web.1]:   Rendered users/_user.html.erb (10.7ms)
+2012-11-05T21:37:00+00:00 app[web.1]:   Rendered users/index.html.erb within layouts/application (25.9ms)
+2012-11-05T21:37:00+00:00 app[web.1]:   Rendered layouts/_header.html.erb (7.4ms)
+2012-11-05T21:37:00+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (3.0ms)
+2012-11-05T21:37:00+00:00 app[web.1]: Completed 200 OK in 50ms (Views: 40.8ms | ActiveRecord: 7.5ms)
+2012-11-05T21:37:04+00:00 app[web.1]: 
+2012-11-05T21:37:04+00:00 app[web.1]: Started DELETE "/users/5" for 209.106.205.35 at 2012-11-05 21:37:04 +0000
+2012-11-05T21:37:04+00:00 app[web.1]: Processing by UsersController#destroy as HTML
+2012-11-05T21:37:04+00:00 app[web.1]: 
+2012-11-05T21:37:04+00:00 app[web.1]:   Parameters: {"authenticity_token"=>"2igk+3rhmUvbQ2Y01vEyk7gIbokBVUBeBjO4JWdeqA4=", "id"=>"5"}
+2012-11-05T21:37:04+00:00 app[web.1]: Redirected to https://glacial-ocean-1154.herokuapp.com/users
+2012-11-05T21:37:04+00:00 app[web.1]: Completed 302 Found in 43ms (ActiveRecord: 30.6ms)
+2012-11-05T21:37:04+00:00 app[web.1]: 
+2012-11-05T21:37:04+00:00 app[web.1]: 
+2012-11-05T21:37:04+00:00 app[web.1]: Started GET "/users" for 209.106.205.35 at 2012-11-05 21:37:04 +0000
+2012-11-05T21:37:04+00:00 app[web.1]: Processing by UsersController#index as HTML
+2012-11-05T21:37:04+00:00 app[web.1]:   Rendered users/_user.html.erb (2.5ms)
+2012-11-05T21:37:04+00:00 app[web.1]:   Rendered users/index.html.erb within layouts/application (20.0ms)
+2012-11-05T21:37:04+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.1ms)
+2012-11-05T21:37:04+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.7ms)
+2012-11-05T21:37:04+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users dyno=web.1 queue=0 wait=0ms service=67ms status=200 bytes=3563
+2012-11-05T21:37:04+00:00 app[web.1]: Completed 200 OK in 38ms (Views: 27.5ms | ActiveRecord: 9.6ms)
+2012-11-05T21:37:04+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.5ms)
+2012-11-05T21:38:43+00:00 app[web.1]: 
+2012-11-05T21:38:43+00:00 app[web.1]: 
+2012-11-05T21:38:43+00:00 app[web.1]: Started GET "/users/3" for 209.106.205.35 at 2012-11-05 21:38:43 +0000
+2012-11-05T21:38:43+00:00 app[web.1]:   Parameters: {"id"=>"3"}
+2012-11-05T21:38:43+00:00 app[web.1]: Processing by UsersController#show as HTML
+2012-11-05T21:38:43+00:00 app[web.1]:   Rendered shared/_stats.html.erb (36.9ms)
+2012-11-05T21:38:43+00:00 app[web.1]:   Rendered users/_follow.html.erb (1.4ms)
+2012-11-05T21:38:43+00:00 app[web.1]:   Rendered users/_follow_form.html.erb (5.3ms)
+2012-11-05T21:38:43+00:00 app[web.1]:   Rendered users/show.html.erb within layouts/application (64.3ms)
+2012-11-05T21:38:43+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:38:43+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.8ms)
+2012-11-05T21:38:43+00:00 app[web.1]: Completed 200 OK in 89ms (Views: 46.9ms | ActiveRecord: 35.3ms)
+2012-11-05T21:38:43+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.4ms)
+2012-11-05T21:38:43+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users/3 dyno=web.1 queue=0 wait=0ms service=112ms status=200 bytes=3659
+2012-11-05T21:38:47+00:00 app[web.1]: 
+2012-11-05T21:38:47+00:00 app[web.1]: 
+2012-11-05T21:38:47+00:00 app[web.1]: Started GET "/users" for 209.106.205.35 at 2012-11-05 21:38:47 +0000
+2012-11-05T21:38:47+00:00 app[web.1]: Processing by UsersController#index as HTML
+2012-11-05T21:38:47+00:00 app[web.1]: Completed 200 OK in 16ms (Views: 8.0ms | ActiveRecord: 6.5ms)
+2012-11-05T21:38:47+00:00 app[web.1]:   Rendered users/index.html.erb within layouts/application (8.5ms)
+2012-11-05T21:38:47+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:38:47+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.5ms)
+2012-11-05T21:38:47+00:00 app[web.1]:   Rendered users/_user.html.erb (2.8ms)
+2012-11-05T21:38:47+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T21:38:50+00:00 app[web.1]: 
+2012-11-05T21:38:50+00:00 app[web.1]: 
+2012-11-05T21:38:50+00:00 app[web.1]: Processing by UsersController#show as HTML
+2012-11-05T21:38:50+00:00 app[web.1]: Started GET "/users/3" for 209.106.205.35 at 2012-11-05 21:38:50 +0000
+2012-11-05T21:38:50+00:00 app[web.1]:   Parameters: {"id"=>"3"}
+2012-11-05T21:38:50+00:00 app[web.1]:   Rendered shared/_stats.html.erb (52.4ms)
+2012-11-05T21:38:50+00:00 app[web.1]:   Rendered users/_follow.html.erb (1.7ms)
+2012-11-05T21:38:50+00:00 app[web.1]:   Rendered users/_follow_form.html.erb (6.3ms)
+2012-11-05T21:38:50+00:00 app[web.1]:   Rendered users/show.html.erb within layouts/application (70.9ms)
+2012-11-05T21:38:50+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:38:50+00:00 app[web.1]: Completed 200 OK in 90ms (Views: 53.3ms | ActiveRecord: 34.9ms)
+2012-11-05T21:38:50+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.9ms)
+2012-11-05T21:38:50+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T21:38:50+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users/3 dyno=web.1 queue=0 wait=1ms service=99ms status=304 bytes=0
+2012-11-05T21:38:52+00:00 app[web.1]: 
+2012-11-05T21:38:52+00:00 app[web.1]: 
+2012-11-05T21:38:52+00:00 app[web.1]: Started POST "/relationships" for 209.106.205.35 at 2012-11-05 21:38:52 +0000
+2012-11-05T21:38:52+00:00 app[web.1]: Processing by RelationshipsController#create as JS
+2012-11-05T21:38:52+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"2igk+3rhmUvbQ2Y01vEyk7gIbokBVUBeBjO4JWdeqA4=", "relationship"=>{"followed_id"=>"3"}, "commit"=>"Follow"}
+2012-11-05T21:38:52+00:00 app[web.1]:   Rendered users/_unfollow.html.erb (5.5ms)
+2012-11-05T21:38:52+00:00 app[web.1]:   Rendered relationships/create.js.erb (13.7ms)
+2012-11-05T21:38:52+00:00 app[web.1]: Completed 200 OK in 73ms (Views: 10.6ms | ActiveRecord: 54.6ms)
+2012-11-05T21:38:52+00:00 heroku[router]: POST glacial-ocean-1154.herokuapp.com/relationships dyno=web.1 queue=0 wait=0ms service=85ms status=200 bytes=583
+2012-11-05T21:38:48+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users dyno=web.1 queue=0 wait=0ms service=30ms status=200 bytes=3489
+2012-11-05T21:38:54+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2012-11-05T21:38:54+00:00 app[web.1]: 
+2012-11-05T21:38:54+00:00 app[web.1]: 
+2012-11-05T21:38:54+00:00 app[web.1]: Started GET "/" for 209.106.205.35 at 2012-11-05 21:38:54 +0000
+2012-11-05T21:38:54+00:00 app[web.1]:   Rendered shared/_user_info.html.erb (3.9ms)
+2012-11-05T21:38:54+00:00 app[web.1]:   Rendered shared/_stats.html.erb (6.7ms)
+2012-11-05T21:38:54+00:00 app[web.1]:   Rendered shared/_error_messages.html.erb (0.0ms)
+2012-11-05T21:38:54+00:00 app[web.1]:   Rendered shared/_micropost_form.html.erb (1.0ms)
+2012-11-05T21:38:54+00:00 app[web.1]:   Rendered shared/_feed_item.html.erb (4.9ms)
+2012-11-05T21:38:54+00:00 app[web.1]:   Rendered shared/_feed.html.erb (12.2ms)
+2012-11-05T21:38:54+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (24.8ms)
+2012-11-05T21:38:54+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:38:54+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.7ms)
+2012-11-05T21:38:54+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T21:38:54+00:00 app[web.1]: Completed 200 OK in 34ms (Views: 14.4ms | ActiveRecord: 17.6ms)
+2012-11-05T21:38:57+00:00 app[web.1]: 
+2012-11-05T21:38:57+00:00 app[web.1]: Started GET "/books" for 209.106.205.35 at 2012-11-05 21:38:57 +0000
+2012-11-05T21:38:57+00:00 app[web.1]: 
+2012-11-05T21:38:57+00:00 app[web.1]: Processing by BooksController#index as HTML
+2012-11-05T21:38:57+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/books dyno=web.1 queue=0 wait=0ms service=137ms status=200 bytes=2823
+2012-11-05T21:38:57+00:00 app[web.1]:   Rendered books/index.html.erb within layouts/application (117.4ms)
+2012-11-05T21:38:57+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:38:57+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T21:38:57+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.6ms)
+2012-11-05T21:38:57+00:00 app[web.1]: Completed 200 OK in 127ms (Views: 25.7ms | ActiveRecord: 99.2ms)
+2012-11-05T21:39:02+00:00 app[web.1]: 
+2012-11-05T21:39:02+00:00 app[web.1]: 
+2012-11-05T21:39:02+00:00 app[web.1]: Started GET "/books/2" for 209.106.205.35 at 2012-11-05 21:39:02 +0000
+2012-11-05T21:39:02+00:00 app[web.1]: Processing by BooksController#show as HTML
+2012-11-05T21:39:02+00:00 app[web.1]:   Parameters: {"id"=>"2"}
+2012-11-05T21:39:03+00:00 app[web.1]:   Rendered shared/_review_form.html.erb (14.6ms)
+2012-11-05T21:39:03+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/books/2 dyno=web.1 queue=0 wait=0ms service=107ms status=200 bytes=4285
+2012-11-05T21:39:03+00:00 app[web.1]:   Rendered books/show.html.erb within layouts/application (29.6ms)
+2012-11-05T21:39:03+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:39:03+00:00 app[web.1]:   Rendered layouts/_header.html.erb (2.7ms)
+2012-11-05T21:39:03+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.6ms)
+2012-11-05T21:39:03+00:00 app[web.1]: Completed 200 OK in 74ms (Views: 29.0ms | ActiveRecord: 42.6ms)
+2012-11-05T21:40:25+00:00 app[web.1]: 
+2012-11-05T21:40:25+00:00 app[web.1]: 
+2012-11-05T21:40:25+00:00 app[web.1]: Started POST "/reviews" for 209.106.205.35 at 2012-11-05 21:40:25 +0000
+2012-11-05T21:40:25+00:00 app[web.1]: Processing by ReviewsController#create as HTML
+2012-11-05T21:40:25+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"2igk+3rhmUvbQ2Y01vEyk7gIbokBVUBeBjO4JWdeqA4=", "review"=>{"book_id"=>"2", "text"=>"This is pretty much what I used to create this site. It is a great book that walks you through developing a new ruby program! I like how he takes small steps that build on each other and explains every thing.", "rating"=>"1"}, "commit"=>"Post Review"}
+2012-11-05T21:40:25+00:00 heroku[router]: POST glacial-ocean-1154.herokuapp.com/reviews dyno=web.1 queue=0 wait=0ms service=66ms status=302 bytes=114
+2012-11-05T21:40:25+00:00 app[web.1]: Redirected to https://glacial-ocean-1154.herokuapp.com/reviews
+2012-11-05T21:40:25+00:00 app[web.1]: Completed 302 Found in 48ms (ActiveRecord: 36.5ms)
+2012-11-05T21:40:25+00:00 app[web.1]: 
+2012-11-05T21:40:25+00:00 app[web.1]: 
+2012-11-05T21:40:25+00:00 app[web.1]: Started GET "/reviews" for 209.106.205.35 at 2012-11-05 21:40:25 +0000
+2012-11-05T21:40:25+00:00 app[web.1]: Processing by ReviewsController#index as HTML
+2012-11-05T21:40:26+00:00 app[web.1]:   Rendered reviews/_review.html.erb (36.6ms)
+2012-11-05T21:40:26+00:00 app[web.1]:   Rendered reviews/index.html.erb within layouts/application (46.3ms)
+2012-11-05T21:40:26+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:40:26+00:00 app[web.1]: Completed 200 OK in 60ms (Views: 43.4ms | ActiveRecord: 14.7ms)
+2012-11-05T21:40:26+00:00 app[web.1]:   Rendered layouts/_header.html.erb (3.0ms)
+2012-11-05T21:40:26+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.4ms)
+2012-11-05T21:40:26+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/reviews dyno=web.1 queue=0 wait=3ms service=79ms status=200 bytes=3234
+2012-11-05T21:40:29+00:00 app[web.1]: 
+2012-11-05T21:40:29+00:00 app[web.1]: 
+2012-11-05T21:40:29+00:00 app[web.1]: Started GET "/users" for 209.106.205.35 at 2012-11-05 21:40:29 +0000
+2012-11-05T21:40:29+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users dyno=web.1 queue=0 wait=0ms service=36ms status=304 bytes=0
+2012-11-05T21:40:29+00:00 app[web.1]:   Rendered users/_user.html.erb (2.2ms)
+2012-11-05T21:40:29+00:00 app[web.1]:   Rendered users/index.html.erb within layouts/application (7.9ms)
+2012-11-05T21:40:29+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:40:29+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.4ms)
+2012-11-05T21:40:29+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T21:40:29+00:00 app[web.1]: Completed 200 OK in 15ms (Views: 7.1ms | ActiveRecord: 6.8ms)
+2012-11-05T21:40:29+00:00 app[web.1]: Processing by UsersController#index as HTML
+2012-11-05T21:40:32+00:00 app[web.1]: 
+2012-11-05T21:40:32+00:00 app[web.1]: 
+2012-11-05T21:40:32+00:00 app[web.1]: Started GET "/users/1" for 209.106.205.35 at 2012-11-05 21:40:32 +0000
+2012-11-05T21:40:32+00:00 app[web.1]: Processing by UsersController#show as HTML
+2012-11-05T21:40:32+00:00 app[web.1]:   Parameters: {"id"=>"1"}
+2012-11-05T21:40:32+00:00 app[web.1]:   Rendered users/_follow_form.html.erb (0.1ms)
+2012-11-05T21:40:32+00:00 app[web.1]:   Rendered microposts/_micropost.html.erb (4.3ms)
+2012-11-05T21:40:32+00:00 app[web.1]:   Rendered users/show.html.erb within layouts/application (26.9ms)
+2012-11-05T21:40:32+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:40:32+00:00 app[web.1]:   Rendered layouts/_header.html.erb (2.0ms)
+2012-11-05T21:40:32+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T21:40:32+00:00 app[web.1]: Completed 200 OK in 39ms (Views: 15.7ms | ActiveRecord: 20.6ms)
+2012-11-05T21:40:32+00:00 app[web.1]:   Rendered shared/_stats.html.erb (7.9ms)
+2012-11-05T21:40:44+00:00 app[web.1]: 
+2012-11-05T21:40:44+00:00 app[web.1]: 
+2012-11-05T21:40:44+00:00 app[web.1]: Started GET "/" for 209.106.205.35 at 2012-11-05 21:40:44 +0000
+2012-11-05T21:40:45+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2012-11-05T21:40:45+00:00 app[web.1]:   Rendered shared/_user_info.html.erb (5.3ms)
+2012-11-05T21:40:45+00:00 app[web.1]:   Rendered shared/_stats.html.erb (9.3ms)
+2012-11-05T21:40:45+00:00 app[web.1]:   Rendered shared/_error_messages.html.erb (0.1ms)
+2012-11-05T21:40:45+00:00 app[web.1]:   Rendered shared/_micropost_form.html.erb (1.6ms)
+2012-11-05T21:40:45+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:40:45+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.9ms)
+2012-11-05T21:40:45+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.4ms)
+2012-11-05T21:40:45+00:00 app[web.1]: Completed 200 OK in 44ms (Views: 20.8ms | ActiveRecord: 20.6ms)
+2012-11-05T21:40:45+00:00 app[web.1]:   Rendered shared/_feed_item.html.erb (5.8ms)
+2012-11-05T21:40:45+00:00 app[web.1]:   Rendered shared/_feed.html.erb (15.6ms)
+2012-11-05T21:40:45+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (33.7ms)
+2012-11-05T21:40:45+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=59ms status=304 bytes=0
+2012-11-05T21:41:11+00:00 app[web.1]: 
+2012-11-05T21:41:11+00:00 app[web.1]: 
+2012-11-05T21:41:11+00:00 app[web.1]: Started POST "/microposts" for 209.106.205.35 at 2012-11-05 21:41:11 +0000
+2012-11-05T21:41:11+00:00 app[web.1]: Processing by MicropostsController#create as HTML
+2012-11-05T21:41:11+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"2igk+3rhmUvbQ2Y01vEyk7gIbokBVUBeBjO4JWdeqA4=", "micropost"=>{"content"=>"Everyone welcome Brenda! find her as Scrappyboe in the users list!"}, "commit"=>"Post"}
+2012-11-05T21:41:11+00:00 heroku[router]: POST glacial-ocean-1154.herokuapp.com/microposts dyno=web.1 queue=0 wait=0ms service=262ms status=302 bytes=107
+2012-11-05T21:41:11+00:00 app[web.1]: Redirected to https://glacial-ocean-1154.herokuapp.com/
+2012-11-05T21:41:11+00:00 app[web.1]: Completed 302 Found in 222ms (ActiveRecord: 66.6ms)
+2012-11-05T21:41:11+00:00 app[web.1]: 
+2012-11-05T21:41:11+00:00 app[web.1]: 
+2012-11-05T21:41:11+00:00 app[web.1]: Started GET "/" for 209.106.205.35 at 2012-11-05 21:41:11 +0000
+2012-11-05T21:41:11+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2012-11-05T21:41:11+00:00 app[web.1]:   Rendered shared/_user_info.html.erb (9.9ms)
+2012-11-05T21:41:11+00:00 app[web.1]:   Rendered shared/_stats.html.erb (13.5ms)
+2012-11-05T21:41:11+00:00 app[web.1]:   Rendered shared/_error_messages.html.erb (0.1ms)
+2012-11-05T21:41:11+00:00 app[web.1]:   Rendered shared/_micropost_form.html.erb (2.5ms)
+2012-11-05T21:41:12+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=106ms status=200 bytes=4878
+2012-11-05T21:41:12+00:00 app[web.1]:   Rendered shared/_feed.html.erb (20.4ms)
+2012-11-05T21:41:12+00:00 app[web.1]:   Rendered shared/_feed_item.html.erb (10.5ms)
+2012-11-05T21:41:12+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (62.2ms)
+2012-11-05T21:41:12+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:41:12+00:00 app[web.1]: Completed 200 OK in 84ms (Views: 48.7ms | ActiveRecord: 21.2ms)
+2012-11-05T21:41:12+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T21:41:12+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.7ms)
+2012-11-05T21:41:18+00:00 app[web.1]: 
+2012-11-05T21:41:18+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users dyno=web.1 queue=0 wait=0ms service=50ms status=304 bytes=0
+2012-11-05T21:41:18+00:00 app[web.1]: 
+2012-11-05T21:41:18+00:00 app[web.1]: Started GET "/users" for 209.106.205.35 at 2012-11-05 21:41:18 +0000
+2012-11-05T21:41:18+00:00 app[web.1]: Processing by UsersController#index as HTML
+2012-11-05T21:41:18+00:00 app[web.1]:   Rendered users/_user.html.erb (2.9ms)
+2012-11-05T21:41:18+00:00 app[web.1]:   Rendered users/index.html.erb within layouts/application (10.1ms)
+2012-11-05T21:41:18+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:41:18+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.7ms)
+2012-11-05T21:41:18+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T21:41:18+00:00 app[web.1]: Completed 200 OK in 27ms (Views: 18.2ms | ActiveRecord: 7.3ms)
+2012-11-05T21:41:23+00:00 app[web.1]: Started GET "/users/1" for 209.106.205.35 at 2012-11-05 21:41:23 +0000
+2012-11-05T21:41:23+00:00 app[web.1]: 
+2012-11-05T21:41:23+00:00 app[web.1]: 
+2012-11-05T21:41:23+00:00 app[web.1]: Processing by UsersController#show as HTML
+2012-11-05T21:41:23+00:00 app[web.1]:   Parameters: {"id"=>"1"}
+2012-11-05T21:41:23+00:00 app[web.1]:   Rendered shared/_stats.html.erb (66.3ms)
+2012-11-05T21:41:23+00:00 app[web.1]:   Rendered users/_follow_form.html.erb (0.1ms)
+2012-11-05T21:41:23+00:00 app[web.1]:   Rendered microposts/_micropost.html.erb (11.4ms)
+2012-11-05T21:41:23+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:41:23+00:00 app[web.1]:   Rendered users/show.html.erb within layouts/application (112.6ms)
+2012-11-05T21:41:23+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users/1 dyno=web.1 queue=0 wait=0ms service=173ms status=200 bytes=3836
+2012-11-05T21:41:23+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T21:41:23+00:00 app[web.1]: Completed 200 OK in 134ms (Views: 61.1ms | ActiveRecord: 71.9ms)
+2012-11-05T21:41:23+00:00 app[web.1]:   Rendered layouts/_header.html.erb (11.3ms)
+2012-11-05T21:41:29+00:00 app[web.1]: 
+2012-11-05T21:41:29+00:00 app[web.1]: Started DELETE "/microposts/2" for 209.106.205.35 at 2012-11-05 21:41:29 +0000
+2012-11-05T21:41:29+00:00 app[web.1]: 
+2012-11-05T21:41:29+00:00 app[web.1]: Processing by MicropostsController#destroy as HTML
+2012-11-05T21:41:29+00:00 app[web.1]:   Parameters: {"authenticity_token"=>"2igk+3rhmUvbQ2Y01vEyk7gIbokBVUBeBjO4JWdeqA4=", "id"=>"2"}
+2012-11-05T21:41:29+00:00 app[web.1]: Redirected to https://glacial-ocean-1154.herokuapp.com/
+2012-11-05T21:41:29+00:00 app[web.1]: Completed 302 Found in 24ms (ActiveRecord: 17.4ms)
+2012-11-05T21:41:29+00:00 heroku[router]: POST glacial-ocean-1154.herokuapp.com/microposts/2 dyno=web.1 queue=0 wait=0ms service=38ms status=302 bytes=107
+2012-11-05T21:41:29+00:00 app[web.1]: 
+2012-11-05T21:41:29+00:00 app[web.1]: 
+2012-11-05T21:41:29+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2012-11-05T21:41:29+00:00 app[web.1]: Started GET "/" for 209.106.205.35 at 2012-11-05 21:41:29 +0000
+2012-11-05T21:41:29+00:00 app[web.1]:   Rendered shared/_user_info.html.erb (4.2ms)
+2012-11-05T21:41:29+00:00 app[web.1]:   Rendered shared/_stats.html.erb (45.6ms)
+2012-11-05T21:41:29+00:00 app[web.1]:   Rendered shared/_micropost_form.html.erb (1.7ms)
+2012-11-05T21:41:29+00:00 app[web.1]:   Rendered shared/_error_messages.html.erb (0.0ms)
+2012-11-05T21:41:29+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (71.0ms)
+2012-11-05T21:41:29+00:00 app[web.1]:   Rendered shared/_feed.html.erb (14.6ms)
+2012-11-05T21:41:29+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:41:29+00:00 app[web.1]:   Rendered shared/_feed_item.html.erb (7.1ms)
+2012-11-05T21:41:29+00:00 app[web.1]:   Rendered layouts/_header.html.erb (3.7ms)
+2012-11-05T21:41:29+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.9ms)
+2012-11-05T21:41:29+00:00 app[web.1]: Completed 200 OK in 86ms (Views: 27.4ms | ActiveRecord: 54.4ms)
+2012-11-05T21:41:29+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=111ms status=200 bytes=4216
+2012-11-05T21:41:39+00:00 app[web.1]: 
+2012-11-05T21:41:39+00:00 app[web.1]: Started GET "/users" for 209.106.205.35 at 2012-11-05 21:41:39 +0000
+2012-11-05T21:41:39+00:00 app[web.1]: 
+2012-11-05T21:41:39+00:00 app[web.1]: Processing by UsersController#index as HTML
+2012-11-05T21:41:39+00:00 app[web.1]:   Rendered users/index.html.erb within layouts/application (25.5ms)
+2012-11-05T21:41:39+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:41:39+00:00 app[web.1]:   Rendered users/_user.html.erb (2.6ms)
+2012-11-05T21:41:39+00:00 app[web.1]:   Rendered layouts/_header.html.erb (4.1ms)
+2012-11-05T21:41:39+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (1.5ms)
+2012-11-05T21:41:39+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users dyno=web.1 queue=0 wait=2ms service=82ms status=304 bytes=0
+2012-11-05T21:41:39+00:00 app[web.1]: Completed 200 OK in 57ms (Views: 36.4ms | ActiveRecord: 15.0ms)
+2012-11-05T21:41:54+00:00 app[web.1]: 
+2012-11-05T21:41:54+00:00 app[web.1]: 
+2012-11-05T21:41:54+00:00 app[web.1]: Started POST "/microposts" for 209.106.205.35 at 2012-11-05 21:41:54 +0000
+2012-11-05T21:41:54+00:00 app[web.1]: Processing by MicropostsController#create as HTML
+2012-11-05T21:41:54+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"2igk+3rhmUvbQ2Y01vEyk7gIbokBVUBeBjO4JWdeqA4=", "micropost"=>{"content"=>"Everyone welcome Scrappybooe!"}, "commit"=>"Post"}
+2012-11-05T21:41:54+00:00 heroku[router]: POST glacial-ocean-1154.herokuapp.com/microposts dyno=web.1 queue=0 wait=0ms service=50ms status=302 bytes=107
+2012-11-05T21:41:54+00:00 app[web.1]: Redirected to https://glacial-ocean-1154.herokuapp.com/
+2012-11-05T21:41:54+00:00 app[web.1]: Completed 302 Found in 29ms (ActiveRecord: 22.4ms)
+2012-11-05T21:41:54+00:00 app[web.1]: 
+2012-11-05T21:41:54+00:00 app[web.1]: 
+2012-11-05T21:41:54+00:00 app[web.1]: Started GET "/" for 209.106.205.35 at 2012-11-05 21:41:54 +0000
+2012-11-05T21:41:54+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2012-11-05T21:41:54+00:00 app[web.1]:   Rendered shared/_user_info.html.erb (5.0ms)
+2012-11-05T21:41:54+00:00 app[web.1]:   Rendered shared/_stats.html.erb (8.6ms)
+2012-11-05T21:41:54+00:00 app[web.1]:   Rendered shared/_error_messages.html.erb (0.0ms)
+2012-11-05T21:41:54+00:00 app[web.1]:   Rendered shared/_micropost_form.html.erb (1.4ms)
+2012-11-05T21:41:54+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T21:41:54+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (49.7ms)
+2012-11-05T21:41:54+00:00 app[web.1]:   Rendered shared/_feed.html.erb (24.7ms)
+2012-11-05T21:41:54+00:00 app[web.1]:   Rendered shared/_feed_item.html.erb (17.5ms)
+2012-11-05T21:41:54+00:00 app[web.1]:   Rendered layouts/_header.html.erb (12.1ms)
+2012-11-05T21:41:54+00:00 app[web.1]: Completed 200 OK in 76ms (Views: 48.9ms | ActiveRecord: 18.0ms)
+2012-11-05T21:41:54+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.4ms)
+2012-11-05T21:41:54+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=89ms status=200 bytes=4804
+2012-11-05T22:05:52+00:00 app[web.1]: 
+2012-11-05T22:05:52+00:00 app[web.1]: 
+2012-11-05T22:05:52+00:00 app[web.1]: Started GET "/users/3" for 209.106.205.35 at 2012-11-05 22:05:52 +0000
+2012-11-05T22:05:52+00:00 app[web.1]: Processing by UsersController#show as HTML
+2012-11-05T22:05:52+00:00 app[web.1]:   Parameters: {"id"=>"3"}
+2012-11-05T22:05:52+00:00 app[web.1]:   Rendered shared/_stats.html.erb (10.5ms)
+2012-11-05T22:05:52+00:00 app[web.1]:   Rendered users/_follow_form.html.erb (8.1ms)
+2012-11-05T22:05:52+00:00 app[web.1]:   Rendered users/_unfollow.html.erb (3.4ms)
+2012-11-05T22:05:52+00:00 app[web.1]:   Rendered users/show.html.erb within layouts/application (31.0ms)
+2012-11-05T22:05:52+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-05T22:05:52+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.7ms)
+2012-11-05T22:05:52+00:00 app[web.1]: Completed 200 OK in 42ms (Views: 20.9ms | ActiveRecord: 17.8ms)
+2012-11-05T22:05:52+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-11-05T22:05:52+00:00 heroku[router]: GET glacial-ocean-1154.herokuapp.com/users/3 dyno=web.1 queue=0 wait=0ms service=57ms status=200 bytes=3598
