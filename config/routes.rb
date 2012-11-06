@@ -1,4 +1,6 @@
 SampleApp::Application.routes.draw do
+  get "reputation/new"
+
   get "authors/new"
 
   resources :users do

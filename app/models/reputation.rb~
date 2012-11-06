@@ -1,0 +1,9 @@
+class Reputation < ActiveRecord::Base
+  attr_accessible :vote_down, :vote_up
+
+  belongs_to :review
+  validates :review, presence: true
+def total
+  vote_up - vote_down
+end
+end

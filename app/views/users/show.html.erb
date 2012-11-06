@@ -7,10 +7,6 @@
         <%= @user.username %>
       </h1>
       <h1>
-        <% if current_user.admin? %>
-          <%= @user.ufull_name %>
-        <% end %>
-      </h1>
     </section>
     <section>
       <%= render 'shared/stats' %>
