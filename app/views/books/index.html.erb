@@ -6,8 +6,8 @@
   <% @books.each do |book| %>
     <li>
       <%= link_to book.title, book %> by: 
-      <%= book.author.asurname %>,
-      <%= book.author.a1stname %>
+      <%= book.author.afull_name %>,
+      <%= link_to book.author.afull_name, author_path(book.author) %>
       <br />
       <h5> This book has been reviewed
       <%= pluralize(book.reviews.count, "times") %>.

@@ -1,6 +1,5 @@
 <li>
-  <%= link_to author.asurname, author %>,
-  <%= link_to author.a1stname, author %>
+  <%= link_to author.afull_name, author %>
   <br />
   <h5>Author has <%= pluralize(author.books.count, "book") %>
   <% if current_user.admin? %>

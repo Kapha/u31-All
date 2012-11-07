@@ -4,6 +4,6 @@
   <div class="field" >
     <%= f.text_area :text, placeholder: "Write a review for this book..." %>
   </div>
-  <%= f.select(:rating, options_for_select([['1', 1], ['2',2], ['3', 3], ['4',4], ['5', 5]], 3)) %>
+  <%= f.select(:rating, options_for_select([['Awesome', 1], ['Good',2], ['OK', 3], ['No good',4], ['Absolutely Horrible', 5]], 3)) %>
     <%= f.submit "Post Review", class: "btn btn-large btn-primary" %>
 <% end %>

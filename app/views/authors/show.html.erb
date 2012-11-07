@@ -1,10 +1,9 @@
-<% provide(:title, @author.asurname) %>
+<% provide(:title, @author.afull_name) %>
 <div class="row">
   <aside class="span4">
     <section>
       <h1>
-        <%= @author.asurname %>, 
-        <%= @author.a1stname %>
+        <%= @author.afull_name %> 
      </h1>
     </section>
     <section>
@@ -19,7 +18,7 @@
     </section>
     <% if current_user.admin? %>  
     <section>
-        <%= link_to "delete", @author, method: :delete, data: {confirm: "This will delete the current author and all books attached to it. Are you sure?" } %>
+        <%= link_to "delete", @author, method: :delete, data: {confirm: "This will delete #{@author.afull_name} and all books attached to him/her. Are you sure?" } %>
         | <%= link_to "edit", edit_author_path(@author) %>
       </section>
     <% end %>
