@@ -10,25 +10,9 @@
       </h4>
     </section>
     <section>
-      <h4> This book has been reviewed <%= pluralize(@book.reviews.count, "time") %>.
+      <h4> This book has been reviewed <%= pluralize(@book.reviews.count, "time") %>
       <% if @book.reviews.any? %>
-        And has an average review of 
-        <% if @book.reviews.average(:rating).to_i == 1 %>
-           "Awesome!"
-        <% end %>
-        <% if @book.reviews.average(:rating).to_i == 2 %>
-           "Good."
-        <% end %>
-        <% if @book.reviews.average(:rating).to_i == 3 %>
-           "OK."
-        <% end %>
-        <% if @book.reviews.average(:rating).to_i == 4 %>
-           "No Good."
-        <% end %>
-        <% if @book.reviews.average(:rating).to_i == 5 %>
-          "Absolutely Horrible."
-        <% end %>
-    
+        <%= render "rating" %>
       <% end %>
       </h4>
     </section>

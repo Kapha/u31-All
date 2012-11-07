@@ -8,4 +8,7 @@ class Review < ActiveRecord::Base
   validates :rating, presence: true
   validates :text, presence: true
 
+  def rate_word
+      puts "Absolutley Horrible"
+  end 
 end

@@ -6,11 +6,28 @@
   <% @books.each do |book| %>
     <li>
       <%= link_to book.title, book %> by: 
-      <%= book.author.afull_name %>,
       <%= link_to book.author.afull_name, author_path(book.author) %>
       <br />
       <h5> This book has been reviewed
-      <%= pluralize(book.reviews.count, "times") %>.
+      <%= pluralize(book.reviews.count, "times") %> 
+      <% if book.reviews.any? %>
+        with an average rating of,
+        <% if book.reviews.average(:rating).to_i == 1 %>
+          "Awesome!"
+        <% end %>
+        <% if book.reviews.average(:rating).to_i == 2 %>
+          "Good."
+        <% end %>
+        <% if book.reviews.average(:rating).to_i == 3 %>
+          "OK."
+        <% end %>
+        <% if book.reviews.average(:rating).to_i == 4 %>
+          "No Good."
+        <% end %>
+        <% if book.reviews.average(:rating).to_i == 5 %>
+          "Absolutely Horrible."
+        <% end %>
+      <% end %>
       </h5>
     </li>
   <% end %>
