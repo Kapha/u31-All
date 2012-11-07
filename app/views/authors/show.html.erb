@@ -12,7 +12,21 @@
       in our library 
       <% if @author.reviews.any? %>
         with an average rating of 
-        <%= @author.reviews.average(:rating).round(1) %>
+        <% if @author.reviews.average(:rating).to_i == 1 %>
+          "Awesome!"
+        <% end %>
+        <% if @author.reviews.average(:rating).to_i == 2 %>
+          "Good."
+        <% end %>
+        <% if @author.reviews.average(:rating).to_i == 3 %>
+          "OK."
+        <% end %>
+        <% if @author.reviews.average(:rating).to_i == 4 %>
+          "No Good."
+        <% end %>
+        <% if @author.reviews.average(:rating).to_i == 5 %>
+          "Absolutely Horrible."
+        <% end %>
       <% end %>
       </h4>
     </section>

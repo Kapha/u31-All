@@ -2,6 +2,24 @@
   <%= link_to author.afull_name, author %>
   <br />
   <h5>Author has <%= pluralize(author.books.count, "book") %>
+  <% if author.reviews.any? %>
+    with an average rating of,
+    <% if author.reviews.average(:rating).to_i == 1 %>
+      "Awesome!"
+    <% end %>
+    <% if author.reviews.average(:rating).to_i == 2 %>
+      "Good."
+    <% end %>
+    <% if author.reviews.average(:rating).to_i == 3 %>
+      "OK."
+    <% end %>
+    <% if author.reviews.average(:rating).to_i == 4 %>
+      "No Good."
+    <% end %>
+    <% if author.reviews.average(:rating).to_i == 5 %>
+      "Absolutely Horrible."
+    <% end %>
+  <% end %>
   <% if current_user.admin? %>
     | <%= link_to "delete", author, method: :delete,
                                   data: { confirm: "You sure?" } %>
