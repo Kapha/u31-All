@@ -1,4 +1,0 @@
-<%= form_for(user) do |f| %>
-  <div><%= f.hidden_field :admin %></div>
-  <%= f.submit 1, class: "btn btn-large btn-primary" %>
-<% end %>

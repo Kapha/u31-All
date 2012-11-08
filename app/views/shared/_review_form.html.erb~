@@ -1,9 +1,0 @@
-<% @review = Review.new %>
-<%= form_for(@review) do |f| %>
-  <%= f.hidden_field :book_id, :value => @book.id  %>
-  <div class="field" >
-    <%= f.text_area :text, placeholder: "Write a review for this book..." %>
-  </div>
-  <%= f.select(:rating, options_for_select([['1', 1], ['2',2], ['3', 3], ['4',4], ['5', 5]], 5)) %>
-    <%= f.submit "Post Review", class: "btn btn-large btn-primary" %>
-<% end %>

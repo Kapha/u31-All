@@ -1,3 +1,0 @@
-<% provide(:title, 'Contact Me') %>
-<h1>Contact University 31</h1>
-<p>Please <%= mail_to "mail the dean", "webmaster@university31.com" %> with any questions or concerns.<p>
