@@ -14,19 +14,19 @@
   by 
   <%= link_to feed_item.book.author.afull_name, feed_item.book.author %>
   as
-  <% if feed_item.rating == 1 %>
+  <% if feed_item.rating = 1 %>
     "Awesome"
   <% end %>
-  <% if feed_item.rating == 2 %>
+  <% if feed_item.rating = 2 %>
     "Good"
   <% end %>
-  <% if feed_item.rating == 3 %>
+  <% if feed_item.rating = 3 %>
     "OK"
   <% end %>
-  <% if feed_item.rating == 4 %>
+  <% if feed_item.rating = 4 %>
     "No Good"
   <% end %>
-  <% if feed_item.rating == 5 %>
+  <% if feed_item.rating = 5 %>
     "Absolutely Horrible"
   <% end %>
   <br />

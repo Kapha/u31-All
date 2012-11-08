@@ -15,19 +15,19 @@
   <br />
   <span class="timestamp">
   This book was rated 
-  <% if review.rating == 1 %>
+  <% if @review.rating == 1 %>
     "Awesome!"
   <% end %>
-  <% if review.rating == 2 %>
+  <% if @review.rating == 2 %>
     "Good."
   <% end %>
-  <% if review.rating == 3 %>
+  <% if @review.rating == 3 %>
     "OK."
   <% end %>
-  <% if review.rating == 4 %>
+  <% if @review.rating == 4 %>
     "No Good."
   <% end %>
-  <% if review.rating == 5 %>
+  <% if @review.rating == 5 %>
     "Absolutely Horrible."
   <% end %>
   by 
