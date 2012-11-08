@@ -13,7 +13,7 @@
     </aside>
     <div class="span8">
       <h3>Micropost Feed </h3>
-
+      <% require 'will_paginate/array' %>
       <%= render 'shared/feed' %>
     </div>
   </div>

@@ -3,10 +3,10 @@ class StaticPagesController < ApplicationController
     if signed_in?
       @micropost  = current_user.microposts.build
       require 'will_paginate/array'
-      if current_user.feed.count <= 20
+      if current_user.feed.count <= 10
       @feed_items = current_user.feed
       else
-      @feed_items = current_user.feed.drop(current_user.feed.count-20)
+      @feed_items = current_user.feed.drop(current_user.feed.count-10)
       end
     end
   end
