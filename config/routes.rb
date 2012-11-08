@@ -28,6 +28,7 @@ SampleApp::Application.routes.draw do
   match '/signout', to: "sessions#destroy", via: :delete
   match '/backdoor', to: 'users#new'
   match '/help/library', to: 'static_pages#libraryhelp'
+  match '/classroom/reading', to: 'static_pages#reading'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -8,17 +8,7 @@
           <li><%= link_to "Help", help_path %></li>
           <li><%= link_to "The Deans Office", "http://www.createdforhome.net" %>
           <% if signed_in? %>
-            <li id="fat-menu" class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                Classroom <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li><%= link_to "Required Reading", classroom_reading_path %></li>
-                <li>List of topics for forum</li>
-                <li>Will eventually be here.</li>
-                <li>And the list of "Required Reading" will be here.</li>
-              </ul>
-            </li>
+            <li><%= link_to "Class Mates", users_path %></li>
             <li id="fat-menu" class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 Library <b class="caret"></b>
@@ -33,6 +23,17 @@
             </li>
             <li id="fat-menu" class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Classroom <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><%= link_to "Required Reading", classroom_reading_path %></li>
+                <li>List of topics for forum</li>
+                <li>Will eventually be here.</li>
+                <li>And the list of "Required Reading" will be here.</li>
+              </ul>
+            </li>
+            <li id="fat-menu" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 Cafeteria <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
@@ -40,7 +41,6 @@
                 <li>A work in progress</li>
               </ul>
             </li>
-            <li><%= link_to "Class Mates", users_path %></li>
             <li id="fat-menu" class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 Account <b class="caret"></b>
