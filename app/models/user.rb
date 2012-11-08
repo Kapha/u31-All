@@ -24,7 +24,7 @@ class User < ActiveRecord::Base
   has_many :reputations, :through => :reviews
 
   def feed
-    Micropost.from_users_followed_by(self)
+    Micropost.from_users_followed_by(self).zip(Review.from_users_followed_by(self)).flatten.compact
   end
 
   def following?(other_user)
