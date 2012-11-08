@@ -3,7 +3,7 @@
 <p>Help, I need somebody, Help, not just anybody, Help, you know I need somebody, HEEEEEELP!!!</p>
 <p>Ok, joking aside. The help section is coming soon. after most of the actual site is programed so we know how it really works. I don't want to update this section a million times. If you would like to help writing these files please <%= mail_to "webmaster@university31.com" "mail the janitorial staff" %> with anything you have written. Thank you for your understanding in this beta phase of the site.</p>
 <ul>
-<li><%= link_to "Help with the Library", help_library_path %></li>
+<li><%= link_to "Help with the Library", library_help_path %></li>
 <li>Help with the Classrooms</li>
 <li>Help with the Cafeteria</li>
 </ul>
