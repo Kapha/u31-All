@@ -9,9 +9,12 @@
   <% end %>
   <% if defined? feed_item.text %>
   <span class="content">
-  Review of <%= feed_item.book.title %> by <%= feed_item.book.author.afull_name %>
-  </span>
-  <span class="content"><%= feed_item.text %>
+  Review of 
+  <%= link_to feed_item.book.title, feed_item.book %> 
+  by 
+  <%= link_to feed_item.book.author.afull_name, feed_item.book.author %>
+  <br />
+  <%= feed_item.text %>
   </span>
   <% end %>
   </br>
