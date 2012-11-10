@@ -11,7 +11,7 @@
 #
 
 class User < ActiveRecord::Base
-  attr_accessible :email, :firstname, :sirname, :password, :password_confirmation, :username
+  attr_accessible :email, :firstname, :sirname, :password, :password_confirmation, :username, :weburl
   has_secure_password
   has_many :microposts, dependent: :destroy
   has_many :relationships, foreign_key: "follower_id", dependent: :destroy

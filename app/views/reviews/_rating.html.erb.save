@@ -1,0 +1,12 @@
+<h5>
+<% if review.rating == 1 %>
+  "Awesome"
+<% if review.rating == 2 %>
+  "Good"
+<% if review.rating == 3 %>
+  "OK"
+<% if review.rating == 4 %>
+  "No Good"
+<% if review.rating == 5 %>
+  "Absolutely Horrible"
+<h5>

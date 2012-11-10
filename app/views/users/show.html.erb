@@ -5,6 +5,10 @@
       <h1>
         <%= gravatar_for @user %>
         <%= @user.username %>
+        <% if defined? @user.weburl %>
+        <br />
+        <%= link_to @user.weburl, "http://#{@user.weburl}" %>
+        <% end %>
       </h1>
       <h1>
     </section>
