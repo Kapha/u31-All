@@ -5,7 +5,8 @@
       <h1>
         <%= gravatar_for @user %>
         <%= @user.username %>
-        <% if defined? @user.weburl %>
+        <% if @user.weburl == "" %>
+        <% else %>
         <br />
         <%= link_to @user.weburl, "http://#{@user.weburl}" %>
         <% end %>
