@@ -1,4 +1,6 @@
 SampleApp::Application.routes.draw do
+  get "questions/new"
+
   get "reputation/new"
 
   get "authors/new"
@@ -16,6 +18,8 @@ SampleApp::Application.routes.draw do
   resources :books
   resources :authors
   resources :reviews
+  resources :questions
+  resources :topics
 
   root :to => 'static_pages#home'
 

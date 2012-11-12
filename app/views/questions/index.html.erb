@@ -1,0 +1,10 @@
+<% provide(:title, 'All Questions') %>
+<h1>All Questions</h1>
+
+<%= will_paginate %>
+
+<ul class="users">
+  <%= render @questions %>
+</ul>
+
+<%= will_paginate %>
