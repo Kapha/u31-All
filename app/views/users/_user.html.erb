@@ -11,4 +11,10 @@
           </%= render 'add_admin' %>
         <% end %>
   <% end %>
+  <br />
+  <% if user.weburl == "" %>
+    User has no website defined
+  <% else %>
+    <%= link_to user.weburl, "http://#{user.weburl}" %>
+  <% end %>
 </li>
