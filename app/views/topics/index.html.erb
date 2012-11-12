@@ -6,8 +6,12 @@
   <% @topics.each do |topic| %>
     <li>
       <%= link_to topic.name, topic %> 
-      <h5> This topic has <%= pluralize(topic.questions.count, "question") %> 
-      </h5>
+      <% if topic.questions.any? %>
+        <h5> This topic has <%= pluralize(topic.questions.count, "question") %> 
+        </h5>
+      <% else %>
+        <h5> This topic has no questions </h5>
+      <% end %>
     </li>
   <% end %>
 </ul>
