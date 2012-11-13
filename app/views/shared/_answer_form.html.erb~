@@ -4,5 +4,5 @@
   <div class="field" >
     <%= f.text_area :text, placeholder: "Have an answer for this question? Type it here..." %>
   </div>
-  <%= f.submit "Post Answer", class: "btn btn-large btn-primary" %>
+  <%= f.submit "Post Review", class: "btn btn-large btn-primary" %>
 <% end %>
