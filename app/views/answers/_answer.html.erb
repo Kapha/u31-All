@@ -1,0 +1,15 @@
+<li>
+  <%= link_to gravatar_for(answer.user), answer.user %>
+  <%= link_to answer.user.username, answer.user %><br />
+  <%= answer.text %>
+  <% if current_user.admin? %>
+  <br />
+  Delete goes here. 
+  <% end %>
+</li>
+<div class = "tab1">
+<li class = "comments">
+  Comments go here
+</li>
+</div>
+

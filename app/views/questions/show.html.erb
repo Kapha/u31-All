@@ -18,6 +18,7 @@
         <%= link_to "delete", @question, method: :delete, data: {confirm: "This will delete the current question and all answers attached to it. Are you sure?" } %>
       </section>
     <% end %>
+    <%= render 'shared/answer_form' %>
   </aside>
   <div class="span8">
       <section>
@@ -25,7 +26,7 @@
     <section>
       <% if @question.answers.any? %>
         <h4 class="microposts">
-        Render Answers here
+        <%= render @answers %>
         </h4>
       <% else %>
         <h1>No one has answered this question yet. Take a second to do so by filling out the form on the left.</h1>
