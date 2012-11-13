@@ -1,8 +1,8 @@
 <% @book = review.book %>
 <% @author = review.book.author %>
-<% @user = review.user %>
+<% user = review.user %>
 <li>
-  <%= link_to gravatar_for(@user), @user %>
+  <%= link_to gravatar_for(user), user %>
   <span class="timestamp">
   Review of 
   <%= link_to review.book.title, @book %>, 

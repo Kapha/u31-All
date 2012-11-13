@@ -17,7 +17,7 @@
                 <li><%= link_to "Ask a Question", questions_new_path %></li>
                 <% @topics = Topic.all %>
                 <% @topics.each do |topic| %>
-                  <%= link_to topic.name, topic_path(topic) %>
+                  <li><%= link_to topic.name, topic_path(topic) %></li>
                 <% end %>
                 <% if current_user.admin? %>
                   <li><%= link_to "All Questions", questions_path %></li>
