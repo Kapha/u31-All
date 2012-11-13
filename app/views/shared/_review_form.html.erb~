@@ -1,7 +1,6 @@
 <% @review = Review.new %>
 <%= form_for(@review) do |f| %>
   <%= f.hidden_field :book_id, :value => @book.id  %>
-  <%= f.hidden_field :user_id, :value => current_user %>
   <div class="field" >
     <%= f.text_area :text, placeholder: "Write a review for this book..." %>
   </div>
