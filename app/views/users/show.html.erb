@@ -17,7 +17,13 @@
       <%= render 'shared/stats' %>
     </section>
     <section>
-      <h4> User has <%= pluralize(@user.reviews.count, "book review") %>.</h4>
+      <h4> 
+        <%= @user.username %> has <%= pluralize(@user.reviews.count, "book review") %>.
+        <br />
+        <%= @user.username %> has asked <%= pluralize(@user.questions.count, "question") %> 
+        <br />
+        and has answered <%= pluralize(@user.answers.count, "question") %>
+      </h4>       
   </aside>
   <div class="span8">
     <%= render 'follow_form' if signed_in? %>
