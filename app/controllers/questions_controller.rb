@@ -6,7 +6,7 @@ class QuestionsController < ApplicationController
 
   def create
     @question = Question.new(params[:question])
-    @question.user_id = current_user   
+    @question.user_id = current_user.id   
     if @question.save
       flash[:success] = "Thank you for adding a new question to the site. Check back to see when it is answered."
       redirect_to @question
