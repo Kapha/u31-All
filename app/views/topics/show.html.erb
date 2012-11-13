@@ -12,6 +12,9 @@
       <h4> This topic has <%= pluralize(@topic.questions.count, "question") %>
       </h4>
     </section>
+    <section>
+      <%= link_to "Ask a new Question", new_question_path, class: "btn btn-large btn-primary" %>
+    </section>
     <% if current_user.admin? %>
       <section>
         <%= link_to "delete", @topic, method: :delete, data: {confirm: "This will delete the current topic and all questions attached to it. Are you sure?" } %>
