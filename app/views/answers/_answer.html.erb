@@ -1,15 +1,32 @@
-<li>
-  <%= link_to gravatar_for(answer.user), answer.user %>
-  <%= link_to answer.user.username, answer.user %><br />
-  <%= answer.text %>
-  <% if current_user.admin? %>
-  <br />
-  Delete goes here. 
-  <% end %>
-</li>
+<section>
+  <li>
+    <%= link_to gravatar_for(answer.user), answer.user %>
+    <%= link_to answer.user.username, answer.user %><br />
+    <%= answer.text %>
+    <% if current_user.admin? %>
+    <br />
+    Delete goes here. 
+    <% end %>
+  </li>
+</section>
 <div class = "tab1">
-<li class = "comments">
-  Comments go here
+  <% if answer.comments.any? %>
+    <section>
+      <li>  
+        Comments go here!
+      </li>
+    </section>
+    <% @placeholder = "Leave a comment here..." %>
+  <% else %>
+    <% @placeholder = "Be the first to comment on this answer..." %>
+  <% end %>
+  <li>
+    <% @comment = Comment.new %>
+      <%= form_for(@comment) do |f| %>
+      <%= f.hidden_field :answer_id, :value => answer.id %>
+      <%= f.text_field :text, placeholder: @placeholder %>
+      <%= f.submit "Leave comment", class: "btn btn-primar" %>
+    <% end %>
 </li>
 </div>
 

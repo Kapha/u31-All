@@ -21,6 +21,7 @@ SampleApp::Application.routes.draw do
   resources :questions
   resources :topics
   resources :answers
+  resources :comments
 
   root :to => 'static_pages#home'
 
