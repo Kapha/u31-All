@@ -21,10 +21,10 @@
         <%= link_to "delete", @book, method: :delete, data: {confirm: "This will delete the current book and all reviews attached to it. Are you sure?" } %>
         | <%= link_to "edit", edit_book_path(@book) %>
       </section>
+      <section>
+        <%= render 'shared/review_form' %>
+      </section>
     <% end %>
-    <section>
-      <%= render 'shared/review_form' %>
-    </section>
   </aside>
   <div class="span8">
       <section>

@@ -23,6 +23,7 @@ class User < ActiveRecord::Base
   has_many :reviews, dependent: :destroy
   has_many :reputations, :through => :reviews
   has_many :questions, dependent: :destroy
+  has_many :answers, dependent: :destroy
 
   def feed
     Micropost.from_users_followed_by(self).zip(Review.from_users_followed_by(self)).flatten.compact

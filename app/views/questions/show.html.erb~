@@ -1,0 +1,35 @@
+<% provide(:title, @book.title) %>
+<div class="row">
+  <aside class="span4">
+    <section>
+      <h1>
+        <%= @question.subject %>, </h1>
+        <%= link_to @question.user.username, user_path(@question.user) %> 
+      <h4>
+
+      </h4>
+    </section>
+    <section>
+      <h4> This question has <%= pluralize(@question.answers.count, "answer") %>
+      </h4>
+    </section>
+    <% if current_user.admin? %>
+      <section>
+        <%= link_to "delete", @question, method: :delete, data: {confirm: "This will delete the current question and all answers attached to it. Are you sure?" } %>
+      </section>
+    <% end %>
+  </aside>
+  <div class="span8">
+      <section>
+      <h2><%= @question.quest %></h2>
+    <section>
+      <% if @question.answers.any? %>
+        <h4 class="microposts">
+        Render Answers here
+        </h4>
+      <% else %>
+        <h1>No one has answered this question yet. Take a second to do so by filling out the form on the left.</h1>
+      <% end %>
+    </section>
+  </div>
+</div>

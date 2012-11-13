@@ -1,53 +1,48 @@
-class AuthorsController < ApplicationController
+class QuestionsController < ApplicationController
 
   before_filter :signed_in_user,
                 only: [:edit, :update, :index, :destroy]
   before_filter :admin_user, only: :destroy
 
   def create
-    @author = Author.new(params[:author])
-    if @author.save
-      flash[:success] = "Thank you for adding a new Author to the site."
-      redirect_to @author
+    @question = Question.new(params[:author])
+    @question.user_id = current_user   
+    if @question.save
+      flash[:success] = "Thank you for adding a new question to the site. Check back to see when it is answered."
+      redirect_to @question
     else
       render 'new'
     end
   end
 
   def destroy
-    Author.find(params[:id]).destroy
-    flash[:success] = "User destroyed."
-    redirect_to authors_url
+    Question.find(params[:id]).destroy
+    flash[:success] = "Question destroyed."
+    redirect_to questions_url
   end
 
   def show
-    @author = Author.find(params[:id])
-    @books = @author.books.paginate(page: params[:page])
-  end
-
-  def destroy
-    Author.find(params[:id]).destroy
-    flash[:success] = "Author destroyed."
-    redirect_to authors_url
+    @question = Question.find(params[:id])
+    @answers = @question.answers.paginate(page: params[:page])
   end
 
   def edit
-    @author = Author.find(params[:id])
+    @question = Question.find(params[:id])
   end
 
   def new
-    @author = Author.new
+    @question = Question.new
   end
 
   def index
-    @authors = Author.paginate(page: params[:page])
+    @questions = Question.paginate(page: params[:page])
   end
 
   def update
-    @author = Author.find(params[:id])    
-    if @author.update_attributes(params[:author])
-      flash[:success] = "Author updated"
-      redirect_to @author
+    @question = Question.find(params[:id]) 
+    if @question.update_attributes(params[:author])
+      flash[:success] = "Question updated"
+      redirect_to @question
     else
       render 'edit'
     end

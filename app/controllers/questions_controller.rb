@@ -5,7 +5,8 @@ class QuestionsController < ApplicationController
   before_filter :admin_user, only: :destroy
 
   def create
-    @question = Question.new(params[:author])
+    @question = Question.new(params[:question])
+    @question.user_id = current_user   
     if @question.save
       flash[:success] = "Thank you for adding a new question to the site. Check back to see when it is answered."
       redirect_to @question
@@ -38,7 +39,7 @@ class QuestionsController < ApplicationController
   end
 
   def update
-    @question = Question.find(params[:id])    
+    @question = Question.find(params[:id]) 
     if @question.update_attributes(params[:author])
       flash[:success] = "Question updated"
       redirect_to @question

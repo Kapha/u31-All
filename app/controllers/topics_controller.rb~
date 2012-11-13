@@ -14,14 +14,25 @@ before_filter :admin_user, only: [:destroy, :update, :new, :create]
     redirect_to(root_path) unless current_user.admin?
   end
 
+  def index
+    @topics = Topic.paginate(page: params[:page])
+  end
+
   def create
     @topic = Topic.new(params[:topic])
+    @topic.user_id = current_user
     if @topic.save
       flash[:success] = "Thank you for adding a new topic to the site."
       redirect_to @topic
     else
       render 'new'
     end
+  end
+
+  def destroy
+    Topic.find(params[:id]).destroy
+    flash[:success] = "Topic destroyed."
+    redirect_to topics_url
   end
 
 end

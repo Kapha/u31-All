@@ -28,4 +28,10 @@ before_filter :admin_user, only: [:destroy, :update, :new, :create]
     end
   end
 
+  def destroy
+    Topic.find(params[:id]).destroy
+    flash[:success] = "Topic destroyed."
+    redirect_to topics_url
+  end
+
 end
