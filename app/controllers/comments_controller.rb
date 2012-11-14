@@ -8,8 +8,8 @@ class CommentsController < ApplicationController
     @comment = Comment.new(params[:comment])
     @comment.user_id = current_user.id   
     if @comment.save
-      flash[:success] = "Thank you for answering this question."
-      redirect_to(root_path)
+      flash[:success] = "Thank you for commenting on this answer."
+      redirect_to :back
     else
       render 'new'
     end
