@@ -1,8 +1,0 @@
-<% @answer = Answer.new %>
-<%= form_for(@answer) do |f| %>
-  <%= f.hidden_field :question_id, :value => @question.id  %>
-  <div class="field" >
-    <%= f.text_area :text, placeholder: "Have an answer for this question? Type it here..." %>
-  </div>
-  <%= f.submit "Post Review", class: "btn btn-large btn-primary" %>
-<% end %>
