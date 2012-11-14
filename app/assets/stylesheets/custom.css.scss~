@@ -240,6 +240,7 @@ aside {
 }
 
 .tab1{
-  padding-left: 30px;
+  padding-left: 50px;
+  padding-bottom: 5px;
 }
 

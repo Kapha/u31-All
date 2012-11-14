@@ -21,17 +21,9 @@
   <li>
     <% @comment = Comment.new %>
       <%= form_for(@comment) do |f| %>
-      <table width="100%" border="0">
-        <tr>
-          <td>
-            <%= f.hidden_field :answer_id, :value => answer.id %>
-            <%= f.text_field :text, placeholder: @placeholder %>
-          </td>
-          <td>
-            <%= f.submit "Leave comment", class: "btn btn-primar" %>
-          </td>
-        </tr>
-      </table>
+      <%= f.hidden_field :answer_id, :value => answer.id %>
+      <%= f.text_field :text, placeholder: @placeholder %>
+      <%= f.submit "Leave comment", class: "btn btn-primar" %>
     <% end %>
 </li>
 </div>
