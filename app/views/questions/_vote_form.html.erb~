@@ -1,9 +1,0 @@
-  <div id="follow_form">
-  This question has been voted for
-  <%= pluralize(@question.qvotes.count, "time") %>
-  <% if @question.voters.include?current_user %>
-    <%= render 'unvote' %>
-  <% else %>
-    <%= render 'vote' %>
-  <% end %>
-  </div>
