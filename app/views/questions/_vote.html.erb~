@@ -1,0 +1,6 @@
+Testing
+</%= form_for(current_user.qvote!(@question), remote: true) do |f| %>
+  <div><%= f.hidden_field :question_id %></div>
+  </%= f.submit "Vote", class: "btn btn-large btn-primary" %>
+Testing
+<% end %>

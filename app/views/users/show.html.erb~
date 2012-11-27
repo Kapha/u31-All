@@ -20,8 +20,10 @@
       <h4> 
         <%= @user.username %> has <%= pluralize(@user.reputation, "reputaion point") %>
         <br />
-        from <%= pluralize(@user.reviews.count, "book review") %>,
+        From <%= pluralize(@user.reviews.count, "book review") %>,
+        <br />
         <%= pluralize(@user.questions.count, "question") %>, 
+        <br />
         and <%= pluralize(@user.answers.count, "answer") %>
       </h4>       
   </aside>

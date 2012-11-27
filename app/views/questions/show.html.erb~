@@ -15,6 +15,7 @@
     </section>
     <section>
       <%= render 'vote_form' %>
+      <%= link_to "Like this question!", qvotes_path, method: :create %>
     </section>
     <% if current_user.admin? %>
       <section>

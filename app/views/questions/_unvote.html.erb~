@@ -1,0 +1,4 @@
+Testing
+  <%= link_to "Unvote", current_user.unvote!(@question), class: "btn btn-large btn-primary" %>
+Testing
+

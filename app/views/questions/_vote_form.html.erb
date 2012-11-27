@@ -1,0 +1,9 @@
+  <div id="follow_form">
+  This question has been voted for
+  <%= pluralize(@question.qvotes.count, "time") %>
+  <% if @question.voters.include?current_user %>
+    <%= link_to "Unvote", current_user.unqvote!(@question), class: "btn btn-large btn-primary" %>
+  <% else %>
+    <%= render 'vote' %>
+  <% end %>
+  </div>

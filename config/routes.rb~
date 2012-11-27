@@ -22,7 +22,7 @@ SampleApp::Application.routes.draw do
   resources :topics
   resources :answers
   resources :comments
-  resources :qvotes
+  resources :qvotes, only: [ :new, :destroy, :create ]
 
   root :to => 'static_pages#home'
 

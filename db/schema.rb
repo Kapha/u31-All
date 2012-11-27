@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121113224553) do
+ActiveRecord::Schema.define(:version => 20121126182932) do
 
   create_table "answers", :force => true do |t|
     t.text     "text"
@@ -55,6 +55,14 @@ ActiveRecord::Schema.define(:version => 20121113224553) do
 
   add_index "microposts", ["user_id", "created_at"], :name => "index_microposts_on_user_id_and_created_at"
 
+  create_table "qstn_votes", :force => true do |t|
+    t.integer  "vote_cnt"
+    t.integer  "user_id"
+    t.integer  "question_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
   create_table "questions", :force => true do |t|
     t.string   "quest"
     t.integer  "user_id"
@@ -63,6 +71,14 @@ ActiveRecord::Schema.define(:version => 20121113224553) do
     t.string   "topic"
     t.string   "subject"
     t.integer  "topic_id"
+  end
+
+  create_table "qvotes", :force => true do |t|
+    t.integer  "vote_cnt"
+    t.integer  "user_id"
+    t.integer  "question_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "relationships", :force => true do |t|
@@ -115,6 +131,7 @@ ActiveRecord::Schema.define(:version => 20121113224553) do
     t.string   "username"
     t.string   "string"
     t.string   "weburl"
+    t.date     "date_of_birth"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
